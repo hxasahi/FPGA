@@ -7,7 +7,7 @@ reg[3:0] temp;
 always @ (posedge clk)
 begin
 	cnt=cnt+1;
-	if(cnt==32'd100_000)
+	if(cnt==32'd10_000)
 	begin
 		cnt=0;
 		case(temp)

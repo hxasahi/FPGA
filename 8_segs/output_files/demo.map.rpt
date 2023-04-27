@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demo
-Thu Apr 27 21:35:37 2023
+Thu Apr 27 21:38:37 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -43,13 +43,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 27 21:35:37 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 27 21:38:37 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; demo                                        ;
 ; Top-level Entity Name              ; demo                                        ;
 ; Family                             ; Cyclone II                                  ;
-; Total logic elements               ; 68                                          ;
-;     Total combinational functions  ; 68                                          ;
+; Total logic elements               ; 67                                          ;
+;     Total combinational functions  ; 67                                          ;
 ;     Dedicated logic registers      ; 50                                          ;
 ; Total registers                    ; 50                                          ;
 ; Total pins                         ; 17                                          ;
@@ -176,16 +176,16 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 68    ;
+; Estimated Total logic elements              ; 67    ;
 ;                                             ;       ;
-; Total combinational functions               ; 68    ;
+; Total combinational functions               ; 67    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 16    ;
+;     -- 4 input functions                    ; 15    ;
 ;     -- 3 input functions                    ; 15    ;
 ;     -- <=2 input functions                  ; 37    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 37    ;
+;     -- normal mode                          ; 36    ;
 ;     -- arithmetic mode                      ; 31    ;
 ;                                             ;       ;
 ; Total registers                             ; 50    ;
@@ -196,8 +196,8 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 50    ;
-; Total fan-out                               ; 313   ;
-; Average fan-out                             ; 2.32  ;
+; Total fan-out                               ; 309   ;
+; Average fan-out                             ; 2.31  ;
 +---------------------------------------------+-------+
 
 
@@ -206,7 +206,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |demo                      ; 68 (68)           ; 50 (50)      ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |demo               ;              ;
+; |demo                      ; 67 (67)           ; 50 (50)      ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |demo               ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -275,7 +275,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Thu Apr 27 21:35:37 2023
+    Info: Processing started: Thu Apr 27 21:38:37 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demo -c demo
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Warning (12019): Can't analyze file -- file key_led.v is missing
@@ -293,7 +293,7 @@ Info (21057): Implemented 112 device resources after synthesis - the final resou
     Info (21061): Implemented 95 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4598 megabytes
-    Info: Processing ended: Thu Apr 27 21:35:37 2023
+    Info: Processing ended: Thu Apr 27 21:38:37 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 

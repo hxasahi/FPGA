@@ -1,5 +1,5 @@
 Flow report for demo
-Thu Apr 27 21:35:44 2023
+Thu Apr 27 21:38:44 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Apr 27 21:35:44 2023       ;
+; Flow Status                        ; Successful - Thu Apr 27 21:38:44 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; demo                                        ;
 ; Top-level Entity Name              ; demo                                        ;
 ; Family                             ; Cyclone II                                  ;
 ; Device                             ; EP2C8Q208C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 68 / 8,256 ( < 1 % )                        ;
-;     Total combinational functions  ; 68 / 8,256 ( < 1 % )                        ;
+; Total logic elements               ; 67 / 8,256 ( < 1 % )                        ;
+;     Total combinational functions  ; 67 / 8,256 ( < 1 % )                        ;
 ;     Dedicated logic registers      ; 50 / 8,256 ( < 1 % )                        ;
 ; Total registers                    ; 50                                          ;
 ; Total pins                         ; 17 / 138 ( 12 % )                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/27/2023 21:35:37 ;
+; Start date & time ; 04/27/2023 21:38:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; demo                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 96830620888746.168260253716652 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 96830620888746.168260271708840 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;

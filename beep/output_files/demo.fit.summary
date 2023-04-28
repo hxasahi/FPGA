@@ -1,14 +1,14 @@
-Fitter Status : Successful - Fri Apr 28 18:04:56 2023
+Fitter Status : Successful - Fri Apr 28 23:32:56 2023
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : demo
 Top-level Entity Name : demo
 Family : Cyclone II
 Device : EP2C8Q208C8
 Timing Models : Final
-Total logic elements : 59 / 8,256 ( < 1 % )
-    Total combinational functions : 59 / 8,256 ( < 1 % )
-    Dedicated logic registers : 33 / 8,256 ( < 1 % )
-Total registers : 33
+Total logic elements : 76 / 8,256 ( < 1 % )
+    Total combinational functions : 69 / 8,256 ( < 1 % )
+    Dedicated logic registers : 48 / 8,256 ( < 1 % )
+Total registers : 48
 Total pins : 12 / 138 ( 9 % )
 Total virtual pins : 0
 Total memory bits : 0 / 165,888 ( 0 % )

@@ -59,11 +59,11 @@ set_global_assignment -name CDF_FILE output_files/Chain2.cdf
 set_location_assignment PIN_23 -to clk
 set_global_assignment -name CDF_FILE output_files/Chain3.cdf
 set_location_assignment PIN_11 -to beep
-set_location_assignment PIN_28 -to key[0]
-set_location_assignment PIN_24 -to key[1]
-set_location_assignment PIN_27 -to key[2]
-set_location_assignment PIN_130 -to key[3]
-set_location_assignment PIN_129 -to key[4]
+set_location_assignment PIN_86 -to key[0]
+set_location_assignment PIN_87 -to key[1]
+set_location_assignment PIN_88 -to key[2]
+set_location_assignment PIN_89 -to key[3]
+set_location_assignment PIN_90 -to key[4]
 set_location_assignment PIN_14 -to led[1]
 set_location_assignment PIN_15 -to led[0]
 set_location_assignment PIN_30 -to led[2]

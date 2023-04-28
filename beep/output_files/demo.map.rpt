@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demo
-Fri Apr 28 18:04:53 2023
+Fri Apr 28 23:32:52 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -13,9 +13,11 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -41,15 +43,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 28 18:04:53 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 28 23:32:52 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; demo                                        ;
 ; Top-level Entity Name              ; demo                                        ;
 ; Family                             ; Cyclone II                                  ;
-; Total logic elements               ; 59                                          ;
-;     Total combinational functions  ; 59                                          ;
-;     Dedicated logic registers      ; 33                                          ;
-; Total registers                    ; 33                                          ;
+; Total logic elements               ; 74                                          ;
+;     Total combinational functions  ; 69                                          ;
+;     Dedicated logic registers      ; 48                                          ;
+; Total registers                    ; 48                                          ;
 ; Total pins                         ; 12                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -148,15 +150,15 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -174,28 +176,28 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 59    ;
+; Estimated Total logic elements              ; 74    ;
 ;                                             ;       ;
-; Total combinational functions               ; 59    ;
+; Total combinational functions               ; 69    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 24    ;
-;     -- 3 input functions                    ; 3     ;
-;     -- <=2 input functions                  ; 32    ;
+;     -- 4 input functions                    ; 25    ;
+;     -- 3 input functions                    ; 2     ;
+;     -- <=2 input functions                  ; 42    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 28    ;
+;     -- normal mode                          ; 38    ;
 ;     -- arithmetic mode                      ; 31    ;
 ;                                             ;       ;
-; Total registers                             ; 33    ;
-;     -- Dedicated logic registers            ; 33    ;
+; Total registers                             ; 48    ;
+;     -- Dedicated logic registers            ; 48    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 12    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 33    ;
-; Total fan-out                               ; 235   ;
-; Average fan-out                             ; 2.26  ;
+; Maximum fan-out                             ; 48    ;
+; Total fan-out                               ; 323   ;
+; Average fan-out                             ; 2.50  ;
 +---------------------------------------------+-------+
 
 
@@ -204,9 +206,23 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |demo                      ; 59 (59)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |demo               ;              ;
+; |demo                      ; 69 (69)           ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |demo               ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; freq[0..4,14,20..31]                   ; Stuck at GND due to stuck port data_in ;
+; freq[10]                               ; Merged with freq[18]                   ;
+; freq[12]                               ; Merged with freq[16]                   ;
+; freq[5]                                ; Merged with freq[15]                   ;
+; freq[7]                                ; Merged with freq[9]                    ;
+; Total Number of Removed Registers = 22 ;                                        ;
++----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -214,14 +230,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 48    ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; freq[15]                               ; 2       ;
+; freq[9]                                ; 2       ;
+; freq[16]                               ; 2       ;
+; Total number of inverted registers = 3 ;         ;
++----------------------------------------+---------+
 
 
 +-------------------------------+
@@ -239,29 +267,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Fri Apr 28 18:04:52 2023
+    Info: Processing started: Fri Apr 28 23:32:51 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demo -c demo
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Warning (12019): Can't analyze file -- file key_led.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file demo.v
     Info (12023): Found entity 1: demo
 Info (12127): Elaborating entity "demo" for the top level hierarchy
-Warning (10034): Output port "led" at demo.v(5) has no driver
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "led[0]" is stuck at GND
-    Warning (13410): Pin "led[1]" is stuck at GND
-    Warning (13410): Pin "led[2]" is stuck at GND
-    Warning (13410): Pin "led[3]" is stuck at GND
-    Warning (13410): Pin "led[4]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 80 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4585 megabytes
-    Info: Processing ended: Fri Apr 28 18:04:53 2023
+    Info (21061): Implemented 74 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4600 megabytes
+    Info: Processing ended: Fri Apr 28 23:32:52 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

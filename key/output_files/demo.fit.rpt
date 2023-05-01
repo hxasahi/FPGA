@@ -1,5 +1,5 @@
 Fitter report for demo
-Mon May 01 20:45:38 2023
+Tue May 02 00:32:18 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon May 01 20:45:38 2023       ;
+; Fitter Status                      ; Successful - Tue May 02 00:32:18 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; demo                                        ;
 ; Top-level Entity Name              ; demo                                        ;
@@ -607,7 +607,8 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |demo                      ; 42 (42)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 10   ; 0            ; 9 (9)        ; 3 (3)             ; 30 (30)          ; |demo               ;              ;
+; |demo                      ; 42 (12)     ; 33 (12)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 10   ; 0            ; 9 (0)        ; 3 (1)             ; 30 (11)          ; |demo               ;              ;
+;    |key:key1|              ; 30 (30)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 2 (2)             ; 19 (19)          ; |demo|key:key1      ;              ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -640,125 +641,125 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                      ;
-+-----------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name      ; Location         ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-----------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; always0~0 ; LCCOMB_X1_Y9_N10 ; 20      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; clk       ; PIN_23           ; 29      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; key       ; PIN_28           ; 21      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; key_flag  ; LCFF_X1_Y9_N5    ; 4       ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-+-----------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                               ;
++--------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name               ; Location         ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clk                ; PIN_23           ; 29      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; key                ; PIN_28           ; 21      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; key:key1|always0~0 ; LCCOMB_X1_Y9_N10 ; 20      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; key:key1|key_flag  ; LCFF_X1_Y9_N5    ; 4       ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
++--------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                              ;
-+----------+---------------+---------+----------------------+------------------+---------------------------+
-; Name     ; Location      ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------+---------------+---------+----------------------+------------------+---------------------------+
-; clk      ; PIN_23        ; 29      ; Global Clock         ; GCLK2            ; --                        ;
-; key_flag ; LCFF_X1_Y9_N5 ; 4       ; Global Clock         ; GCLK3            ; --                        ;
-+----------+---------------+---------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                       ;
++-------------------+---------------+---------+----------------------+------------------+---------------------------+
+; Name              ; Location      ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------+---------------+---------+----------------------+------------------+---------------------------+
+; clk               ; PIN_23        ; 29      ; Global Clock         ; GCLK2            ; --                        ;
+; key:key1|key_flag ; LCFF_X1_Y9_N5 ; 4       ; Global Clock         ; GCLK3            ; --                        ;
++-------------------+---------------+---------+----------------------+------------------+---------------------------+
 
 
-+---------------------------------+
-; Non-Global High Fan-Out Signals ;
-+-----------------+---------------+
-; Name            ; Fan-Out       ;
-+-----------------+---------------+
-; key             ; 21            ;
-; always0~0       ; 20            ;
-; cnt[0]          ; 11            ;
-; cnt[3]          ; 10            ;
-; cnt[2]          ; 10            ;
-; cnt[1]          ; 10            ;
-; cnt_20ms[0]     ; 3             ;
-; Equal1~5        ; 2             ;
-; Equal1~0        ; 2             ;
-; cnt_20ms[15]    ; 2             ;
-; cnt_20ms[13]    ; 2             ;
-; cnt_20ms[16]    ; 2             ;
-; cnt_20ms[14]    ; 2             ;
-; cnt_20ms[12]    ; 2             ;
-; cnt_20ms[11]    ; 2             ;
-; cnt_20ms[10]    ; 2             ;
-; cnt_20ms[9]     ; 2             ;
-; cnt_20ms[8]     ; 2             ;
-; cnt_20ms[7]     ; 2             ;
-; cnt_20ms[6]     ; 2             ;
-; cnt_20ms[5]     ; 2             ;
-; cnt_20ms[4]     ; 2             ;
-; cnt_20ms[3]     ; 2             ;
-; cnt_20ms[2]     ; 2             ;
-; cnt_20ms[1]     ; 2             ;
-; cnt_20ms[19]    ; 2             ;
-; cnt_20ms[18]    ; 2             ;
-; cnt_20ms[17]    ; 2             ;
-; cnt[0]~3        ; 1             ;
-; Equal1~6        ; 1             ;
-; Equal1~4        ; 1             ;
-; Equal1~3        ; 1             ;
-; Equal1~2        ; 1             ;
-; Equal1~1        ; 1             ;
-; cnt~2           ; 1             ;
-; cnt[2]~1        ; 1             ;
-; cnt~0           ; 1             ;
-; WideOr0~0       ; 1             ;
-; WideOr1~0       ; 1             ;
-; WideOr2~0       ; 1             ;
-; WideOr3~0       ; 1             ;
-; WideOr4~0       ; 1             ;
-; WideOr5~0       ; 1             ;
-; WideOr6~0       ; 1             ;
-; led[7]~reg0     ; 1             ;
-; led[6]~reg0     ; 1             ;
-; led[5]~reg0     ; 1             ;
-; led[4]~reg0     ; 1             ;
-; led[3]~reg0     ; 1             ;
-; led[2]~reg0     ; 1             ;
-; led[1]~reg0     ; 1             ;
-; led[0]~reg0     ; 1             ;
-; cnt_20ms[19]~58 ; 1             ;
-; cnt_20ms[18]~57 ; 1             ;
-; cnt_20ms[18]~56 ; 1             ;
-; cnt_20ms[17]~55 ; 1             ;
-; cnt_20ms[17]~54 ; 1             ;
-; cnt_20ms[16]~53 ; 1             ;
-; cnt_20ms[16]~52 ; 1             ;
-; cnt_20ms[15]~51 ; 1             ;
-; cnt_20ms[15]~50 ; 1             ;
-; cnt_20ms[14]~49 ; 1             ;
-; cnt_20ms[14]~48 ; 1             ;
-; cnt_20ms[13]~47 ; 1             ;
-; cnt_20ms[13]~46 ; 1             ;
-; cnt_20ms[12]~45 ; 1             ;
-; cnt_20ms[12]~44 ; 1             ;
-; cnt_20ms[11]~43 ; 1             ;
-; cnt_20ms[11]~42 ; 1             ;
-; cnt_20ms[10]~41 ; 1             ;
-; cnt_20ms[10]~40 ; 1             ;
-; cnt_20ms[9]~39  ; 1             ;
-; cnt_20ms[9]~38  ; 1             ;
-; cnt_20ms[8]~37  ; 1             ;
-; cnt_20ms[8]~36  ; 1             ;
-; cnt_20ms[7]~35  ; 1             ;
-; cnt_20ms[7]~34  ; 1             ;
-; cnt_20ms[6]~33  ; 1             ;
-; cnt_20ms[6]~32  ; 1             ;
-; cnt_20ms[5]~31  ; 1             ;
-; cnt_20ms[5]~30  ; 1             ;
-; cnt_20ms[4]~29  ; 1             ;
-; cnt_20ms[4]~28  ; 1             ;
-; cnt_20ms[3]~27  ; 1             ;
-; cnt_20ms[3]~26  ; 1             ;
-; cnt_20ms[2]~25  ; 1             ;
-; cnt_20ms[2]~24  ; 1             ;
-; cnt_20ms[1]~23  ; 1             ;
-; cnt_20ms[1]~22  ; 1             ;
-; cnt_20ms[0]~21  ; 1             ;
-; cnt_20ms[0]~20  ; 1             ;
-+-----------------+---------------+
++------------------------------------+
+; Non-Global High Fan-Out Signals    ;
++--------------------------+---------+
+; Name                     ; Fan-Out ;
++--------------------------+---------+
+; key                      ; 21      ;
+; key:key1|always0~0       ; 20      ;
+; cnt[0]                   ; 11      ;
+; cnt[3]                   ; 10      ;
+; cnt[2]                   ; 10      ;
+; cnt[1]                   ; 10      ;
+; key:key1|cnt_20ms[0]     ; 3       ;
+; key:key1|Equal1~5        ; 2       ;
+; key:key1|Equal1~0        ; 2       ;
+; key:key1|cnt_20ms[15]    ; 2       ;
+; key:key1|cnt_20ms[13]    ; 2       ;
+; key:key1|cnt_20ms[16]    ; 2       ;
+; key:key1|cnt_20ms[14]    ; 2       ;
+; key:key1|cnt_20ms[12]    ; 2       ;
+; key:key1|cnt_20ms[11]    ; 2       ;
+; key:key1|cnt_20ms[10]    ; 2       ;
+; key:key1|cnt_20ms[9]     ; 2       ;
+; key:key1|cnt_20ms[8]     ; 2       ;
+; key:key1|cnt_20ms[7]     ; 2       ;
+; key:key1|cnt_20ms[6]     ; 2       ;
+; key:key1|cnt_20ms[5]     ; 2       ;
+; key:key1|cnt_20ms[4]     ; 2       ;
+; key:key1|cnt_20ms[3]     ; 2       ;
+; key:key1|cnt_20ms[2]     ; 2       ;
+; key:key1|cnt_20ms[1]     ; 2       ;
+; key:key1|cnt_20ms[19]    ; 2       ;
+; key:key1|cnt_20ms[18]    ; 2       ;
+; key:key1|cnt_20ms[17]    ; 2       ;
+; cnt[0]~3                 ; 1       ;
+; key:key1|Equal1~6        ; 1       ;
+; key:key1|Equal1~4        ; 1       ;
+; key:key1|Equal1~3        ; 1       ;
+; key:key1|Equal1~2        ; 1       ;
+; key:key1|Equal1~1        ; 1       ;
+; cnt~2                    ; 1       ;
+; cnt[2]~1                 ; 1       ;
+; cnt~0                    ; 1       ;
+; WideOr0~0                ; 1       ;
+; WideOr1~0                ; 1       ;
+; WideOr2~0                ; 1       ;
+; WideOr3~0                ; 1       ;
+; WideOr4~0                ; 1       ;
+; WideOr5~0                ; 1       ;
+; WideOr6~0                ; 1       ;
+; led[7]~reg0              ; 1       ;
+; led[6]~reg0              ; 1       ;
+; led[5]~reg0              ; 1       ;
+; led[4]~reg0              ; 1       ;
+; led[3]~reg0              ; 1       ;
+; led[2]~reg0              ; 1       ;
+; led[1]~reg0              ; 1       ;
+; led[0]~reg0              ; 1       ;
+; key:key1|cnt_20ms[19]~58 ; 1       ;
+; key:key1|cnt_20ms[18]~57 ; 1       ;
+; key:key1|cnt_20ms[18]~56 ; 1       ;
+; key:key1|cnt_20ms[17]~55 ; 1       ;
+; key:key1|cnt_20ms[17]~54 ; 1       ;
+; key:key1|cnt_20ms[16]~53 ; 1       ;
+; key:key1|cnt_20ms[16]~52 ; 1       ;
+; key:key1|cnt_20ms[15]~51 ; 1       ;
+; key:key1|cnt_20ms[15]~50 ; 1       ;
+; key:key1|cnt_20ms[14]~49 ; 1       ;
+; key:key1|cnt_20ms[14]~48 ; 1       ;
+; key:key1|cnt_20ms[13]~47 ; 1       ;
+; key:key1|cnt_20ms[13]~46 ; 1       ;
+; key:key1|cnt_20ms[12]~45 ; 1       ;
+; key:key1|cnt_20ms[12]~44 ; 1       ;
+; key:key1|cnt_20ms[11]~43 ; 1       ;
+; key:key1|cnt_20ms[11]~42 ; 1       ;
+; key:key1|cnt_20ms[10]~41 ; 1       ;
+; key:key1|cnt_20ms[10]~40 ; 1       ;
+; key:key1|cnt_20ms[9]~39  ; 1       ;
+; key:key1|cnt_20ms[9]~38  ; 1       ;
+; key:key1|cnt_20ms[8]~37  ; 1       ;
+; key:key1|cnt_20ms[8]~36  ; 1       ;
+; key:key1|cnt_20ms[7]~35  ; 1       ;
+; key:key1|cnt_20ms[7]~34  ; 1       ;
+; key:key1|cnt_20ms[6]~33  ; 1       ;
+; key:key1|cnt_20ms[6]~32  ; 1       ;
+; key:key1|cnt_20ms[5]~31  ; 1       ;
+; key:key1|cnt_20ms[5]~30  ; 1       ;
+; key:key1|cnt_20ms[4]~29  ; 1       ;
+; key:key1|cnt_20ms[4]~28  ; 1       ;
+; key:key1|cnt_20ms[3]~27  ; 1       ;
+; key:key1|cnt_20ms[3]~26  ; 1       ;
+; key:key1|cnt_20ms[2]~25  ; 1       ;
+; key:key1|cnt_20ms[2]~24  ; 1       ;
+; key:key1|cnt_20ms[1]~23  ; 1       ;
+; key:key1|cnt_20ms[1]~22  ; 1       ;
+; key:key1|cnt_20ms[0]~21  ; 1       ;
+; key:key1|cnt_20ms[0]~20  ; 1       ;
++--------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -932,12 +933,12 @@ Info (332144): No user constrained base clocks found in the design
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node clk (placed in PIN 23 (CLK0, LVDSCLK0p, Input))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info (176353): Automatically promoted node key_flag 
+Info (176353): Automatically promoted node key:key1|key_flag 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -949,7 +950,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.30 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 8 output pins without output pin load capacitance assignment
     Info (306007): Pin "led[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -967,7 +968,7 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file E:/project/FPGA/key/output_files/demo.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 5254 megabytes
-    Info: Processing ended: Mon May 01 20:45:38 2023
+    Info: Processing ended: Tue May 02 00:32:18 2023
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

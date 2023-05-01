@@ -6,7 +6,7 @@ Type  : Slow Model Setup 'clk'
 Slack : -4.073
 TNS   : -79.023
 
-Type  : Slow Model Setup 'key_flag'
+Type  : Slow Model Setup 'key:key1|key_flag'
 Slack : -0.709
 TNS   : -1.935
 
@@ -14,7 +14,7 @@ Type  : Slow Model Hold 'clk'
 Slack : 0.356
 TNS   : 0.000
 
-Type  : Slow Model Hold 'key_flag'
+Type  : Slow Model Hold 'key:key1|key_flag'
 Slack : 0.499
 TNS   : 0.000
 
@@ -22,7 +22,7 @@ Type  : Slow Model Minimum Pulse Width 'clk'
 Slack : -1.941
 TNS   : -44.977
 
-Type  : Slow Model Minimum Pulse Width 'key_flag'
+Type  : Slow Model Minimum Pulse Width 'key:key1|key_flag'
 Slack : -0.742
 TNS   : -5.936
 
@@ -30,7 +30,7 @@ Type  : Fast Model Setup 'clk'
 Slack : -0.682
 TNS   : -11.730
 
-Type  : Fast Model Setup 'key_flag'
+Type  : Fast Model Setup 'key:key1|key_flag'
 Slack : 0.438
 TNS   : 0.000
 
@@ -38,7 +38,7 @@ Type  : Fast Model Hold 'clk'
 Slack : -0.039
 TNS   : -0.263
 
-Type  : Fast Model Hold 'key_flag'
+Type  : Fast Model Hold 'key:key1|key_flag'
 Slack : 0.215
 TNS   : 0.000
 
@@ -46,7 +46,7 @@ Type  : Fast Model Minimum Pulse Width 'clk'
 Slack : -1.380
 TNS   : -30.380
 
-Type  : Fast Model Minimum Pulse Width 'key_flag'
+Type  : Fast Model Minimum Pulse Width 'key:key1|key_flag'
 Slack : -0.500
 TNS   : -4.000
 

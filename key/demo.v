@@ -4,27 +4,9 @@ input key;
 output reg[7:0] led;
 
 reg[3:0] cnt;
-reg key_flag;
-reg [19:0] cnt_20ms;
-parameter cnt_max = 20'd999_999;
+wire key_flag;
 
-always @ (posedge clk)
-begin
-	if(key==1'b1)
-		cnt_20ms <= 20'b0;
-	else if(cnt_20ms==cnt_max && key==1'b0)
-		cnt_20ms <= cnt_20ms;
-	else
-		cnt_20ms <= cnt_20ms + 1'b1;
-end
-
-always @ (posedge clk)
-begin
-	if(cnt_20ms == cnt_max-1'b1)
-		key_flag <= 1'b1;
-	else
-		key_flag <= 1'b0;
-end
+key key1(.clk(clk),.key_in(key),.key_flag(key_flag));
 
 always @ (posedge key_flag)
 begin

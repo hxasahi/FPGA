@@ -1,0 +1,7 @@
+
+State Machine - |demo|state
+Name state.THREE state.TWO state.ONE state.IDLE 
+state.IDLE 0 0 0 0 
+state.ONE 0 0 1 1 
+state.TWO 0 1 0 1 
+state.THREE 1 0 0 1 

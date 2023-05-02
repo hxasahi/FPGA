@@ -1,5 +1,5 @@
 Assembler report for demo
-Tue May 02 01:07:15 2023
+Tue May 02 17:43:18 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: E:/project/FPGA/key/output_files/demo.sof
-  6. Assembler Device Options: E:/project/FPGA/key/output_files/demo.pof
+  5. Assembler Device Options: E:/project/FPGA/key_fsm/output_files/demo.sof
+  6. Assembler Device Options: E:/project/FPGA/key_fsm/output_files/demo.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue May 02 01:07:15 2023 ;
+; Assembler Status      ; Successful - Tue May 02 17:43:18 2023 ;
 ; Revision Name         ; demo                                  ;
 ; Top-level Entity Name ; demo                                  ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-------------------------------------------+
-; Assembler Generated Files                 ;
-+-------------------------------------------+
-; File Name                                 ;
-+-------------------------------------------+
-; E:/project/FPGA/key/output_files/demo.sof ;
-; E:/project/FPGA/key/output_files/demo.pof ;
-+-------------------------------------------+
++-----------------------------------------------+
+; Assembler Generated Files                     ;
++-----------------------------------------------+
+; File Name                                     ;
++-----------------------------------------------+
+; E:/project/FPGA/key_fsm/output_files/demo.sof ;
+; E:/project/FPGA/key_fsm/output_files/demo.pof ;
++-----------------------------------------------+
 
 
-+---------------------------------------------------------------------+
-; Assembler Device Options: E:/project/FPGA/key/output_files/demo.sof ;
-+----------------+----------------------------------------------------+
-; Option         ; Setting                                            ;
-+----------------+----------------------------------------------------+
-; Device         ; EP2C8Q208C8                                        ;
-; JTAG usercode  ; 0x000C9485                                         ;
-; Checksum       ; 0x000C9485                                         ;
-+----------------+----------------------------------------------------+
++-------------------------------------------------------------------------+
+; Assembler Device Options: E:/project/FPGA/key_fsm/output_files/demo.sof ;
++----------------+--------------------------------------------------------+
+; Option         ; Setting                                                ;
++----------------+--------------------------------------------------------+
+; Device         ; EP2C8Q208C8                                            ;
+; JTAG usercode  ; 0x000C3A82                                             ;
+; Checksum       ; 0x000C3A82                                             ;
++----------------+--------------------------------------------------------+
 
 
-+---------------------------------------------------------------------+
-; Assembler Device Options: E:/project/FPGA/key/output_files/demo.pof ;
-+--------------------+------------------------------------------------+
-; Option             ; Setting                                        ;
-+--------------------+------------------------------------------------+
-; Device             ; EPCS4                                          ;
-; JTAG usercode      ; 0x00000000                                     ;
-; Checksum           ; 0x06EF349E                                     ;
-; Compression Ratio  ; 3                                              ;
-+--------------------+------------------------------------------------+
++-------------------------------------------------------------------------+
+; Assembler Device Options: E:/project/FPGA/key_fsm/output_files/demo.pof ;
++--------------------+----------------------------------------------------+
+; Option             ; Setting                                            ;
++--------------------+----------------------------------------------------+
+; Device             ; EPCS4                                              ;
+; JTAG usercode      ; 0x00000000                                         ;
+; Checksum           ; 0x06EFC349                                         ;
+; Compression Ratio  ; 3                                                  ;
++--------------------+----------------------------------------------------+
 
 
 +--------------------+
@@ -117,13 +117,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Tue May 02 01:07:14 2023
+    Info: Processing started: Tue May 02 17:43:17 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off demo -c demo
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4565 megabytes
-    Info: Processing ended: Tue May 02 01:07:15 2023
+    Info: Peak virtual memory: 4566 megabytes
+    Info: Processing ended: Tue May 02 17:43:18 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,12 +1,13 @@
-module key(clk,key_in,key_flag);
+module key(clk,rst_n,key_in,key_flag);
 input clk;
+input rst_n;
 input key_in;
 output key_flag;
 
 reg key_flag;
 reg [19:0] cnt_20ms;
 parameter cnt_max = 20'd999_999;
-
+//parameter cnt_max = 20'd9;
 always @ (posedge clk)
 begin
 	if(key_in==1'b1)

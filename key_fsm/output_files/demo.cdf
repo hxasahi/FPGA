@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C8Q208) Path("E:/project/FPGA/key/output_files/") File("demo.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C8Q208) Path("E:/project/FPGA/key_fsm/output_files/") File("demo.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

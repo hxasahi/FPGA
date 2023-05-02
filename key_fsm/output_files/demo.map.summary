@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue May 02 01:07:09 2023
+Analysis & Synthesis Status : Successful - Tue May 02 17:43:13 2023
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : demo
 Top-level Entity Name : demo
 Family : Cyclone II
-Total logic elements : 74
-    Total combinational functions : 73
-    Dedicated logic registers : 54
-Total registers : 54
+Total logic elements : 37
+    Total combinational functions : 34
+    Dedicated logic registers : 29
+Total registers : 29
 Total pins : 11
 Total virtual pins : 0
 Total memory bits : 0

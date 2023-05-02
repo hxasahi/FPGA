@@ -87,11 +87,11 @@ DATA0                        : 20        : input  :                   :         
 DCLK                         : 21        :        :                   :         : 1         :                
 nCE                          : 22        :        :                   :         : 1         :                
 clk                          : 23        : input  : 3.3-V LVTTL       :         : 1         : Y              
-key[1]                       : 24        : input  : 3.3-V LVTTL       :         : 1         : Y              
+rst_n                        : 24        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND                          : 25        : gnd    :                   :         :           :                
 nCONFIG                      : 26        :        :                   :         : 1         :                
 GND+                         : 27        :        :                   :         : 1         :                
-key[0]                       : 28        : input  : 3.3-V LVTTL       :         : 1         : Y              
+key                          : 28        : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 29        : power  :                   : 3.3V    : 1         :                
 led[2]                       : 30        : output : 3.3-V LVTTL       :         : 1         : Y              
 led[3]                       : 31        : output : 3.3-V LVTTL       :         : 1         : Y              

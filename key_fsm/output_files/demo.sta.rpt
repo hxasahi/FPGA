@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for demo
-Tue May 02 01:07:17 2023
+Tue May 02 17:43:19 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -112,7 +112,7 @@ applicable agreement for further details.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 189.61 MHz ; 189.61 MHz      ; clk        ;      ;
+; 196.66 MHz ; 196.66 MHz      ; clk        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -122,7 +122,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -4.274 ; -173.829      ;
+; clk   ; -4.085 ; -87.929       ;
 +-------+--------+---------------+
 
 
@@ -131,7 +131,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; clk   ; 0.499 ; 0.000         ;
+; clk   ; 0.744 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -152,7 +152,7 @@ No paths to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clk   ; -1.941 ; -82.077               ;
+; clk   ; -1.941 ; -44.977               ;
 +-------+--------+-----------------------+
 
 
@@ -161,106 +161,106 @@ No paths to report.
 +--------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node             ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
-; -4.274 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.314      ;
-; -4.274 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.314      ;
-; -4.274 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.314      ;
-; -4.274 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.314      ;
-; -4.274 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.314      ;
-; -4.274 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.314      ;
-; -4.274 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.314      ;
-; -4.274 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.314      ;
-; -4.274 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.314      ;
-; -4.274 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.314      ;
-; -4.271 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.311      ;
-; -4.271 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.311      ;
-; -4.271 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.311      ;
-; -4.271 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.311      ;
-; -4.271 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.311      ;
-; -4.271 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.311      ;
-; -4.271 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.311      ;
-; -4.271 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.311      ;
-; -4.271 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.311      ;
-; -4.271 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.311      ;
-; -4.234 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.274      ;
-; -4.234 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.274      ;
-; -4.234 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.274      ;
-; -4.234 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.274      ;
-; -4.234 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.274      ;
-; -4.234 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.274      ;
-; -4.234 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.274      ;
-; -4.234 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.274      ;
-; -4.234 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.274      ;
-; -4.234 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.274      ;
-; -4.191 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.231      ;
-; -4.191 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.231      ;
-; -4.191 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.231      ;
-; -4.191 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.231      ;
-; -4.191 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.231      ;
-; -4.191 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.231      ;
-; -4.191 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.231      ;
-; -4.191 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.231      ;
-; -4.191 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.231      ;
-; -4.191 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.231      ;
-; -4.101 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.141      ;
-; -4.101 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.141      ;
-; -4.101 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.141      ;
-; -4.101 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.141      ;
-; -4.101 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.141      ;
-; -4.101 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.141      ;
-; -4.101 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.141      ;
-; -4.101 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.141      ;
-; -4.101 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.141      ;
-; -4.101 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.141      ;
-; -4.096 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.136      ;
-; -4.096 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.136      ;
-; -4.096 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.136      ;
-; -4.096 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.136      ;
-; -4.096 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.136      ;
-; -4.096 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.136      ;
-; -4.096 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.136      ;
-; -4.096 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.136      ;
-; -4.096 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.136      ;
-; -4.096 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.136      ;
-; -4.059 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.099      ;
-; -4.059 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.099      ;
-; -4.059 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.099      ;
-; -4.059 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.099      ;
-; -4.059 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.099      ;
-; -4.059 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.099      ;
-; -4.059 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.099      ;
-; -4.059 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.099      ;
-; -4.059 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.099      ;
-; -4.059 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.099      ;
-; -3.998 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.005      ; 5.043      ;
-; -3.998 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.005      ; 5.043      ;
-; -3.998 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.005      ; 5.043      ;
-; -3.998 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.005      ; 5.043      ;
-; -3.998 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.005      ; 5.043      ;
-; -3.998 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.005      ; 5.043      ;
-; -3.998 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.005      ; 5.043      ;
-; -3.998 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.005      ; 5.043      ;
-; -3.998 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.005      ; 5.043      ;
-; -3.998 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.005      ; 5.043      ;
-; -3.997 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.037      ;
-; -3.997 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.037      ;
-; -3.997 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.037      ;
-; -3.997 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.037      ;
-; -3.997 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.037      ;
-; -3.997 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.037      ;
-; -3.997 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.037      ;
-; -3.997 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.037      ;
-; -3.997 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.037      ;
-; -3.997 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.037      ;
-; -3.946 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.986      ;
-; -3.946 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.986      ;
-; -3.946 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.986      ;
-; -3.946 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.986      ;
-; -3.946 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.986      ;
-; -3.946 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.986      ;
-; -3.946 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.986      ;
-; -3.946 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.986      ;
-; -3.946 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.986      ;
-; -3.946 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.986      ;
+; -4.085 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.125      ;
+; -4.085 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.125      ;
+; -4.085 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.125      ;
+; -4.085 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.125      ;
+; -4.085 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.125      ;
+; -4.085 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.125      ;
+; -4.085 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.125      ;
+; -4.085 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.125      ;
+; -4.082 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.122      ;
+; -4.082 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.122      ;
+; -4.082 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.122      ;
+; -4.082 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.122      ;
+; -4.082 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.122      ;
+; -4.082 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.122      ;
+; -4.082 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.122      ;
+; -4.082 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.122      ;
+; -4.052 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.009      ; 5.101      ;
+; -4.052 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.009      ; 5.101      ;
+; -4.052 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.009      ; 5.101      ;
+; -4.052 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.009      ; 5.101      ;
+; -4.052 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.009      ; 5.101      ;
+; -4.052 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.009      ; 5.101      ;
+; -4.052 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.009      ; 5.101      ;
+; -4.052 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.009      ; 5.101      ;
+; -4.039 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.079      ;
+; -4.039 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.079      ;
+; -4.039 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.079      ;
+; -4.039 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.079      ;
+; -4.039 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.079      ;
+; -4.039 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.079      ;
+; -4.039 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.079      ;
+; -4.039 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.079      ;
+; -4.012 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.052      ;
+; -4.012 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.052      ;
+; -4.012 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.052      ;
+; -4.012 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.052      ;
+; -4.012 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.052      ;
+; -4.012 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.052      ;
+; -4.012 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.052      ;
+; -4.012 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.052      ;
+; -3.825 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.874      ;
+; -3.825 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.874      ;
+; -3.825 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.874      ;
+; -3.825 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.874      ;
+; -3.825 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.874      ;
+; -3.825 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.874      ;
+; -3.825 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.874      ;
+; -3.825 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.874      ;
+; -3.771 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.820      ;
+; -3.771 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.820      ;
+; -3.771 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.820      ;
+; -3.771 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.820      ;
+; -3.771 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.820      ;
+; -3.771 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.820      ;
+; -3.771 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.820      ;
+; -3.771 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.820      ;
+; -3.704 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.753      ;
+; -3.704 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.753      ;
+; -3.704 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.753      ;
+; -3.704 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.753      ;
+; -3.704 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.753      ;
+; -3.704 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.753      ;
+; -3.704 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.753      ;
+; -3.704 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.753      ;
+; -3.699 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; -0.009     ; 4.730      ;
+; -3.699 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; -0.009     ; 4.730      ;
+; -3.696 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; -0.009     ; 4.727      ;
+; -3.696 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; -0.009     ; 4.727      ;
+; -3.666 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.706      ;
+; -3.666 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.706      ;
+; -3.653 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; -0.009     ; 4.684      ;
+; -3.653 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; -0.009     ; 4.684      ;
+; -3.638 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.678      ;
+; -3.638 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.678      ;
+; -3.638 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.678      ;
+; -3.638 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.678      ;
+; -3.638 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.678      ;
+; -3.638 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.678      ;
+; -3.638 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.678      ;
+; -3.638 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.678      ;
+; -3.626 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; -0.009     ; 4.657      ;
+; -3.626 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; -0.009     ; 4.657      ;
+; -3.607 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.647      ;
+; -3.607 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.647      ;
+; -3.607 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.647      ;
+; -3.607 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.647      ;
+; -3.607 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.647      ;
+; -3.607 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.647      ;
+; -3.607 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.647      ;
+; -3.607 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.647      ;
+; -3.579 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.628      ;
+; -3.579 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.628      ;
+; -3.579 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.628      ;
+; -3.579 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.628      ;
+; -3.579 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.628      ;
+; -3.579 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.628      ;
+; -3.579 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.628      ;
+; -3.579 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.628      ;
+; -3.570 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.619      ;
+; -3.570 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.009      ; 4.619      ;
 +--------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -269,106 +269,106 @@ No paths to report.
 +-------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node             ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
-; 0.499 ; cnt[0]                ; cnt[0]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
-; 0.499 ; cnt[2]                ; cnt[2]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
-; 0.499 ; cnt[3]                ; cnt[3]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
-; 0.749 ; key:key1|cnt_20ms[19] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.055      ;
-; 0.749 ; key:key2|cnt_20ms[19] ; key:key2|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.055      ;
-; 0.843 ; cnt[1]                ; led[3]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.149      ;
-; 0.846 ; cnt[1]                ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.152      ;
-; 0.849 ; cnt[1]                ; led[0]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.155      ;
-; 0.850 ; cnt[1]                ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.156      ;
-; 0.989 ; cnt[0]                ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.295      ;
-; 0.991 ; cnt[0]                ; led[0]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.297      ;
-; 0.993 ; cnt[0]                ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.299      ;
-; 0.994 ; cnt[0]                ; led[3]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.300      ;
-; 1.060 ; key:key2|key_flag     ; cnt[0]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.366      ;
-; 1.088 ; key:key2|cnt_20ms[0]  ; key:key2|key_flag     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.394      ;
-; 1.088 ; key:key1|cnt_20ms[0]  ; key:key1|key_flag     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.394      ;
+; 0.744 ; key:key1|cnt_20ms[19] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.050      ;
+; 0.760 ; state.IDLE            ; state.ONE             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.066      ;
+; 0.767 ; state.THREE           ; state.IDLE            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.073      ;
+; 0.903 ; state.TWO             ; state.THREE           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.209      ;
+; 0.921 ; state.ONE             ; state.TWO             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.227      ;
+; 0.921 ; state.ONE             ; led[0]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.227      ;
+; 0.922 ; state.TWO             ; led[7]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.228      ;
+; 0.938 ; state.ONE             ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.244      ;
+; 1.076 ; key:key1|key_flag     ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.382      ;
+; 1.077 ; key:key1|key_flag     ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.383      ;
+; 1.080 ; key:key1|key_flag     ; led[7]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.386      ;
+; 1.121 ; state.ONE             ; led[7]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.427      ;
+; 1.145 ; state.THREE           ; led[7]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.451      ;
+; 1.150 ; state.THREE           ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.456      ;
 ; 1.166 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.472      ;
-; 1.166 ; key:key2|cnt_20ms[10] ; key:key2|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.472      ;
-; 1.171 ; key:key2|cnt_20ms[3]  ; key:key2|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.477      ;
-; 1.172 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.478      ;
-; 1.176 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.482      ;
-; 1.176 ; key:key2|cnt_20ms[11] ; key:key2|cnt_20ms[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.482      ;
+; 1.172 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.478      ;
+; 1.176 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.482      ;
+; 1.176 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.482      ;
+; 1.177 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.483      ;
+; 1.181 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.487      ;
 ; 1.182 ; key:key1|cnt_20ms[8]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.488      ;
-; 1.182 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.488      ;
-; 1.182 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.488      ;
-; 1.182 ; key:key2|cnt_20ms[8]  ; key:key2|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.488      ;
-; 1.182 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.488      ;
-; 1.182 ; key:key2|cnt_20ms[17] ; key:key2|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.488      ;
 ; 1.183 ; key:key1|cnt_20ms[7]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.489      ;
-; 1.183 ; key:key2|cnt_20ms[7]  ; key:key2|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.489      ;
-; 1.185 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.491      ;
-; 1.185 ; key:key2|cnt_20ms[12] ; key:key2|cnt_20ms[12] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.491      ;
 ; 1.186 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.492      ;
-; 1.186 ; key:key2|cnt_20ms[9]  ; key:key2|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.492      ;
+; 1.198 ; state.THREE           ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.504      ;
 ; 1.216 ; key:key1|cnt_20ms[18] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.522      ;
-; 1.217 ; key:key2|cnt_20ms[18] ; key:key2|cnt_20ms[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.523      ;
-; 1.221 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.527      ;
-; 1.221 ; cnt[2]                ; led[3]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.527      ;
-; 1.223 ; cnt[2]                ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.529      ;
-; 1.224 ; cnt[2]                ; led[0]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.530      ;
-; 1.225 ; cnt[2]                ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.531      ;
+; 1.230 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.536      ;
 ; 1.233 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.539      ;
-; 1.233 ; key:key2|cnt_20ms[2]  ; key:key2|cnt_20ms[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.539      ;
 ; 1.234 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.540      ;
 ; 1.234 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.540      ;
-; 1.234 ; key:key2|cnt_20ms[4]  ; key:key2|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.540      ;
-; 1.234 ; key:key2|cnt_20ms[6]  ; key:key2|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.540      ;
-; 1.238 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.544      ;
-; 1.238 ; key:key2|cnt_20ms[0]  ; key:key2|cnt_20ms[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.544      ;
-; 1.281 ; key:key1|key_flag     ; cnt[1]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.587      ;
-; 1.305 ; cnt[3]                ; led[3]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.611      ;
-; 1.306 ; cnt[3]                ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.612      ;
-; 1.308 ; cnt[3]                ; led[0]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.614      ;
-; 1.309 ; cnt[3]                ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.615      ;
-; 1.416 ; cnt[1]                ; cnt[2]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.722      ;
-; 1.417 ; cnt[1]                ; cnt[1]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.723      ;
-; 1.418 ; cnt[1]                ; cnt[3]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.724      ;
-; 1.426 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.732      ;
-; 1.439 ; key:key2|cnt_20ms[1]  ; key:key2|cnt_20ms[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.745      ;
-; 1.468 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.774      ;
-; 1.475 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.781      ;
-; 1.475 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.781      ;
-; 1.478 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.784      ;
-; 1.478 ; key:key2|cnt_20ms[13] ; key:key2|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.784      ;
-; 1.480 ; cnt[0]                ; led[4]~reg0           ; clk          ; clk         ; 0.000        ; 0.005      ; 1.791      ;
-; 1.482 ; cnt[0]                ; led[5]~reg0           ; clk          ; clk         ; 0.000        ; 0.005      ; 1.793      ;
-; 1.483 ; cnt[0]                ; led[6]~reg0           ; clk          ; clk         ; 0.000        ; 0.005      ; 1.794      ;
-; 1.522 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.828      ;
-; 1.522 ; key:key2|cnt_20ms[5]  ; key:key2|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.828      ;
-; 1.526 ; key:key1|key_flag     ; cnt[3]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.832      ;
-; 1.532 ; key:key1|key_flag     ; cnt[2]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.838      ;
-; 1.539 ; key:key1|key_flag     ; cnt[0]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.845      ;
-; 1.562 ; cnt[0]                ; cnt[2]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.868      ;
-; 1.563 ; cnt[0]                ; cnt[1]                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.869      ;
-; 1.630 ; cnt[3]                ; led[7]~reg0           ; clk          ; clk         ; 0.000        ; 0.005      ; 1.941      ;
-; 1.644 ; cnt[3]                ; led[4]~reg0           ; clk          ; clk         ; 0.000        ; 0.005      ; 1.955      ;
-; 1.645 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.951      ;
-; 1.645 ; key:key2|cnt_20ms[10] ; key:key2|cnt_20ms[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.951      ;
-; 1.646 ; cnt[3]                ; led[5]~reg0           ; clk          ; clk         ; 0.000        ; 0.005      ; 1.957      ;
-; 1.646 ; cnt[3]                ; led[6]~reg0           ; clk          ; clk         ; 0.000        ; 0.005      ; 1.957      ;
-; 1.650 ; key:key2|cnt_20ms[3]  ; key:key2|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.956      ;
-; 1.651 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.957      ;
-; 1.655 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.961      ;
-; 1.655 ; key:key2|cnt_20ms[11] ; key:key2|cnt_20ms[12] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.961      ;
+; 1.377 ; key:key1|cnt_20ms[0]  ; key:key1|key_flag     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.683      ;
+; 1.468 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.774      ;
+; 1.475 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.781      ;
+; 1.478 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.784      ;
+; 1.576 ; key:key1|key_flag     ; state.THREE           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.882      ;
+; 1.576 ; key:key1|key_flag     ; state.IDLE            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.882      ;
+; 1.576 ; key:key1|key_flag     ; state.ONE             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.882      ;
+; 1.576 ; key:key1|key_flag     ; state.TWO             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.882      ;
+; 1.655 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.961      ;
+; 1.655 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.961      ;
+; 1.660 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.966      ;
 ; 1.661 ; key:key1|cnt_20ms[8]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.967      ;
-; 1.661 ; key:key2|cnt_20ms[8]  ; key:key2|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.967      ;
-; 1.661 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.967      ;
-; 1.661 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.967      ;
 ; 1.662 ; key:key1|cnt_20ms[7]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.968      ;
-; 1.662 ; key:key2|cnt_20ms[7]  ; key:key2|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.968      ;
-; 1.664 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.970      ;
-; 1.664 ; key:key2|cnt_20ms[12] ; key:key2|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.970      ;
 ; 1.696 ; key:key1|cnt_20ms[18] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.002      ;
-; 1.697 ; key:key2|cnt_20ms[18] ; key:key2|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.003      ;
-; 1.701 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.007      ;
-; 1.701 ; cnt[2]                ; cnt[1]                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.007      ;
-; 1.713 ; key:key2|cnt_20ms[2]  ; key:key2|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.019      ;
+; 1.706 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.012      ;
 ; 1.713 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.019      ;
+; 1.714 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.020      ;
 ; 1.714 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.020      ;
-; 1.714 ; key:key2|cnt_20ms[6]  ; key:key2|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.020      ;
+; 1.741 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.047      ;
+; 1.741 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.047      ;
+; 1.746 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.052      ;
+; 1.748 ; key:key1|cnt_20ms[7]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.054      ;
+; 1.761 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.067      ;
+; 1.765 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.009      ; 2.080      ;
+; 1.766 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.072      ;
+; 1.799 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.105      ;
+; 1.800 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.106      ;
+; 1.800 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.106      ;
+; 1.817 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.123      ;
+; 1.827 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.133      ;
+; 1.827 ; key:key1|cnt_20ms[8]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.009      ; 2.142      ;
+; 1.827 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.133      ;
+; 1.832 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.138      ;
+; 1.847 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.153      ;
+; 1.852 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.158      ;
+; 1.885 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.191      ;
+; 1.886 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.192      ;
+; 1.886 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.192      ;
+; 1.896 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.202      ;
+; 1.903 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.209      ;
+; 1.913 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.219      ;
+; 1.914 ; key:key1|cnt_20ms[7]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.009      ; 2.229      ;
+; 1.918 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.224      ;
+; 1.933 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.239      ;
+; 1.947 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.253      ;
+; 1.954 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.260      ;
+; 1.957 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.263      ;
+; 1.971 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.277      ;
+; 1.972 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.278      ;
+; 1.982 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.288      ;
+; 1.989 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.295      ;
+; 1.999 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.305      ;
+; 2.017 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.323      ;
+; 2.019 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.325      ;
+; 2.023 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.009      ; 2.338      ;
+; 2.040 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.346      ;
+; 2.043 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.349      ;
+; 2.052 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.009      ; 2.367      ;
+; 2.057 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.363      ;
+; 2.058 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.364      ;
+; 2.068 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.374      ;
+; 2.071 ; key:key1|cnt_20ms[7]  ; key:key1|key_flag     ; clk          ; clk         ; 0.000        ; 0.000      ; 2.377      ;
+; 2.075 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.381      ;
+; 2.084 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.009      ; 2.399      ;
+; 2.085 ; key:key1|cnt_20ms[8]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.009      ; 2.400      ;
+; 2.085 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.391      ;
+; 2.103 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.409      ;
+; 2.105 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.411      ;
+; 2.109 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.009      ; 2.424      ;
+; 2.129 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.435      ;
+; 2.137 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.443      ;
 +-------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -378,14 +378,6 @@ No paths to report.
 ; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
 +--------+--------------+----------------+------------------+-------+------------+-----------------------+
 ; -1.941 ; 1.000        ; 2.941          ; Port Rate        ; clk   ; Rise       ; clk                   ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; cnt[0]                ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; cnt[0]                ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; cnt[1]                ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; cnt[1]                ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; cnt[2]                ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; cnt[2]                ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; cnt[3]                ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; cnt[3]                ;
 ; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key1|cnt_20ms[0]  ;
 ; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key1|cnt_20ms[0]  ;
 ; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key1|cnt_20ms[10] ;
@@ -428,55 +420,63 @@ No paths to report.
 ; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key1|cnt_20ms[9]  ;
 ; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key1|key_flag     ;
 ; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key1|key_flag     ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[0]  ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[0]  ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[10] ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[10] ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[11] ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[11] ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[12] ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[12] ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[13] ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[13] ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[14] ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[14] ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[15] ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[15] ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[16] ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[16] ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[17] ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[17] ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[18] ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[18] ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[19] ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[19] ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[1]  ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[1]  ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[2]  ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[2]  ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[3]  ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[3]  ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[4]  ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[4]  ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[5]  ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[5]  ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[6]  ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[6]  ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[7]  ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[7]  ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[8]  ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[8]  ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[9]  ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[9]  ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; key:key2|key_flag     ;
-; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|key_flag     ;
 ; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; led[0]~reg0           ;
 ; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; led[0]~reg0           ;
 ; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; led[1]~reg0           ;
 ; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; led[1]~reg0           ;
 ; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; led[2]~reg0           ;
 ; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; led[2]~reg0           ;
-; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; led[3]~reg0           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; led[7]~reg0           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; led[7]~reg0           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; state.IDLE            ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; state.IDLE            ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; state.ONE             ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; state.ONE             ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; state.THREE           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; state.THREE           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; state.TWO             ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; state.TWO             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[0]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[0]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[10]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[10]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[11]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[11]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[12]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[12]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[13]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[13]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[14]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[14]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[15]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[15]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[16]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[16]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[17]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[17]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[18]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[18]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[19]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[19]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[1]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[1]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[2]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[2]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[3]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[3]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[4]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[4]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[5]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[5]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[6]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[6]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[7]|clk  ;
 +--------+--------------+----------------+------------------+-------+------------+-----------------------+
 
 
@@ -485,9 +485,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; key[*]    ; clk        ; 2.105 ; 2.105 ; Rise       ; clk             ;
-;  key[0]   ; clk        ; 1.747 ; 1.747 ; Rise       ; clk             ;
-;  key[1]   ; clk        ; 2.105 ; 2.105 ; Rise       ; clk             ;
+; key       ; clk        ; 2.140 ; 2.140 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -496,9 +494,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; key[*]    ; clk        ; 0.405 ; 0.405 ; Rise       ; clk             ;
-;  key[0]   ; clk        ; 0.405 ; 0.405 ; Rise       ; clk             ;
-;  key[1]   ; clk        ; 0.075 ; 0.075 ; Rise       ; clk             ;
+; key       ; clk        ; 0.067 ; 0.067 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -507,15 +503,13 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; led[*]    ; clk        ; 7.972 ; 7.972 ; Rise       ; clk             ;
-;  led[0]   ; clk        ; 7.954 ; 7.954 ; Rise       ; clk             ;
-;  led[1]   ; clk        ; 7.972 ; 7.972 ; Rise       ; clk             ;
-;  led[2]   ; clk        ; 7.688 ; 7.688 ; Rise       ; clk             ;
-;  led[3]   ; clk        ; 7.704 ; 7.704 ; Rise       ; clk             ;
-;  led[4]   ; clk        ; 7.758 ; 7.758 ; Rise       ; clk             ;
-;  led[5]   ; clk        ; 7.791 ; 7.791 ; Rise       ; clk             ;
-;  led[6]   ; clk        ; 7.795 ; 7.795 ; Rise       ; clk             ;
-;  led[7]   ; clk        ; 7.793 ; 7.793 ; Rise       ; clk             ;
+; led[*]    ; clk        ; 8.210 ; 8.210 ; Rise       ; clk             ;
+;  led[0]   ; clk        ; 7.620 ; 7.620 ; Rise       ; clk             ;
+;  led[1]   ; clk        ; 7.649 ; 7.649 ; Rise       ; clk             ;
+;  led[2]   ; clk        ; 6.939 ; 6.939 ; Rise       ; clk             ;
+;  led[3]   ; clk        ; 6.950 ; 6.950 ; Rise       ; clk             ;
+;  led[5]   ; clk        ; 7.878 ; 7.878 ; Rise       ; clk             ;
+;  led[7]   ; clk        ; 8.210 ; 8.210 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -524,15 +518,13 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; led[*]    ; clk        ; 7.688 ; 7.688 ; Rise       ; clk             ;
-;  led[0]   ; clk        ; 7.954 ; 7.954 ; Rise       ; clk             ;
-;  led[1]   ; clk        ; 7.972 ; 7.972 ; Rise       ; clk             ;
-;  led[2]   ; clk        ; 7.688 ; 7.688 ; Rise       ; clk             ;
-;  led[3]   ; clk        ; 7.704 ; 7.704 ; Rise       ; clk             ;
-;  led[4]   ; clk        ; 7.758 ; 7.758 ; Rise       ; clk             ;
-;  led[5]   ; clk        ; 7.791 ; 7.791 ; Rise       ; clk             ;
-;  led[6]   ; clk        ; 7.795 ; 7.795 ; Rise       ; clk             ;
-;  led[7]   ; clk        ; 7.793 ; 7.793 ; Rise       ; clk             ;
+; led[*]    ; clk        ; 6.939 ; 6.939 ; Rise       ; clk             ;
+;  led[0]   ; clk        ; 7.620 ; 7.620 ; Rise       ; clk             ;
+;  led[1]   ; clk        ; 7.649 ; 7.649 ; Rise       ; clk             ;
+;  led[2]   ; clk        ; 6.939 ; 6.939 ; Rise       ; clk             ;
+;  led[3]   ; clk        ; 6.950 ; 6.950 ; Rise       ; clk             ;
+;  led[5]   ; clk        ; 7.878 ; 7.878 ; Rise       ; clk             ;
+;  led[7]   ; clk        ; 8.210 ; 8.210 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -541,7 +533,7 @@ No paths to report.
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -0.771 ; -26.489       ;
+; clk   ; -0.694 ; -12.188       ;
 +-------+--------+---------------+
 
 
@@ -550,7 +542,7 @@ No paths to report.
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; clk   ; 0.215 ; 0.000         ;
+; clk   ; 0.240 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -571,7 +563,7 @@ No paths to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clk   ; -1.380 ; -55.380               ;
+; clk   ; -1.380 ; -30.380               ;
 +-------+--------+-----------------------+
 
 
@@ -580,106 +572,106 @@ No paths to report.
 +--------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node             ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
-; -0.771 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.803      ;
-; -0.771 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.803      ;
-; -0.771 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.803      ;
-; -0.771 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.803      ;
-; -0.771 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.803      ;
-; -0.771 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.803      ;
-; -0.771 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.803      ;
-; -0.771 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.803      ;
-; -0.771 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.803      ;
-; -0.771 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.803      ;
-; -0.769 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.801      ;
-; -0.769 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.801      ;
-; -0.769 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.801      ;
-; -0.769 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.801      ;
-; -0.769 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.801      ;
-; -0.769 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.801      ;
-; -0.769 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.801      ;
-; -0.769 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.801      ;
-; -0.769 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.801      ;
-; -0.769 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.801      ;
-; -0.765 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.797      ;
-; -0.765 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.797      ;
-; -0.765 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.797      ;
-; -0.765 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.797      ;
-; -0.765 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.797      ;
-; -0.765 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.797      ;
-; -0.765 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.797      ;
-; -0.765 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.797      ;
-; -0.765 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.797      ;
-; -0.765 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.797      ;
-; -0.733 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.765      ;
-; -0.733 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.765      ;
-; -0.733 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.765      ;
-; -0.733 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.765      ;
-; -0.733 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.765      ;
-; -0.733 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.765      ;
-; -0.733 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.765      ;
-; -0.733 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.765      ;
-; -0.733 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.765      ;
-; -0.733 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.765      ;
-; -0.696 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.728      ;
-; -0.696 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.728      ;
-; -0.696 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.728      ;
-; -0.696 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.728      ;
-; -0.696 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.728      ;
-; -0.696 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.728      ;
-; -0.696 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.728      ;
-; -0.696 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.728      ;
-; -0.696 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.728      ;
-; -0.696 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.728      ;
-; -0.695 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.727      ;
-; -0.695 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.727      ;
-; -0.695 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.727      ;
-; -0.695 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.727      ;
-; -0.695 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.727      ;
-; -0.695 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.727      ;
-; -0.695 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.727      ;
-; -0.695 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.727      ;
-; -0.695 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.727      ;
-; -0.695 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.727      ;
-; -0.688 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.720      ;
-; -0.688 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.720      ;
-; -0.688 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.720      ;
-; -0.688 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.720      ;
-; -0.688 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.720      ;
-; -0.688 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.720      ;
-; -0.688 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.720      ;
-; -0.688 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.720      ;
-; -0.688 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.720      ;
-; -0.688 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.720      ;
-; -0.674 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.006      ; 1.712      ;
-; -0.674 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.706      ;
-; -0.674 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.006      ; 1.712      ;
-; -0.674 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.706      ;
-; -0.674 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.006      ; 1.712      ;
-; -0.674 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.706      ;
-; -0.674 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.006      ; 1.712      ;
-; -0.674 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.706      ;
-; -0.674 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.006      ; 1.712      ;
-; -0.674 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.706      ;
-; -0.674 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.006      ; 1.712      ;
-; -0.674 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.706      ;
-; -0.674 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.006      ; 1.712      ;
-; -0.674 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.706      ;
-; -0.674 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.006      ; 1.712      ;
-; -0.674 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.706      ;
-; -0.674 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.006      ; 1.712      ;
-; -0.674 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.706      ;
-; -0.674 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.006      ; 1.712      ;
-; -0.674 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.706      ;
-; -0.669 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.701      ;
-; -0.669 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.701      ;
-; -0.669 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.701      ;
-; -0.669 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.701      ;
-; -0.669 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.701      ;
-; -0.669 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.701      ;
-; -0.669 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.701      ;
-; -0.669 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.701      ;
-; -0.669 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.701      ;
-; -0.669 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.701      ;
+; -0.694 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.726      ;
+; -0.694 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.726      ;
+; -0.694 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.726      ;
+; -0.694 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.726      ;
+; -0.694 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.726      ;
+; -0.694 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.726      ;
+; -0.694 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.726      ;
+; -0.694 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.726      ;
+; -0.689 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.729      ;
+; -0.689 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.729      ;
+; -0.689 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.729      ;
+; -0.689 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.729      ;
+; -0.689 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.729      ;
+; -0.689 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.729      ;
+; -0.689 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.729      ;
+; -0.689 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.729      ;
+; -0.684 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.684 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.684 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.684 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.684 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.684 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.684 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.684 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.683 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.715      ;
+; -0.683 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.715      ;
+; -0.683 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.715      ;
+; -0.683 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.715      ;
+; -0.683 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.715      ;
+; -0.683 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.715      ;
+; -0.683 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.715      ;
+; -0.683 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.715      ;
+; -0.676 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.708      ;
+; -0.676 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.708      ;
+; -0.676 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.708      ;
+; -0.676 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.708      ;
+; -0.676 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.708      ;
+; -0.676 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.708      ;
+; -0.676 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.708      ;
+; -0.676 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.708      ;
+; -0.618 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.658      ;
+; -0.618 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.658      ;
+; -0.618 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.658      ;
+; -0.618 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.658      ;
+; -0.618 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.658      ;
+; -0.618 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.658      ;
+; -0.618 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.658      ;
+; -0.618 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.658      ;
+; -0.610 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.009      ; 1.651      ;
+; -0.610 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.009      ; 1.651      ;
+; -0.610 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.009      ; 1.651      ;
+; -0.610 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.009      ; 1.651      ;
+; -0.610 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.009      ; 1.651      ;
+; -0.610 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.009      ; 1.651      ;
+; -0.610 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.009      ; 1.651      ;
+; -0.610 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.009      ; 1.651      ;
+; -0.593 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.633      ;
+; -0.593 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.633      ;
+; -0.593 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.633      ;
+; -0.593 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.633      ;
+; -0.593 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.633      ;
+; -0.593 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.633      ;
+; -0.593 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.633      ;
+; -0.593 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.633      ;
+; -0.581 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.621      ;
+; -0.581 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.621      ;
+; -0.581 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.621      ;
+; -0.581 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.621      ;
+; -0.581 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.621      ;
+; -0.581 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.621      ;
+; -0.581 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.621      ;
+; -0.581 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.621      ;
+; -0.580 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; -0.009     ; 1.603      ;
+; -0.580 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; -0.009     ; 1.603      ;
+; -0.576 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; -0.001     ; 1.607      ;
+; -0.575 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; -0.001     ; 1.606      ;
+; -0.575 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; -0.001     ; 1.606      ;
+; -0.570 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; -0.009     ; 1.593      ;
+; -0.570 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; -0.009     ; 1.593      ;
+; -0.569 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; -0.009     ; 1.592      ;
+; -0.569 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; -0.009     ; 1.592      ;
+; -0.568 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.608      ;
+; -0.568 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.608      ;
+; -0.568 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.608      ;
+; -0.568 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.608      ;
+; -0.568 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.608      ;
+; -0.568 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.608      ;
+; -0.568 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.608      ;
+; -0.568 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.608      ;
+; -0.562 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 1.000        ; -0.009     ; 1.585      ;
+; -0.562 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 1.000        ; -0.009     ; 1.585      ;
+; -0.557 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.589      ;
+; -0.557 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.589      ;
+; -0.557 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.589      ;
+; -0.557 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.589      ;
+; -0.557 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.589      ;
+; -0.557 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.589      ;
+; -0.557 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.589      ;
+; -0.557 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.589      ;
+; -0.557 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 1.000        ; 0.008      ; 1.597      ;
 +--------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -688,106 +680,106 @@ No paths to report.
 +-------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node             ; To Node               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
-; 0.215 ; cnt[0]                ; cnt[0]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; cnt[2]                ; cnt[2]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; cnt[3]                ; cnt[3]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.242 ; key:key1|cnt_20ms[19] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.394      ;
-; 0.242 ; key:key2|cnt_20ms[19] ; key:key2|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.394      ;
-; 0.289 ; cnt[1]                ; led[3]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.441      ;
-; 0.292 ; cnt[1]                ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.444      ;
-; 0.294 ; cnt[1]                ; led[0]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.446      ;
-; 0.295 ; cnt[1]                ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.447      ;
-; 0.329 ; cnt[0]                ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.481      ;
-; 0.330 ; key:key2|key_flag     ; cnt[0]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.482      ;
-; 0.331 ; cnt[0]                ; led[0]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.483      ;
-; 0.333 ; cnt[0]                ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.485      ;
-; 0.335 ; cnt[0]                ; led[3]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.487      ;
+; 0.240 ; key:key1|cnt_20ms[19] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.392      ;
+; 0.271 ; state.IDLE            ; state.ONE             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.423      ;
+; 0.273 ; state.THREE           ; state.IDLE            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.425      ;
+; 0.293 ; state.TWO             ; led[7]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.445      ;
+; 0.302 ; state.ONE             ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.454      ;
+; 0.328 ; state.TWO             ; state.THREE           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.480      ;
+; 0.339 ; state.ONE             ; state.TWO             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.491      ;
+; 0.339 ; state.ONE             ; led[0]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.491      ;
+; 0.339 ; key:key1|key_flag     ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.491      ;
+; 0.341 ; key:key1|key_flag     ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.493      ;
+; 0.341 ; key:key1|key_flag     ; led[7]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.493      ;
 ; 0.355 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
-; 0.355 ; key:key2|cnt_20ms[10] ; key:key2|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
-; 0.359 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
-; 0.359 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
-; 0.359 ; key:key2|cnt_20ms[3]  ; key:key2|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
-; 0.359 ; key:key2|cnt_20ms[11] ; key:key2|cnt_20ms[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
+; 0.360 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.362 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.514      ;
+; 0.362 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.514      ;
+; 0.362 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.514      ;
+; 0.363 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
 ; 0.365 ; key:key1|cnt_20ms[7]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
 ; 0.365 ; key:key1|cnt_20ms[8]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
 ; 0.365 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
-; 0.365 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
-; 0.365 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
-; 0.365 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
-; 0.365 ; key:key2|cnt_20ms[7]  ; key:key2|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
-; 0.365 ; key:key2|cnt_20ms[8]  ; key:key2|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
-; 0.365 ; key:key2|cnt_20ms[9]  ; key:key2|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
-; 0.365 ; key:key2|cnt_20ms[12] ; key:key2|cnt_20ms[12] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
-; 0.365 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
-; 0.365 ; key:key2|cnt_20ms[17] ; key:key2|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
 ; 0.369 ; key:key1|cnt_20ms[18] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.521      ;
-; 0.369 ; key:key2|cnt_20ms[18] ; key:key2|cnt_20ms[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.521      ;
-; 0.372 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.377 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.529      ;
-; 0.377 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.529      ;
-; 0.377 ; key:key2|cnt_20ms[2]  ; key:key2|cnt_20ms[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.529      ;
-; 0.377 ; key:key2|cnt_20ms[4]  ; key:key2|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.529      ;
-; 0.378 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.372 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; state.THREE           ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
+; 0.373 ; state.THREE           ; led[7]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.525      ;
+; 0.376 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.528      ;
+; 0.378 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
 ; 0.378 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
-; 0.378 ; key:key2|cnt_20ms[0]  ; key:key2|cnt_20ms[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
-; 0.378 ; key:key2|cnt_20ms[6]  ; key:key2|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
-; 0.380 ; key:key2|cnt_20ms[0]  ; key:key2|key_flag     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.532      ;
-; 0.380 ; key:key1|cnt_20ms[0]  ; key:key1|key_flag     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.532      ;
-; 0.385 ; cnt[2]                ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.537      ;
-; 0.386 ; cnt[2]                ; led[3]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.538      ;
-; 0.387 ; cnt[2]                ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.539      ;
-; 0.390 ; cnt[2]                ; led[0]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.542      ;
-; 0.406 ; key:key1|key_flag     ; cnt[1]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.558      ;
-; 0.412 ; cnt[3]                ; led[1]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.564      ;
-; 0.415 ; cnt[3]                ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.567      ;
-; 0.417 ; cnt[3]                ; led[3]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.569      ;
-; 0.422 ; cnt[3]                ; led[0]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.574      ;
-; 0.435 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.587      ;
-; 0.438 ; key:key2|cnt_20ms[16] ; key:key2|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.590      ;
-; 0.443 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.595      ;
-; 0.443 ; key:key2|cnt_20ms[13] ; key:key2|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.595      ;
-; 0.444 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.596      ;
-; 0.444 ; key:key2|cnt_20ms[1]  ; key:key2|cnt_20ms[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.596      ;
-; 0.444 ; key:key2|cnt_20ms[15] ; key:key2|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.596      ;
-; 0.454 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.606      ;
-; 0.454 ; key:key2|cnt_20ms[5]  ; key:key2|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.606      ;
-; 0.456 ; cnt[0]                ; led[4]~reg0           ; clk          ; clk         ; 0.000        ; 0.006      ; 0.614      ;
-; 0.460 ; cnt[0]                ; led[5]~reg0           ; clk          ; clk         ; 0.000        ; 0.006      ; 0.618      ;
-; 0.460 ; cnt[1]                ; cnt[2]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.612      ;
-; 0.460 ; cnt[1]                ; cnt[3]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.612      ;
-; 0.461 ; cnt[1]                ; cnt[1]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.613      ;
-; 0.462 ; cnt[0]                ; led[6]~reg0           ; clk          ; clk         ; 0.000        ; 0.006      ; 0.620      ;
-; 0.475 ; key:key1|key_flag     ; cnt[3]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.627      ;
-; 0.478 ; key:key1|key_flag     ; cnt[2]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.630      ;
-; 0.481 ; key:key1|key_flag     ; cnt[0]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.633      ;
-; 0.493 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.645      ;
-; 0.493 ; key:key2|cnt_20ms[10] ; key:key2|cnt_20ms[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.645      ;
-; 0.497 ; key:key1|cnt_20ms[11] ; key:key1|cnt_20ms[12] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.649      ;
-; 0.497 ; key:key2|cnt_20ms[11] ; key:key2|cnt_20ms[12] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.649      ;
-; 0.497 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.649      ;
-; 0.497 ; key:key2|cnt_20ms[3]  ; key:key2|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.649      ;
-; 0.500 ; cnt[0]                ; cnt[2]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.652      ;
-; 0.501 ; cnt[0]                ; cnt[1]                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.653      ;
+; 0.378 ; state.THREE           ; led[2]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.379 ; state.ONE             ; led[7]~reg0           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.531      ;
+; 0.438 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.590      ;
+; 0.443 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.595      ;
+; 0.444 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.596      ;
+; 0.450 ; key:key1|cnt_20ms[0]  ; key:key1|key_flag     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.602      ;
+; 0.500 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.652      ;
+; 0.500 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.652      ;
+; 0.500 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.652      ;
 ; 0.503 ; key:key1|cnt_20ms[7]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.655      ;
 ; 0.503 ; key:key1|cnt_20ms[8]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.655      ;
-; 0.503 ; key:key2|cnt_20ms[7]  ; key:key2|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.655      ;
-; 0.503 ; key:key2|cnt_20ms[8]  ; key:key2|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.655      ;
-; 0.503 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.655      ;
-; 0.503 ; key:key2|cnt_20ms[12] ; key:key2|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.655      ;
-; 0.503 ; key:key1|cnt_20ms[12] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.655      ;
-; 0.503 ; key:key2|cnt_20ms[14] ; key:key2|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.655      ;
-; 0.506 ; cnt[3]                ; led[4]~reg0           ; clk          ; clk         ; 0.000        ; 0.006      ; 0.664      ;
-; 0.508 ; cnt[3]                ; led[6]~reg0           ; clk          ; clk         ; 0.000        ; 0.006      ; 0.666      ;
 ; 0.509 ; key:key1|cnt_20ms[18] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.661      ;
-; 0.509 ; key:key2|cnt_20ms[18] ; key:key2|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.661      ;
-; 0.510 ; cnt[3]                ; led[5]~reg0           ; clk          ; clk         ; 0.000        ; 0.006      ; 0.668      ;
-; 0.512 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.664      ;
-; 0.517 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.669      ;
-; 0.517 ; key:key2|cnt_20ms[2]  ; key:key2|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.669      ;
-; 0.517 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.669      ;
-; 0.517 ; key:key2|cnt_20ms[4]  ; key:key2|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.669      ;
+; 0.512 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.664      ;
+; 0.516 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.668      ;
+; 0.518 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
 ; 0.518 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
-; 0.518 ; key:key2|cnt_20ms[6]  ; key:key2|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.535 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.687      ;
+; 0.535 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.687      ;
+; 0.535 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.687      ;
+; 0.538 ; key:key1|cnt_20ms[7]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.690      ;
+; 0.542 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.008      ; 0.702      ;
+; 0.551 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.703      ;
+; 0.553 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.705      ;
+; 0.553 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.705      ;
+; 0.553 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.705      ;
+; 0.556 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.708      ;
+; 0.563 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.715      ;
+; 0.570 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.722      ;
+; 0.570 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.722      ;
+; 0.570 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.722      ;
+; 0.576 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.728      ;
+; 0.581 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.733      ;
+; 0.582 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.734      ;
+; 0.582 ; key:key1|cnt_20ms[8]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.008      ; 0.742      ;
+; 0.586 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.738      ;
+; 0.588 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.740      ;
+; 0.588 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.740      ;
+; 0.588 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.740      ;
+; 0.591 ; key:key1|cnt_20ms[17] ; key:key1|cnt_20ms[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.743      ;
+; 0.598 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.750      ;
+; 0.605 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.757      ;
+; 0.605 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.757      ;
+; 0.606 ; key:key1|key_flag     ; state.THREE           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.758      ;
+; 0.606 ; key:key1|key_flag     ; state.IDLE            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.758      ;
+; 0.606 ; key:key1|key_flag     ; state.ONE             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.758      ;
+; 0.606 ; key:key1|key_flag     ; state.TWO             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.758      ;
+; 0.606 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.758      ;
+; 0.616 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.768      ;
+; 0.617 ; key:key1|cnt_20ms[15] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.769      ;
+; 0.617 ; key:key1|cnt_20ms[7]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.008      ; 0.777      ;
+; 0.621 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.773      ;
+; 0.623 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.775      ;
+; 0.623 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.775      ;
+; 0.633 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.785      ;
+; 0.640 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.792      ;
+; 0.641 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.793      ;
+; 0.647 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.008      ; 0.807      ;
+; 0.651 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.803      ;
+; 0.656 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.808      ;
+; 0.657 ; key:key1|cnt_20ms[7]  ; key:key1|key_flag     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.809      ;
+; 0.658 ; key:key1|cnt_20ms[1]  ; key:key1|cnt_20ms[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.810      ;
+; 0.658 ; key:key1|cnt_20ms[4]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.810      ;
+; 0.664 ; key:key1|cnt_20ms[14] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.816      ;
+; 0.667 ; key:key1|cnt_20ms[6]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.008      ; 0.827      ;
+; 0.668 ; key:key1|cnt_20ms[10] ; key:key1|cnt_20ms[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.820      ;
+; 0.670 ; key:key1|cnt_20ms[16] ; key:key1|cnt_20ms[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.822      ;
+; 0.675 ; key:key1|cnt_20ms[3]  ; key:key1|cnt_20ms[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.827      ;
+; 0.676 ; key:key1|cnt_20ms[0]  ; key:key1|cnt_20ms[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.828      ;
+; 0.682 ; key:key1|cnt_20ms[9]  ; key:key1|cnt_20ms[14] ; clk          ; clk         ; 0.000        ; 0.008      ; 0.842      ;
+; 0.684 ; key:key1|cnt_20ms[5]  ; key:key1|cnt_20ms[10] ; clk          ; clk         ; 0.000        ; 0.008      ; 0.844      ;
+; 0.686 ; key:key1|cnt_20ms[13] ; key:key1|cnt_20ms[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.838      ;
+; 0.687 ; key:key1|cnt_20ms[8]  ; key:key1|cnt_20ms[13] ; clk          ; clk         ; 0.000        ; 0.008      ; 0.847      ;
+; 0.691 ; key:key1|cnt_20ms[2]  ; key:key1|cnt_20ms[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.843      ;
 +-------+-----------------------+-----------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -797,14 +789,6 @@ No paths to report.
 ; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
 +--------+--------------+----------------+------------------+-------+------------+-----------------------+
 ; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                   ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cnt[0]                ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cnt[0]                ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cnt[1]                ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cnt[1]                ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cnt[2]                ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cnt[2]                ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cnt[3]                ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cnt[3]                ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key1|cnt_20ms[0]  ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key1|cnt_20ms[0]  ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key1|cnt_20ms[10] ;
@@ -847,55 +831,63 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key1|cnt_20ms[9]  ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key1|key_flag     ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key1|key_flag     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[0]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[0]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[10] ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[10] ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[11] ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[11] ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[12] ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[12] ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[13] ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[13] ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[14] ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[14] ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[15] ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[15] ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[16] ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[16] ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[17] ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[17] ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[18] ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[18] ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[19] ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[19] ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[1]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[1]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[2]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[2]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[3]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[3]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[4]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[4]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[5]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[5]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[6]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[6]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[7]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[7]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[8]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[8]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|cnt_20ms[9]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|cnt_20ms[9]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; key:key2|key_flag     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; key:key2|key_flag     ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; led[0]~reg0           ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; led[0]~reg0           ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; led[1]~reg0           ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; led[1]~reg0           ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; led[2]~reg0           ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; led[2]~reg0           ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; led[3]~reg0           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; led[7]~reg0           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; led[7]~reg0           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; state.IDLE            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; state.IDLE            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; state.ONE             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; state.ONE             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; state.THREE           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; state.THREE           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; state.TWO             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; state.TWO             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[0]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[0]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[10]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[10]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[11]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[11]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[12]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[12]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[13]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[13]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[14]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[14]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[15]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[15]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[16]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[16]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[17]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[17]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[18]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[18]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[19]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[19]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[1]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[1]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[2]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[2]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[3]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[3]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[4]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[4]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[5]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[5]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[6]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; key1|cnt_20ms[6]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; key1|cnt_20ms[7]|clk  ;
 +--------+--------------+----------------+------------------+-------+------------+-----------------------+
 
 
@@ -904,9 +896,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; key[*]    ; clk        ; 0.326 ; 0.326 ; Rise       ; clk             ;
-;  key[0]   ; clk        ; 0.228 ; 0.228 ; Rise       ; clk             ;
-;  key[1]   ; clk        ; 0.326 ; 0.326 ; Rise       ; clk             ;
+; key       ; clk        ; 0.330 ; 0.330 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -915,9 +905,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; key[*]    ; clk        ; 0.464 ; 0.464 ; Rise       ; clk             ;
-;  key[0]   ; clk        ; 0.464 ; 0.464 ; Rise       ; clk             ;
-;  key[1]   ; clk        ; 0.378 ; 0.378 ; Rise       ; clk             ;
+; key       ; clk        ; 0.371 ; 0.371 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -926,15 +914,13 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; led[*]    ; clk        ; 3.742 ; 3.742 ; Rise       ; clk             ;
-;  led[0]   ; clk        ; 3.734 ; 3.734 ; Rise       ; clk             ;
-;  led[1]   ; clk        ; 3.742 ; 3.742 ; Rise       ; clk             ;
-;  led[2]   ; clk        ; 3.584 ; 3.584 ; Rise       ; clk             ;
-;  led[3]   ; clk        ; 3.592 ; 3.592 ; Rise       ; clk             ;
-;  led[4]   ; clk        ; 3.682 ; 3.682 ; Rise       ; clk             ;
-;  led[5]   ; clk        ; 3.700 ; 3.700 ; Rise       ; clk             ;
-;  led[6]   ; clk        ; 3.703 ; 3.703 ; Rise       ; clk             ;
-;  led[7]   ; clk        ; 3.701 ; 3.701 ; Rise       ; clk             ;
+; led[*]    ; clk        ; 3.833 ; 3.833 ; Rise       ; clk             ;
+;  led[0]   ; clk        ; 3.628 ; 3.628 ; Rise       ; clk             ;
+;  led[1]   ; clk        ; 3.645 ; 3.645 ; Rise       ; clk             ;
+;  led[2]   ; clk        ; 3.347 ; 3.347 ; Rise       ; clk             ;
+;  led[3]   ; clk        ; 3.350 ; 3.350 ; Rise       ; clk             ;
+;  led[5]   ; clk        ; 3.741 ; 3.741 ; Rise       ; clk             ;
+;  led[7]   ; clk        ; 3.833 ; 3.833 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -943,28 +929,26 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; led[*]    ; clk        ; 3.584 ; 3.584 ; Rise       ; clk             ;
-;  led[0]   ; clk        ; 3.734 ; 3.734 ; Rise       ; clk             ;
-;  led[1]   ; clk        ; 3.742 ; 3.742 ; Rise       ; clk             ;
-;  led[2]   ; clk        ; 3.584 ; 3.584 ; Rise       ; clk             ;
-;  led[3]   ; clk        ; 3.592 ; 3.592 ; Rise       ; clk             ;
-;  led[4]   ; clk        ; 3.682 ; 3.682 ; Rise       ; clk             ;
-;  led[5]   ; clk        ; 3.700 ; 3.700 ; Rise       ; clk             ;
-;  led[6]   ; clk        ; 3.703 ; 3.703 ; Rise       ; clk             ;
-;  led[7]   ; clk        ; 3.701 ; 3.701 ; Rise       ; clk             ;
+; led[*]    ; clk        ; 3.347 ; 3.347 ; Rise       ; clk             ;
+;  led[0]   ; clk        ; 3.628 ; 3.628 ; Rise       ; clk             ;
+;  led[1]   ; clk        ; 3.645 ; 3.645 ; Rise       ; clk             ;
+;  led[2]   ; clk        ; 3.347 ; 3.347 ; Rise       ; clk             ;
+;  led[3]   ; clk        ; 3.350 ; 3.350 ; Rise       ; clk             ;
+;  led[5]   ; clk        ; 3.741 ; 3.741 ; Rise       ; clk             ;
+;  led[7]   ; clk        ; 3.833 ; 3.833 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
-+--------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                            ;
-+------------------+----------+-------+----------+---------+---------------------+
-; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -4.274   ; 0.215 ; N/A      ; N/A     ; -1.941              ;
-;  clk             ; -4.274   ; 0.215 ; N/A      ; N/A     ; -1.941              ;
-; Design-wide TNS  ; -173.829 ; 0.0   ; 0.0      ; 0.0     ; -82.077             ;
-;  clk             ; -173.829 ; 0.000 ; N/A      ; N/A     ; -82.077             ;
-+------------------+----------+-------+----------+---------+---------------------+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -4.085  ; 0.240 ; N/A      ; N/A     ; -1.941              ;
+;  clk             ; -4.085  ; 0.240 ; N/A      ; N/A     ; -1.941              ;
+; Design-wide TNS  ; -87.929 ; 0.0   ; 0.0      ; 0.0     ; -44.977             ;
+;  clk             ; -87.929 ; 0.000 ; N/A      ; N/A     ; -44.977             ;
++------------------+---------+-------+----------+---------+---------------------+
 
 
 +-----------------------------------------------------------------------+
@@ -972,9 +956,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; key[*]    ; clk        ; 2.105 ; 2.105 ; Rise       ; clk             ;
-;  key[0]   ; clk        ; 1.747 ; 1.747 ; Rise       ; clk             ;
-;  key[1]   ; clk        ; 2.105 ; 2.105 ; Rise       ; clk             ;
+; key       ; clk        ; 2.140 ; 2.140 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -983,9 +965,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; key[*]    ; clk        ; 0.464 ; 0.464 ; Rise       ; clk             ;
-;  key[0]   ; clk        ; 0.464 ; 0.464 ; Rise       ; clk             ;
-;  key[1]   ; clk        ; 0.378 ; 0.378 ; Rise       ; clk             ;
+; key       ; clk        ; 0.371 ; 0.371 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -994,15 +974,13 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; led[*]    ; clk        ; 7.972 ; 7.972 ; Rise       ; clk             ;
-;  led[0]   ; clk        ; 7.954 ; 7.954 ; Rise       ; clk             ;
-;  led[1]   ; clk        ; 7.972 ; 7.972 ; Rise       ; clk             ;
-;  led[2]   ; clk        ; 7.688 ; 7.688 ; Rise       ; clk             ;
-;  led[3]   ; clk        ; 7.704 ; 7.704 ; Rise       ; clk             ;
-;  led[4]   ; clk        ; 7.758 ; 7.758 ; Rise       ; clk             ;
-;  led[5]   ; clk        ; 7.791 ; 7.791 ; Rise       ; clk             ;
-;  led[6]   ; clk        ; 7.795 ; 7.795 ; Rise       ; clk             ;
-;  led[7]   ; clk        ; 7.793 ; 7.793 ; Rise       ; clk             ;
+; led[*]    ; clk        ; 8.210 ; 8.210 ; Rise       ; clk             ;
+;  led[0]   ; clk        ; 7.620 ; 7.620 ; Rise       ; clk             ;
+;  led[1]   ; clk        ; 7.649 ; 7.649 ; Rise       ; clk             ;
+;  led[2]   ; clk        ; 6.939 ; 6.939 ; Rise       ; clk             ;
+;  led[3]   ; clk        ; 6.950 ; 6.950 ; Rise       ; clk             ;
+;  led[5]   ; clk        ; 7.878 ; 7.878 ; Rise       ; clk             ;
+;  led[7]   ; clk        ; 8.210 ; 8.210 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1011,15 +989,13 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; led[*]    ; clk        ; 3.584 ; 3.584 ; Rise       ; clk             ;
-;  led[0]   ; clk        ; 3.734 ; 3.734 ; Rise       ; clk             ;
-;  led[1]   ; clk        ; 3.742 ; 3.742 ; Rise       ; clk             ;
-;  led[2]   ; clk        ; 3.584 ; 3.584 ; Rise       ; clk             ;
-;  led[3]   ; clk        ; 3.592 ; 3.592 ; Rise       ; clk             ;
-;  led[4]   ; clk        ; 3.682 ; 3.682 ; Rise       ; clk             ;
-;  led[5]   ; clk        ; 3.700 ; 3.700 ; Rise       ; clk             ;
-;  led[6]   ; clk        ; 3.703 ; 3.703 ; Rise       ; clk             ;
-;  led[7]   ; clk        ; 3.701 ; 3.701 ; Rise       ; clk             ;
+; led[*]    ; clk        ; 3.347 ; 3.347 ; Rise       ; clk             ;
+;  led[0]   ; clk        ; 3.628 ; 3.628 ; Rise       ; clk             ;
+;  led[1]   ; clk        ; 3.645 ; 3.645 ; Rise       ; clk             ;
+;  led[2]   ; clk        ; 3.347 ; 3.347 ; Rise       ; clk             ;
+;  led[3]   ; clk        ; 3.350 ; 3.350 ; Rise       ; clk             ;
+;  led[5]   ; clk        ; 3.741 ; 3.741 ; Rise       ; clk             ;
+;  led[7]   ; clk        ; 3.833 ; 3.833 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1028,7 +1004,7 @@ No paths to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 1328     ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 668      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1038,7 +1014,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 1328     ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 668      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1063,9 +1039,9 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 40    ; 40   ;
-; Unconstrained Output Ports      ; 8     ; 8    ;
-; Unconstrained Output Port Paths ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 28    ; 28   ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 6     ; 6    ;
 +---------------------------------+-------+------+
 
 
@@ -1075,7 +1051,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Tue May 02 01:07:16 2023
+    Info: Processing started: Tue May 02 17:43:18 2023
 Info: Command: quartus_sta demo -c demo
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -1088,44 +1064,44 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.274
+Info (332146): Worst-case setup slack is -4.085
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -4.274      -173.829 clk 
-Info (332146): Worst-case hold slack is 0.499
+    Info (332119):    -4.085       -87.929 clk 
+Info (332146): Worst-case hold slack is 0.744
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.499         0.000 clk 
+    Info (332119):     0.744         0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.941
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.941       -82.077 clk 
+    Info (332119):    -1.941       -44.977 clk 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.771
+Info (332146): Worst-case setup slack is -0.694
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -0.771       -26.489 clk 
-Info (332146): Worst-case hold slack is 0.215
+    Info (332119):    -0.694       -12.188 clk 
+Info (332146): Worst-case hold slack is 0.240
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.215         0.000 clk 
+    Info (332119):     0.240         0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.380       -55.380 clk 
+    Info (332119):    -1.380       -30.380 clk 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4573 megabytes
-    Info: Processing ended: Tue May 02 01:07:17 2023
+    Info: Processing ended: Tue May 02 17:43:19 2023
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

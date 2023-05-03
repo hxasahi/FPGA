@@ -1,8 +1,10 @@
 
 State Machine - |demo|state
-Name state.S2 state.S1_5 state.S1 state.S0_5 state.IDLE 
-state.IDLE 0 0 0 0 0 
-state.S0_5 0 0 0 1 1 
-state.S1 0 0 1 0 1 
-state.S1_5 0 1 0 0 1 
-state.S2 1 0 0 0 1 
+Name state.S3 state.S2_5 state.S2 state.S1_5 state.S1 state.S0_5 state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 
+state.S0_5 0 0 0 0 0 1 1 
+state.S1 0 0 0 0 1 0 1 
+state.S1_5 0 0 0 1 0 0 1 
+state.S2 0 0 1 0 0 0 1 
+state.S2_5 0 1 0 0 0 0 1 
+state.S3 1 0 0 0 0 0 1 

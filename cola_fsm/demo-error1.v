@@ -55,14 +55,14 @@ end
 //流水灯
 always @ (posedge clk or negedge rst_n)
 begin
-	if(state==LED1)
+	if(state==S2_5)
 		if(rst_n==1'b0)
 			led_temp<=8'b0000_0001;
 		else if(led_temp==8'b1000_0000 && led_500ms==led_500ms_max-1)
 			led_temp<=8'b0000_0001;
 		else if(led_500ms==led_500ms_max-1)
 			led_temp<=led_temp<<1;		
-	else if(state==LED2)
+	else if(state==S3)
 		if(rst_n==1'b0)
 				led_temp<=8'b1000_0000;
 			else if(led_temp==8'b0000_0001 && led_500ms==led_500ms_max-1)

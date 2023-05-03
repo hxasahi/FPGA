@@ -43,7 +43,7 @@ begin
 	else if(cnt_5s == cnt_5s_max)
 		cnt_5s <= cnt_5s;
 	else
-		cnt_5s <= cnt_5s + 32'd1;
+		cnt_5s <= cnt_5s + 32'd1; 
 end
 //流水灯500ms时钟
 always @ (posedge clk or negedge rst_n)

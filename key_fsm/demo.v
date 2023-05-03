@@ -31,13 +31,9 @@ begin
 				else
 					state<=ONE;
 		TWO : if(key_1)
-					state<=THREE;				
+					state<=IDLE;				
 				else
-					state<=TWO;
-		THREE:if(key_1)
-					state<=IDLE;
-				else
-					state<=THREE;
+					state<=TWO;		
 		default: state<=IDLE;
 		endcase
 	end
@@ -50,12 +46,15 @@ begin
 	begin
 		if(state==ONE)
 			led=8'b0000_0001;
+		else if(state==TWO && key_1==1'b1)		
+			led=8'b0000_0100;	
 		else if(state==TWO)
-			led=8'b0000_0010;	
-		else if(state==THREE && key_1==1'b0)
-			led=8'b0000_0100;
+			led=8'b0000_0010;
+			//加上下面这一条会不执行key_1==1'b1
+		/*
 		else if(state==IDLE)	
 			led=8'b1010_1010;	
+		*/
 	end
 end
 endmodule

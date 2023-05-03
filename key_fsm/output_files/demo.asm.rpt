@@ -1,5 +1,5 @@
 Assembler report for demo
-Tue May 02 17:43:18 2023
+Wed May 03 19:56:21 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue May 02 17:43:18 2023 ;
+; Assembler Status      ; Successful - Wed May 03 19:56:21 2023 ;
 ; Revision Name         ; demo                                  ;
 ; Top-level Entity Name ; demo                                  ;
 ; Family                ; Cyclone II                            ;
@@ -94,8 +94,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                ;
 +----------------+--------------------------------------------------------+
 ; Device         ; EP2C8Q208C8                                            ;
-; JTAG usercode  ; 0x000C3A82                                             ;
-; Checksum       ; 0x000C3A82                                             ;
+; JTAG usercode  ; 0x000C38EA                                             ;
+; Checksum       ; 0x000C38EA                                             ;
 +----------------+--------------------------------------------------------+
 
 
@@ -106,7 +106,7 @@ applicable agreement for further details.
 +--------------------+----------------------------------------------------+
 ; Device             ; EPCS4                                              ;
 ; JTAG usercode      ; 0x00000000                                         ;
-; Checksum           ; 0x06EFC349                                         ;
+; Checksum           ; 0x06EFD4A5                                         ;
 ; Compression Ratio  ; 3                                                  ;
 +--------------------+----------------------------------------------------+
 
@@ -117,13 +117,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Tue May 02 17:43:17 2023
+    Info: Processing started: Wed May 03 19:56:20 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off demo -c demo
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4566 megabytes
-    Info: Processing ended: Tue May 02 17:43:18 2023
+    Info: Peak virtual memory: 4565 megabytes
+    Info: Processing ended: Wed May 03 19:56:21 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

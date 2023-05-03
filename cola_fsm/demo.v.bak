@@ -1,0 +1,4 @@
+module demo(key,led)
+input key;
+output led;
+assign led = key;

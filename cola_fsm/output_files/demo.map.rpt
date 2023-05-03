@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demo
-Wed May 03 20:39:21 2023
+Thu May 04 00:59:52 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -16,14 +16,15 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
   8. State Machine - |demo|state
   9. Registers Removed During Synthesis
  10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |demo
- 13. Parameter Settings for User Entity Instance: key:key1
- 14. Parameter Settings for User Entity Instance: key:key2
- 15. Port Connectivity Checks: "key:key2"
- 16. Port Connectivity Checks: "key:key1"
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |demo
+ 14. Parameter Settings for User Entity Instance: key:key1
+ 15. Parameter Settings for User Entity Instance: key:key2
+ 16. Port Connectivity Checks: "key:key2"
+ 17. Port Connectivity Checks: "key:key1"
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -49,15 +50,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 03 20:39:21 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 04 00:59:52 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; demo                                        ;
 ; Top-level Entity Name              ; demo                                        ;
 ; Family                             ; Cyclone II                                  ;
-; Total logic elements               ; 127                                         ;
-;     Total combinational functions  ; 127                                         ;
-;     Dedicated logic registers      ; 87                                          ;
-; Total registers                    ; 87                                          ;
+; Total logic elements               ; 251                                         ;
+;     Total combinational functions  ; 243                                         ;
+;     Dedicated logic registers      ; 165                                         ;
+; Total registers                    ; 165                                         ;
 ; Total pins                         ; 12                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -183,28 +184,28 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 127   ;
+; Estimated Total logic elements              ; 251   ;
 ;                                             ;       ;
-; Total combinational functions               ; 127   ;
+; Total combinational functions               ; 243   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 39    ;
-;     -- 3 input functions                    ; 12    ;
-;     -- <=2 input functions                  ; 76    ;
+;     -- 4 input functions                    ; 80    ;
+;     -- 3 input functions                    ; 17    ;
+;     -- <=2 input functions                  ; 146   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 58    ;
-;     -- arithmetic mode                      ; 69    ;
+;     -- normal mode                          ; 112   ;
+;     -- arithmetic mode                      ; 131   ;
 ;                                             ;       ;
-; Total registers                             ; 87    ;
-;     -- Dedicated logic registers            ; 87    ;
+; Total registers                             ; 165   ;
+;     -- Dedicated logic registers            ; 165   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 12    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 87    ;
-; Total fan-out                               ; 719   ;
-; Average fan-out                             ; 3.18  ;
+; Maximum fan-out                             ; 165   ;
+; Total fan-out                               ; 1352  ;
+; Average fan-out                             ; 3.22  ;
 +---------------------------------------------+-------+
 
 
@@ -213,7 +214,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |demo                      ; 127 (71)          ; 87 (45)      ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |demo               ;              ;
+; |demo                      ; 243 (187)         ; 165 (123)    ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |demo               ;              ;
 ;    |key:key1|              ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|key:key1      ;              ;
 ;    |key:key2|              ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|key:key2      ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
@@ -236,19 +237,21 @@ Encoding Type:  One-Hot
 +------------+----------+------------+----------+------------+----------+------------+------------+
 
 
-+-----------------------------------------------------------------+
-; Registers Removed During Synthesis                              ;
-+---------------------------------------+-------------------------+
-; Register name                         ; Reason for Removal      ;
-+---------------------------------------+-------------------------+
-; led[6]~reg0                           ; Merged with led[7]~reg0 ;
-; state~4                               ; Lost fanout             ;
-; state~5                               ; Lost fanout             ;
-; state~6                               ; Lost fanout             ;
-; state~7                               ; Lost fanout             ;
-; state.S3                              ; Lost fanout             ;
-; Total Number of Removed Registers = 6 ;                         ;
-+---------------------------------------+-------------------------+
++------------------------------------------------------------------+
+; Registers Removed During Synthesis                               ;
++---------------------------------------+--------------------------+
+; Register name                         ; Reason for Removal       ;
++---------------------------------------+--------------------------+
+; led_temp3[0]                          ; Merged with led_temp2[3] ;
+; led_temp3[1]                          ; Merged with led_temp2[2] ;
+; led_temp3[2]                          ; Merged with led_temp2[1] ;
+; led_temp3[3]                          ; Merged with led_temp2[0] ;
+; state~4                               ; Lost fanout              ;
+; state~5                               ; Lost fanout              ;
+; state~6                               ; Lost fanout              ;
+; state~7                               ; Lost fanout              ;
+; Total Number of Removed Registers = 8 ;                          ;
++---------------------------------------+--------------------------+
 
 
 +------------------------------------------------------+
@@ -256,14 +259,25 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 87    ;
-; Number of registers using Synchronous Clear  ; 72    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 45    ;
+; Total registers                              ; 165   ;
+; Number of registers using Synchronous Clear  ; 104   ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 123   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 79    ;
+; Number of registers using Clock Enable       ; 116   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; led_temp1[0]                           ; 4       ;
+; led_temp2[0]                           ; 5       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -271,10 +285,14 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |demo|cnt_1s[23]            ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |demo|key:key1|cnt_20ms[5]  ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |demo|key:key2|cnt_20ms[10] ;
-; 9:1                ; 7 bits    ; 42 LEs        ; 35 LEs               ; 7 LEs                  ; Yes        ; |demo|led[7]~reg0           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |demo|cnt_10s[14]           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |demo|led_temp2[2]          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |demo|led_temp1[1]          ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |demo|key:key1|cnt_20ms[19] ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |demo|key:key2|cnt_20ms[11] ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |demo|cnt_5s[1]             ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |demo|led[7]~reg0           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |demo|state                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
 
 
@@ -283,7 +301,9 @@ Encoding Type:  One-Hot
 +----------------+----------------------------------+------------------+
 ; Parameter Name ; Value                            ; Type             ;
 +----------------+----------------------------------+------------------+
-; cnt_1s_max     ; 00001110111001101011001010000000 ; Unsigned Binary  ;
+; cnt_5s_max     ; 00001110111001101011001010000000 ; Unsigned Binary  ;
+; cnt_10s_max    ; 00011101110011010110010100000000 ; Unsigned Binary  ;
+; led_500ms_max  ; 00000001011111010111100001000000 ; Unsigned Binary  ;
 ; IDLE           ; 0001                             ; Unsigned Binary  ;
 ; S0_5           ; 0010                             ; Unsigned Binary  ;
 ; S1             ; 0011                             ; Unsigned Binary  ;
@@ -348,7 +368,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Wed May 03 20:39:20 2023
+    Info: Processing started: Thu May 04 00:59:52 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demo -c demo
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file demo.v
@@ -356,20 +376,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file demo.v
 Info (12021): Found 1 design units, including 1 entities, in source file key.v
     Info (12023): Found entity 1: key
 Info (12127): Elaborating entity "demo" for the top level hierarchy
-Info (10264): Verilog HDL Case Statement information at demo.v(45): all case item expressions in this case statement are onehot
 Info (12128): Elaborating entity "key" for hierarchy "key:key1"
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 140 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 263 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 128 logic cells
+    Info (21061): Implemented 251 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4597 megabytes
-    Info: Processing ended: Wed May 03 20:39:21 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4589 megabytes
+    Info: Processing ended: Thu May 04 00:59:52 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

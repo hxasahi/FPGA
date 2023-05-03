@@ -1,5 +1,5 @@
 Flow report for demo
-Wed May 03 20:39:27 2023
+Thu May 04 01:00:00 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed May 03 20:39:27 2023       ;
+; Flow Status                        ; Successful - Thu May 04 01:00:00 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; demo                                        ;
 ; Top-level Entity Name              ; demo                                        ;
 ; Family                             ; Cyclone II                                  ;
 ; Device                             ; EP2C8Q208C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 128 / 8,256 ( 2 % )                         ;
-;     Total combinational functions  ; 127 / 8,256 ( 2 % )                         ;
-;     Dedicated logic registers      ; 87 / 8,256 ( 1 % )                          ;
-; Total registers                    ; 87                                          ;
+; Total logic elements               ; 254 / 8,256 ( 3 % )                         ;
+;     Total combinational functions  ; 243 / 8,256 ( 3 % )                         ;
+;     Dedicated logic registers      ; 165 / 8,256 ( 2 % )                         ;
+; Total registers                    ; 165                                         ;
 ; Total pins                         ; 12 / 138 ( 9 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 165,888 ( 0 % )                         ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/03/2023 20:39:20 ;
+; Start date & time ; 05/04/2023 00:59:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; demo                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                        ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 345052807169.168311756001528 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 345052807169.168313319214856 ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                           ; --            ; --          ; demo.vt        ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; demo.vt                      ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                  ; --            ; --          ; eda_simulation ;
@@ -99,12 +99,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4587 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:03     ; 1.0                     ; 5252 MB             ; 00:00:03                           ;
-; Assembler                 ; 00:00:00     ; 1.0                     ; 4567 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 4588 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4524 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:04     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4581 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:03     ; 1.0                     ; 5255 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 4569 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4576 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4524 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:05     ; --                      ; --                  ; 00:00:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

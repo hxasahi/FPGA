@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demo
-Thu May 04 10:57:04 2023
+Thu May 04 11:34:25 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -17,12 +17,14 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
   9. Analysis & Synthesis IP Cores Summary
  10. General Register Statistics
  11. Source assignments for ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated
- 12. Parameter Settings for User Entity Instance: ip_pll:ip_pll_one|altpll:altpll_component
- 13. Parameter Settings for User Entity Instance: ip_rom:ip_rom_inst|altsyncram:altsyncram_component
- 14. altpll Parameter Settings by Entity Instance
- 15. altsyncram Parameter Settings by Entity Instance
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+ 12. Source assignments for ip_ram:ip_ram_inst|altsyncram:altsyncram_component|altsyncram_gra1:auto_generated
+ 13. Parameter Settings for User Entity Instance: ip_pll:ip_pll_one|altpll:altpll_component
+ 14. Parameter Settings for User Entity Instance: ip_rom:ip_rom_inst|altsyncram:altsyncram_component
+ 15. Parameter Settings for User Entity Instance: ip_ram:ip_ram_inst|altsyncram:altsyncram_component
+ 16. altpll Parameter Settings by Entity Instance
+ 17. altsyncram Parameter Settings by Entity Instance
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -48,7 +50,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 04 10:57:04 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 04 11:34:25 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; demo                                        ;
 ; Top-level Entity Name              ; demo                                        ;
@@ -57,9 +59,9 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 21                                          ;
+; Total pins                         ; 30                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 2,048                                       ;
+; Total memory bits                  ; 4,096                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 1                                           ;
 +------------------------------------+---------------------------------------------+
@@ -175,6 +177,7 @@ applicable agreement for further details.
 ; demo.v                           ; yes             ; User Verilog HDL File        ; E:/project/FPGA/ip_test/demo.v                                       ;         ;
 ; ip_cores/ip_pll/ip_pll.v         ; yes             ; User Wizard-Generated File   ; E:/project/FPGA/ip_test/ip_cores/ip_pll/ip_pll.v                     ;         ;
 ; ip_cores/ip_rom/ip_rom.v         ; yes             ; User Wizard-Generated File   ; E:/project/FPGA/ip_test/ip_cores/ip_rom/ip_rom.v                     ;         ;
+; ip_cores/ip_ram/ip_ram.v         ; yes             ; User Wizard-Generated File   ; E:/project/FPGA/ip_test/ip_cores/ip_ram/ip_ram.v                     ;         ;
 ; altpll.tdf                       ; yes             ; Megafunction                 ; d:/altera/13.0/quartus/libraries/megafunctions/altpll.tdf            ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                 ; d:/altera/13.0/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
 ; stratix_pll.inc                  ; yes             ; Megafunction                 ; d:/altera/13.0/quartus/libraries/megafunctions/stratix_pll.inc       ;         ;
@@ -189,6 +192,7 @@ applicable agreement for further details.
 ; altram.inc                       ; yes             ; Megafunction                 ; d:/altera/13.0/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                 ; d:/altera/13.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
 ; db/altsyncram_gj71.tdf           ; yes             ; Auto-Generated Megafunction  ; E:/project/FPGA/ip_test/db/altsyncram_gj71.tdf                       ;         ;
+; db/altsyncram_gra1.tdf           ; yes             ; Auto-Generated Megafunction  ; E:/project/FPGA/ip_test/db/altsyncram_gra1.tdf                       ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
 
 
@@ -212,16 +216,16 @@ applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 0                                               ;
 ;     -- I/O registers                        ; 0                                               ;
 ;                                             ;                                                 ;
-; I/O pins                                    ; 21                                              ;
-; Total memory bits                           ; 2048                                            ;
+; I/O pins                                    ; 30                                              ;
+; Total memory bits                           ; 4096                                            ;
 ; Embedded Multiplier 9-bit elements          ; 0                                               ;
 ; Total PLLs                                  ; 1                                               ;
 ;     -- PLLs                                 ; 1                                               ;
 ;                                             ;                                                 ;
 ; Maximum fan-out node                        ; ip_pll:ip_pll_one|altpll:altpll_component|_clk0 ;
-; Maximum fan-out                             ; 12                                              ;
-; Total fan-out                               ; 85                                              ;
-; Average fan-out                             ; 2.83                                            ;
+; Maximum fan-out                             ; 20                                              ;
+; Total fan-out                               ; 173                                             ;
+; Average fan-out                             ; 3.68                                            ;
 +---------------------------------------------+-------------------------------------------------+
 
 
@@ -230,9 +234,12 @@ applicable agreement for further details.
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                     ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------+--------------+
-; |demo                                     ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 21   ; 0            ; |demo                                                                                   ;              ;
+; |demo                                     ; 0 (0)             ; 0 (0)        ; 4096        ; 0            ; 0       ; 0         ; 30   ; 0            ; |demo                                                                                   ;              ;
 ;    |ip_pll:ip_pll_one|                    ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|ip_pll:ip_pll_one                                                                 ;              ;
 ;       |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|ip_pll:ip_pll_one|altpll:altpll_component                                         ;              ;
+;    |ip_ram:ip_ram_inst|                   ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|ip_ram:ip_ram_inst                                                                ;              ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|ip_ram:ip_ram_inst|altsyncram:altsyncram_component                                ;              ;
+;          |altsyncram_gra1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|ip_ram:ip_ram_inst|altsyncram:altsyncram_component|altsyncram_gra1:auto_generated ;              ;
 ;    |ip_rom:ip_rom_inst|                   ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|ip_rom:ip_rom_inst                                                                ;              ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|ip_rom:ip_rom_inst|altsyncram:altsyncram_component                                ;              ;
 ;          |altsyncram_gj71:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated ;              ;
@@ -240,13 +247,14 @@ applicable agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                         ;
-+----------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------+
-; Name                                                                                         ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF      ;
-+----------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------+
-; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; demo.mif ;
-+----------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                ;
++----------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------+
+; Name                                                                                         ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF      ;
++----------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------+
+; ip_ram:ip_ram_inst|altsyncram:altsyncram_component|altsyncram_gra1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 8            ; --           ; --           ; 2048 ; None     ;
+; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 256          ; 8            ; --           ; --           ; 2048 ; demo.mif ;
++----------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------+
@@ -255,6 +263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance          ; IP Include File                                  ;
 +--------+--------------+---------+--------------+--------------+--------------------------+--------------------------------------------------+
 ; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |demo|ip_pll:ip_pll_one  ; E:/project/FPGA/ip_test/ip_cores/ip_pll/ip_pll.v ;
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |demo|ip_ram:ip_ram_inst ; E:/project/FPGA/ip_test/ip_cores/ip_ram/ip_ram.v ;
 ; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |demo|ip_rom:ip_rom_inst ; E:/project/FPGA/ip_test/ip_cores/ip_rom/ip_rom.v ;
 +--------+--------------+---------+--------------+--------------+--------------------------+--------------------------------------------------+
 
@@ -276,6 +285,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +----------------------------------------------------------------------------------------------------------+
 ; Source assignments for ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                         ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
++---------------------------------+--------------------+------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Source assignments for ip_ram:ip_ram_inst|altsyncram:altsyncram_component|altsyncram_gra1:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                         ;
 +---------------------------------+--------------------+------+--------------------------------------------+
@@ -718,6 +736,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ip_ram:ip_ram_inst|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-------------------------------------+
+; Parameter Name                     ; Value                ; Type                                ;
++------------------------------------+----------------------+-------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                             ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                             ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                             ;
+; WIDTH_A                            ; 8                    ; Signed Integer                      ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                      ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                      ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                             ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                             ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                             ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                             ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                             ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                             ;
+; WIDTH_B                            ; 1                    ; Untyped                             ;
+; WIDTHAD_B                          ; 1                    ; Untyped                             ;
+; NUMWORDS_B                         ; 1                    ; Untyped                             ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                             ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                             ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                             ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                             ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                             ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                             ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                             ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                             ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                             ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                             ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                             ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                      ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                             ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                             ;
+; BYTE_SIZE                          ; 8                    ; Untyped                             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                             ;
+; INIT_FILE                          ; UNUSED               ; Untyped                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                             ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                             ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                             ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                             ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                             ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                             ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                             ;
+; CBXI_PARAMETER                     ; altsyncram_gra1      ; Untyped                             ;
++------------------------------------+----------------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                              ;
 +-------------------------------+-------------------------------------------+
@@ -740,9 +819,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+----------------------------------------------------+
 ; Name                                      ; Value                                              ;
 +-------------------------------------------+----------------------------------------------------+
-; Number of entity instances                ; 1                                                  ;
+; Number of entity instances                ; 2                                                  ;
 ; Entity Instance                           ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                                ;
+;     -- WIDTH_A                            ; 8                                                  ;
+;     -- NUMWORDS_A                         ; 256                                                ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                       ;
+;     -- WIDTH_B                            ; 1                                                  ;
+;     -- NUMWORDS_B                         ; 1                                                  ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                          ;
+; Entity Instance                           ; ip_ram:ip_ram_inst|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                        ;
 ;     -- WIDTH_A                            ; 8                                                  ;
 ;     -- NUMWORDS_A                         ; 256                                                ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                       ;
@@ -770,7 +860,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Thu May 04 10:57:03 2023
+    Info: Processing started: Thu May 04 11:34:25 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demo -c demo
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file demo.v
@@ -779,6 +869,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file ip_core
     Info (12023): Found entity 1: ip_pll
 Info (12021): Found 1 design units, including 1 entities, in source file ip_cores/ip_rom/ip_rom.v
     Info (12023): Found entity 1: ip_rom
+Info (12021): Found 1 design units, including 1 entities, in source file ip_cores/ip_ram/ip_ram.v
+    Info (12023): Found entity 1: ip_ram
 Info (12127): Elaborating entity "demo" for the top level hierarchy
 Info (12128): Elaborating entity "ip_pll" for hierarchy "ip_pll:ip_pll_one"
 Info (12128): Elaborating entity "altpll" for hierarchy "ip_pll:ip_pll_one|altpll:altpll_component"
@@ -866,17 +958,37 @@ Info (12133): Instantiated megafunction "ip_rom:ip_rom_inst|altsyncram:altsyncra
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gj71.tdf
     Info (12023): Found entity 1: altsyncram_gj71
 Info (12128): Elaborating entity "altsyncram_gj71" for hierarchy "ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated"
+Info (12128): Elaborating entity "ip_ram" for hierarchy "ip_ram:ip_ram_inst"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ip_ram:ip_ram_inst|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "ip_ram:ip_ram_inst|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "ip_ram:ip_ram_inst|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gra1.tdf
+    Info (12023): Found entity 1: altsyncram_gra1
+Info (12128): Elaborating entity "altsyncram_gra1" for hierarchy "ip_ram:ip_ram_inst|altsyncram:altsyncram_component|altsyncram_gra1:auto_generated"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21064): Implemented 8 RAM segments
+Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4618 megabytes
-    Info: Processing ended: Thu May 04 10:57:04 2023
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Thu May 04 11:34:25 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

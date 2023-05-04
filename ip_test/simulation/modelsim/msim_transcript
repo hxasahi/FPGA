@@ -28,6 +28,12 @@
 # 
 # Top level modules:
 # 	ip_rom
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/ip_test/ip_cores/ip_ram {E:/project/FPGA/ip_test/ip_cores/ip_ram/ip_ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ip_ram
+# 
+# Top level modules:
+# 	ip_ram
 # 
 # vlog -vlog01compat -work work +incdir+E:/project/FPGA/ip_test/simulation/modelsim {E:/project/FPGA/ip_test/simulation/modelsim/demo.vt}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -47,6 +53,7 @@
 # Loading work.ip_rom
 # Loading altera_mf_ver.altsyncram
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.ip_ram
 # Loading altera_mf_ver.MF_stratixii_pll
 # Loading altera_mf_ver.MF_pll_reg
 # Loading altera_mf_ver.arm_m_cntr
@@ -69,4 +76,4 @@
 #  Note : Cyclone II PLL locked to incoming clock
 # Time: 21020  Instance: demo_vlg_tst.i1.ip_pll_one.altpll_component.stratixii_pll.pll1
 # Break key hit 
-# Break in Module MF_stratixii_pll at D:/altera/13.0/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v line 8786
+# Break in Module MF_stratixii_pll at D:/altera/13.0/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v line 8776

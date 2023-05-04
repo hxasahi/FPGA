@@ -8,6 +8,8 @@ entity demo is
         c0_clk          : out    vl_logic;
         c1_clk          : out    vl_logic;
         c2_clk          : out    vl_logic;
-        data            : out    vl_logic_vector(7 downto 0)
+        wren            : in     vl_logic;
+        data            : out    vl_logic_vector(7 downto 0);
+        data_ram        : out    vl_logic_vector(7 downto 0)
     );
 end demo;

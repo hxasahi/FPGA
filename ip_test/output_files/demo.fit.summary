@@ -1,4 +1,4 @@
-Fitter Status : Successful - Thu May 04 10:57:07 2023
+Fitter Status : Successful - Thu May 04 11:34:28 2023
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : demo
 Top-level Entity Name : demo
@@ -9,8 +9,8 @@ Total logic elements : 0 / 8,256 ( 0 % )
     Total combinational functions : 0 / 8,256 ( 0 % )
     Dedicated logic registers : 0 / 8,256 ( 0 % )
 Total registers : 0
-Total pins : 21 / 138 ( 15 % )
+Total pins : 30 / 138 ( 22 % )
 Total virtual pins : 0
-Total memory bits : 2,048 / 165,888 ( 1 % )
+Total memory bits : 4,096 / 165,888 ( 2 % )
 Embedded Multiplier 9-bit elements : 0 / 36 ( 0 % )
 Total PLLs : 1 / 2 ( 50 % )

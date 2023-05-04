@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\project\FPGA\ip_test\simulation\modelsim
+vdemo
+Ia<zL`hli]:b34>cAGaP?`3
+VXK:QM8PY@gDfH4;>n9@hI1
+Z1 dE:\project\FPGA\ip_test\simulation\modelsim
+w1683168130
+8E:/project/FPGA/ip_test/demo.v
+FE:/project/FPGA/ip_test/demo.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 nzQ0zN;YDm_dL[^@iF9CM0
+!s85 0
+!s108 1683168161.768000
+!s107 E:/project/FPGA/ip_test/demo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/ip_test|E:/project/FPGA/ip_test/demo.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/project/FPGA/ip_test -O0
+vdemo_vlg_tst
+!i10b 1
+!s100 dmS<K@OPD91_PhE:cU=bW2
+Iga3@Zk>1Yk^=DGFQY1K1V0
+VDVVRW5Sd]7B_hkWkC]Ime1
+R1
+w1683168155
+8E:/project/FPGA/ip_test/simulation/modelsim/demo.vt
+FE:/project/FPGA/ip_test/simulation/modelsim/demo.vt
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1683168161.854000
+!s107 E:/project/FPGA/ip_test/simulation/modelsim/demo.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/ip_test/simulation/modelsim|E:/project/FPGA/ip_test/simulation/modelsim/demo.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/project/FPGA/ip_test/simulation/modelsim -O0
+vip_pll
+I27Q7=ao?DC<i39^b?6_FY2
+VF09f6j1dIf];IjL<SlmhT1
+R1
+w1683167195
+8E:/project/FPGA/ip_test/ip_cores/ip_pll/ip_pll.v
+FE:/project/FPGA/ip_test/ip_cores/ip_pll/ip_pll.v
+L0 39
+R2
+r1
+31
+R3
+!i10b 1
+!s100 ?6U`JAI0=UMdnIJ[?2OkM3
+!s85 0
+!s108 1683168161.808000
+!s107 E:/project/FPGA/ip_test/ip_cores/ip_pll/ip_pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/ip_test/ip_cores/ip_pll|E:/project/FPGA/ip_test/ip_cores/ip_pll/ip_pll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/project/FPGA/ip_test/ip_cores/ip_pll -O0

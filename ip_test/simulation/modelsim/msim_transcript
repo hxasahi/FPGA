@@ -1,0 +1,63 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do demo_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/ip_test {E:/project/FPGA/ip_test/demo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo
+# 
+# Top level modules:
+# 	demo
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/ip_test/ip_cores/ip_pll {E:/project/FPGA/ip_test/ip_cores/ip_pll/ip_pll.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ip_pll
+# 
+# Top level modules:
+# 	ip_pll
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/ip_test/simulation/modelsim {E:/project/FPGA/ip_test/simulation/modelsim/demo.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  demo_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps demo_vlg_tst 
+# Loading work.demo_vlg_tst
+# Loading work.demo
+# Loading work.ip_pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_stratixii_pll
+# Loading altera_mf_ver.MF_pll_reg
+# Loading altera_mf_ver.arm_m_cntr
+# Loading altera_mf_ver.arm_n_cntr
+# Loading altera_mf_ver.arm_scale_cntr
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+#  Note : Cyclone II PLL is enabled
+# Time: 0  Instance: demo_vlg_tst.i1.ip_pll_one.altpll_component.stratixii_pll.pll1
+#  Note : Cyclone II PLL locked to incoming clock
+# Time: 1020  Instance: demo_vlg_tst.i1.ip_pll_one.altpll_component.stratixii_pll.pll1
+# Note : Cyclone II PLL lost lock
+# Time: 1120  Instance: demo_vlg_tst.i1.ip_pll_one.altpll_component.stratixii_pll.pll1
+#  Note : Cyclone II PLL locked to incoming clock
+# Time: 21020  Instance: demo_vlg_tst.i1.ip_pll_one.altpll_component.stratixii_pll.pll1
+# Break key hit 
+# Simulation stop requested.

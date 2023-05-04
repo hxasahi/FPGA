@@ -1,0 +1,29 @@
+`timescale 1 ps/ 1 ps
+
+module demo_vlg_tst();
+
+reg clk;
+wire c0_clk;
+wire c1_clk;
+wire c2_clk;
+wire c_locked;
+
+demo i1 (
+	.c0_clk(c0_clk),
+	.c1_clk(c1_clk),
+	.c2_clk(c2_clk),
+	.c_locked(c_locked),
+	.clk(clk)
+);
+initial                                                
+begin                                                                                            
+	$display("Running testbench");
+	clk = 1'b1;
+end            
+                                        
+always                                                 
+begin                                                                                                    
+	#10 clk = ~clk;        
+end                                                    
+endmodule
+

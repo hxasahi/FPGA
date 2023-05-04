@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for demo
-Thu May 04 10:42:18 2023
+Thu May 04 10:57:09 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -16,25 +16,33 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Minimum Pulse Width: 'clk'
- 12. Clock to Output Times
- 13. Minimum Clock to Output Times
- 14. Fast Model Setup Summary
- 15. Fast Model Hold Summary
- 16. Fast Model Recovery Summary
- 17. Fast Model Removal Summary
- 18. Fast Model Minimum Pulse Width Summary
- 19. Fast Model Minimum Pulse Width: 'clk'
- 20. Clock to Output Times
- 21. Minimum Clock to Output Times
- 22. Multicorner Timing Analysis Summary
- 23. Clock to Output Times
- 24. Minimum Clock to Output Times
- 25. Clock Transfers
- 26. Report TCCS
- 27. Report RSKM
- 28. Unconstrained Paths
- 29. TimeQuest Timing Analyzer Messages
+ 11. Slow Model Minimum Pulse Width: 'ip_pll_one|altpll_component|pll|clk[0]'
+ 12. Slow Model Minimum Pulse Width: 'clk'
+ 13. Setup Times
+ 14. Hold Times
+ 15. Clock to Output Times
+ 16. Minimum Clock to Output Times
+ 17. Fast Model Setup Summary
+ 18. Fast Model Hold Summary
+ 19. Fast Model Recovery Summary
+ 20. Fast Model Removal Summary
+ 21. Fast Model Minimum Pulse Width Summary
+ 22. Fast Model Minimum Pulse Width: 'ip_pll_one|altpll_component|pll|clk[0]'
+ 23. Fast Model Minimum Pulse Width: 'clk'
+ 24. Setup Times
+ 25. Hold Times
+ 26. Clock to Output Times
+ 27. Minimum Clock to Output Times
+ 28. Multicorner Timing Analysis Summary
+ 29. Setup Times
+ 30. Hold Times
+ 31. Clock to Output Times
+ 32. Minimum Clock to Output Times
+ 33. Clock Transfers
+ 34. Report TCCS
+ 35. Report RSKM
+ 36. Unconstrained Paths
+ 37. TimeQuest Timing Analyzer Messages
 
 
 
@@ -129,13 +137,44 @@ No paths to report.
 No paths to report.
 
 
-+----------------------------------------+
-; Slow Model Minimum Pulse Width Summary ;
-+-------+--------+-----------------------+
-; Clock ; Slack  ; End Point TNS         ;
-+-------+--------+-----------------------+
-; clk   ; 10.000 ; 0.000                 ;
-+-------+--------+-----------------------+
++-----------------------------------------------------------------+
+; Slow Model Minimum Pulse Width Summary                          ;
++----------------------------------------+--------+---------------+
+; Clock                                  ; Slack  ; End Point TNS ;
++----------------------------------------+--------+---------------+
+; ip_pll_one|altpll_component|pll|clk[0] ; 2.223  ; 0.000         ;
+; clk                                    ; 10.000 ; 0.000         ;
++----------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'ip_pll_one|altpll_component|pll|clk[0]'                                                                                                                                                           ;
++-------+--------------+----------------+------------------+----------------------------------------+------------+-------------------------------------------------------------------------------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                                  ; Clock Edge ; Target                                                                                                            ;
++-------+--------------+----------------+------------------+----------------------------------------+------------+-------------------------------------------------------------------------------------------------------------------+
+; 2.223 ; 5.000        ; 2.777          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 2.223 ; 5.000        ; 2.777          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 2.223 ; 5.000        ; 2.777          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg1 ;
+; 2.223 ; 5.000        ; 2.777          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg1 ;
+; 2.223 ; 5.000        ; 2.777          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg2 ;
+; 2.223 ; 5.000        ; 2.777          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg2 ;
+; 2.223 ; 5.000        ; 2.777          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg3 ;
+; 2.223 ; 5.000        ; 2.777          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg3 ;
+; 2.223 ; 5.000        ; 2.777          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg4 ;
+; 2.223 ; 5.000        ; 2.777          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg4 ;
+; 2.223 ; 5.000        ; 2.777          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg5 ;
+; 2.223 ; 5.000        ; 2.777          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg5 ;
+; 2.223 ; 5.000        ; 2.777          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg6 ;
+; 2.223 ; 5.000        ; 2.777          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg6 ;
+; 2.223 ; 5.000        ; 2.777          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg7 ;
+; 2.223 ; 5.000        ; 2.777          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg7 ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_pll_one|altpll_component|_clk0~clkctrl|inclk[0]                                                                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_pll_one|altpll_component|_clk0~clkctrl|inclk[0]                                                                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_pll_one|altpll_component|_clk0~clkctrl|outclk                                                                  ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_pll_one|altpll_component|_clk0~clkctrl|outclk                                                                  ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom_inst|altsyncram_component|auto_generated|ram_block1a0|clk0                                                 ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom_inst|altsyncram_component|auto_generated|ram_block1a0|clk0                                                 ;
++-------+--------------+----------------+------------------+----------------------------------------+------------+-------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -158,16 +197,59 @@ No paths to report.
 
 
 +----------------------------------------------------------------------------------------------+
+; Setup Times                                                                                  ;
++-----------+------------+-------+-------+------------+----------------------------------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                        ;
++-----------+------------+-------+-------+------------+----------------------------------------+
+; addr[*]   ; clk        ; 8.101 ; 8.101 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[0]  ; clk        ; 7.345 ; 7.345 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[1]  ; clk        ; 8.101 ; 8.101 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[2]  ; clk        ; 7.490 ; 7.490 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[3]  ; clk        ; 2.840 ; 2.840 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[4]  ; clk        ; 2.875 ; 2.875 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[5]  ; clk        ; 2.822 ; 2.822 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[6]  ; clk        ; 7.344 ; 7.344 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[7]  ; clk        ; 7.346 ; 7.346 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
++-----------+------------+-------+-------+------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                     ;
++-----------+------------+--------+--------+------------+----------------------------------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                        ;
++-----------+------------+--------+--------+------------+----------------------------------------+
+; addr[*]   ; clk        ; -2.509 ; -2.509 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[0]  ; clk        ; -7.032 ; -7.032 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[1]  ; clk        ; -7.788 ; -7.788 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[2]  ; clk        ; -7.177 ; -7.177 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[3]  ; clk        ; -2.527 ; -2.527 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[4]  ; clk        ; -2.562 ; -2.562 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[5]  ; clk        ; -2.509 ; -2.509 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[6]  ; clk        ; -7.031 ; -7.031 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[7]  ; clk        ; -7.033 ; -7.033 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
++-----------+------------+--------+--------+------------+----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
 ; Clock to Output Times                                                                        ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                        ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 ; c0_clk    ; clk        ; 1.555 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+; data[*]   ; clk        ; 9.596 ; 9.596 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[0]  ; clk        ; 9.335 ; 9.335 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[1]  ; clk        ; 9.596 ; 9.596 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[2]  ; clk        ; 9.219 ; 9.219 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[3]  ; clk        ; 8.828 ; 8.828 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[4]  ; clk        ; 9.554 ; 9.554 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[5]  ; clk        ; 9.340 ; 9.340 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[6]  ; clk        ; 9.226 ; 9.226 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[7]  ; clk        ; 8.932 ; 8.932 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
 ; c0_clk    ; clk        ;       ; 1.555 ; Fall       ; ip_pll_one|altpll_component|pll|clk[0] ;
-; c1_clk    ; clk        ; 3.308 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c1_clk    ; clk        ;       ; 3.308 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c2_clk    ; clk        ; 8.296 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
-; c2_clk    ; clk        ;       ; 8.296 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c1_clk    ; clk        ; 3.033 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c1_clk    ; clk        ;       ; 3.033 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c2_clk    ; clk        ; 8.297 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c2_clk    ; clk        ;       ; 8.297 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 
 
@@ -177,11 +259,20 @@ No paths to report.
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                        ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 ; c0_clk    ; clk        ; 1.555 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+; data[*]   ; clk        ; 8.828 ; 8.828 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[0]  ; clk        ; 9.335 ; 9.335 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[1]  ; clk        ; 9.596 ; 9.596 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[2]  ; clk        ; 9.219 ; 9.219 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[3]  ; clk        ; 8.828 ; 8.828 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[4]  ; clk        ; 9.554 ; 9.554 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[5]  ; clk        ; 9.340 ; 9.340 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[6]  ; clk        ; 9.226 ; 9.226 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[7]  ; clk        ; 8.932 ; 8.932 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
 ; c0_clk    ; clk        ;       ; 1.555 ; Fall       ; ip_pll_one|altpll_component|pll|clk[0] ;
-; c1_clk    ; clk        ; 3.308 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c1_clk    ; clk        ;       ; 3.308 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c2_clk    ; clk        ; 8.296 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
-; c2_clk    ; clk        ;       ; 8.296 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c1_clk    ; clk        ; 3.033 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c1_clk    ; clk        ;       ; 3.033 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c2_clk    ; clk        ; 8.297 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c2_clk    ; clk        ;       ; 8.297 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 
 
@@ -209,13 +300,44 @@ No paths to report.
 No paths to report.
 
 
-+----------------------------------------+
-; Fast Model Minimum Pulse Width Summary ;
-+-------+--------+-----------------------+
-; Clock ; Slack  ; End Point TNS         ;
-+-------+--------+-----------------------+
-; clk   ; 10.000 ; 0.000                 ;
-+-------+--------+-----------------------+
++-----------------------------------------------------------------+
+; Fast Model Minimum Pulse Width Summary                          ;
++----------------------------------------+--------+---------------+
+; Clock                                  ; Slack  ; End Point TNS ;
++----------------------------------------+--------+---------------+
+; ip_pll_one|altpll_component|pll|clk[0] ; 3.077  ; 0.000         ;
+; clk                                    ; 10.000 ; 0.000         ;
++----------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'ip_pll_one|altpll_component|pll|clk[0]'                                                                                                                                                           ;
++-------+--------------+----------------+------------------+----------------------------------------+------------+-------------------------------------------------------------------------------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock                                  ; Clock Edge ; Target                                                                                                            ;
++-------+--------------+----------------+------------------+----------------------------------------+------------+-------------------------------------------------------------------------------------------------------------------+
+; 3.077 ; 5.000        ; 1.923          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 3.077 ; 5.000        ; 1.923          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 3.077 ; 5.000        ; 1.923          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg1 ;
+; 3.077 ; 5.000        ; 1.923          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg1 ;
+; 3.077 ; 5.000        ; 1.923          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg2 ;
+; 3.077 ; 5.000        ; 1.923          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg2 ;
+; 3.077 ; 5.000        ; 1.923          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg3 ;
+; 3.077 ; 5.000        ; 1.923          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg3 ;
+; 3.077 ; 5.000        ; 1.923          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg4 ;
+; 3.077 ; 5.000        ; 1.923          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg4 ;
+; 3.077 ; 5.000        ; 1.923          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg5 ;
+; 3.077 ; 5.000        ; 1.923          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg5 ;
+; 3.077 ; 5.000        ; 1.923          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg6 ;
+; 3.077 ; 5.000        ; 1.923          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg6 ;
+; 3.077 ; 5.000        ; 1.923          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg7 ;
+; 3.077 ; 5.000        ; 1.923          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom:ip_rom_inst|altsyncram:altsyncram_component|altsyncram_gj71:auto_generated|ram_block1a0~porta_address_reg7 ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_pll_one|altpll_component|_clk0~clkctrl|inclk[0]                                                                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_pll_one|altpll_component|_clk0~clkctrl|inclk[0]                                                                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_pll_one|altpll_component|_clk0~clkctrl|outclk                                                                  ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_pll_one|altpll_component|_clk0~clkctrl|outclk                                                                  ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom_inst|altsyncram_component|auto_generated|ram_block1a0|clk0                                                 ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; ip_pll_one|altpll_component|pll|clk[0] ; Rise       ; ip_rom_inst|altsyncram_component|auto_generated|ram_block1a0|clk0                                                 ;
++-------+--------------+----------------+------------------+----------------------------------------+------------+-------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -238,16 +360,59 @@ No paths to report.
 
 
 +----------------------------------------------------------------------------------------------+
+; Setup Times                                                                                  ;
++-----------+------------+-------+-------+------------+----------------------------------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                        ;
++-----------+------------+-------+-------+------------+----------------------------------------+
+; addr[*]   ; clk        ; 3.969 ; 3.969 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[0]  ; clk        ; 3.690 ; 3.690 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[1]  ; clk        ; 3.969 ; 3.969 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[2]  ; clk        ; 3.737 ; 3.737 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[3]  ; clk        ; 1.237 ; 1.237 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[4]  ; clk        ; 1.256 ; 1.256 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[5]  ; clk        ; 1.232 ; 1.232 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[6]  ; clk        ; 3.684 ; 3.684 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[7]  ; clk        ; 3.686 ; 3.686 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
++-----------+------------+-------+-------+------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                     ;
++-----------+------------+--------+--------+------------+----------------------------------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                        ;
++-----------+------------+--------+--------+------------+----------------------------------------+
+; addr[*]   ; clk        ; -1.093 ; -1.093 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[0]  ; clk        ; -3.551 ; -3.551 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[1]  ; clk        ; -3.830 ; -3.830 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[2]  ; clk        ; -3.598 ; -3.598 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[3]  ; clk        ; -1.098 ; -1.098 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[4]  ; clk        ; -1.117 ; -1.117 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[5]  ; clk        ; -1.093 ; -1.093 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[6]  ; clk        ; -3.545 ; -3.545 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[7]  ; clk        ; -3.547 ; -3.547 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
++-----------+------------+--------+--------+------------+----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
 ; Clock to Output Times                                                                        ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                        ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 ; c0_clk    ; clk        ; 0.522 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+; data[*]   ; clk        ; 4.278 ; 4.278 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[0]  ; clk        ; 4.076 ; 4.076 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[1]  ; clk        ; 4.278 ; 4.278 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[2]  ; clk        ; 4.161 ; 4.161 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[3]  ; clk        ; 4.039 ; 4.039 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[4]  ; clk        ; 4.243 ; 4.243 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[5]  ; clk        ; 4.077 ; 4.077 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[6]  ; clk        ; 4.166 ; 4.166 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[7]  ; clk        ; 3.950 ; 3.950 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
 ; c0_clk    ; clk        ;       ; 0.522 ; Fall       ; ip_pll_one|altpll_component|pll|clk[0] ;
-; c1_clk    ; clk        ; 1.407 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c1_clk    ; clk        ;       ; 1.407 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c2_clk    ; clk        ; 6.394 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
-; c2_clk    ; clk        ;       ; 6.394 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c1_clk    ; clk        ; 1.201 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c1_clk    ; clk        ;       ; 1.201 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c2_clk    ; clk        ; 6.395 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c2_clk    ; clk        ;       ; 6.395 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 
 
@@ -257,24 +422,69 @@ No paths to report.
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                        ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 ; c0_clk    ; clk        ; 0.522 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+; data[*]   ; clk        ; 3.950 ; 3.950 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[0]  ; clk        ; 4.076 ; 4.076 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[1]  ; clk        ; 4.278 ; 4.278 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[2]  ; clk        ; 4.161 ; 4.161 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[3]  ; clk        ; 4.039 ; 4.039 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[4]  ; clk        ; 4.243 ; 4.243 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[5]  ; clk        ; 4.077 ; 4.077 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[6]  ; clk        ; 4.166 ; 4.166 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[7]  ; clk        ; 3.950 ; 3.950 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
 ; c0_clk    ; clk        ;       ; 0.522 ; Fall       ; ip_pll_one|altpll_component|pll|clk[0] ;
-; c1_clk    ; clk        ; 1.407 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c1_clk    ; clk        ;       ; 1.407 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c2_clk    ; clk        ; 6.394 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
-; c2_clk    ; clk        ;       ; 6.394 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c1_clk    ; clk        ; 1.201 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c1_clk    ; clk        ;       ; 1.201 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c2_clk    ; clk        ; 6.395 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c2_clk    ; clk        ;       ; 6.395 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 
 
-+----------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                        ;
-+------------------+-------+------+----------+---------+---------------------+
-; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+-------+------+----------+---------+---------------------+
-; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; 10.000              ;
-;  clk             ; N/A   ; N/A  ; N/A      ; N/A     ; 10.000              ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
-;  clk             ; N/A   ; N/A  ; N/A      ; N/A     ; 0.000               ;
-+------------------+-------+------+----------+---------+---------------------+
++---------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                               ;
++-----------------------------------------+-------+------+----------+---------+---------------------+
+; Clock                                   ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++-----------------------------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack                        ; N/A   ; N/A  ; N/A      ; N/A     ; 2.223               ;
+;  clk                                    ; N/A   ; N/A  ; N/A      ; N/A     ; 10.000              ;
+;  ip_pll_one|altpll_component|pll|clk[0] ; N/A   ; N/A  ; N/A      ; N/A     ; 2.223               ;
+; Design-wide TNS                         ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
+;  clk                                    ; N/A   ; N/A  ; N/A      ; N/A     ; 0.000               ;
+;  ip_pll_one|altpll_component|pll|clk[0] ; N/A   ; N/A  ; N/A      ; N/A     ; 0.000               ;
++-----------------------------------------+-------+------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Setup Times                                                                                  ;
++-----------+------------+-------+-------+------------+----------------------------------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                        ;
++-----------+------------+-------+-------+------------+----------------------------------------+
+; addr[*]   ; clk        ; 8.101 ; 8.101 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[0]  ; clk        ; 7.345 ; 7.345 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[1]  ; clk        ; 8.101 ; 8.101 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[2]  ; clk        ; 7.490 ; 7.490 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[3]  ; clk        ; 2.840 ; 2.840 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[4]  ; clk        ; 2.875 ; 2.875 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[5]  ; clk        ; 2.822 ; 2.822 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[6]  ; clk        ; 7.344 ; 7.344 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[7]  ; clk        ; 7.346 ; 7.346 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
++-----------+------------+-------+-------+------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                     ;
++-----------+------------+--------+--------+------------+----------------------------------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference                        ;
++-----------+------------+--------+--------+------------+----------------------------------------+
+; addr[*]   ; clk        ; -1.093 ; -1.093 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[0]  ; clk        ; -3.551 ; -3.551 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[1]  ; clk        ; -3.830 ; -3.830 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[2]  ; clk        ; -3.598 ; -3.598 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[3]  ; clk        ; -1.098 ; -1.098 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[4]  ; clk        ; -1.117 ; -1.117 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[5]  ; clk        ; -1.093 ; -1.093 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[6]  ; clk        ; -3.545 ; -3.545 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  addr[7]  ; clk        ; -3.547 ; -3.547 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
++-----------+------------+--------+--------+------------+----------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -283,11 +493,20 @@ No paths to report.
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                        ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 ; c0_clk    ; clk        ; 1.555 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+; data[*]   ; clk        ; 9.596 ; 9.596 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[0]  ; clk        ; 9.335 ; 9.335 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[1]  ; clk        ; 9.596 ; 9.596 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[2]  ; clk        ; 9.219 ; 9.219 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[3]  ; clk        ; 8.828 ; 8.828 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[4]  ; clk        ; 9.554 ; 9.554 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[5]  ; clk        ; 9.340 ; 9.340 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[6]  ; clk        ; 9.226 ; 9.226 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[7]  ; clk        ; 8.932 ; 8.932 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
 ; c0_clk    ; clk        ;       ; 1.555 ; Fall       ; ip_pll_one|altpll_component|pll|clk[0] ;
-; c1_clk    ; clk        ; 3.308 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c1_clk    ; clk        ;       ; 3.308 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c2_clk    ; clk        ; 8.296 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
-; c2_clk    ; clk        ;       ; 8.296 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c1_clk    ; clk        ; 3.033 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c1_clk    ; clk        ;       ; 3.033 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c2_clk    ; clk        ; 8.297 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c2_clk    ; clk        ;       ; 8.297 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 
 
@@ -297,11 +516,20 @@ No paths to report.
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference                        ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 ; c0_clk    ; clk        ; 0.522 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+; data[*]   ; clk        ; 3.950 ; 3.950 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[0]  ; clk        ; 4.076 ; 4.076 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[1]  ; clk        ; 4.278 ; 4.278 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[2]  ; clk        ; 4.161 ; 4.161 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[3]  ; clk        ; 4.039 ; 4.039 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[4]  ; clk        ; 4.243 ; 4.243 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[5]  ; clk        ; 4.077 ; 4.077 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[6]  ; clk        ; 4.166 ; 4.166 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
+;  data[7]  ; clk        ; 3.950 ; 3.950 ; Rise       ; ip_pll_one|altpll_component|pll|clk[0] ;
 ; c0_clk    ; clk        ;       ; 0.522 ; Fall       ; ip_pll_one|altpll_component|pll|clk[0] ;
-; c1_clk    ; clk        ; 1.407 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c1_clk    ; clk        ;       ; 1.407 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
-; c2_clk    ; clk        ; 6.394 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
-; c2_clk    ; clk        ;       ; 6.394 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c1_clk    ; clk        ; 1.201 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c1_clk    ; clk        ;       ; 1.201 ; Fall       ; ip_pll_one|altpll_component|pll|clk[1] ;
+; c2_clk    ; clk        ; 6.395 ;       ; Rise       ; ip_pll_one|altpll_component|pll|clk[2] ;
+; c2_clk    ; clk        ;       ; 6.395 ; Fall       ; ip_pll_one|altpll_component|pll|clk[2] ;
 +-----------+------------+-------+-------+------------+----------------------------------------+
 
 
@@ -330,10 +558,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 0     ; 0    ;
-; Unconstrained Input Port Paths  ; 0     ; 0    ;
-; Unconstrained Output Ports      ; 3     ; 3    ;
-; Unconstrained Output Port Paths ; 3     ; 3    ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 8     ; 8    ;
+; Unconstrained Output Ports      ; 11    ; 11   ;
+; Unconstrained Output Port Paths ; 67    ; 67   ;
 +---------------------------------+-------+------+
 
 
@@ -343,7 +571,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Thu May 04 10:42:17 2023
+    Info: Processing started: Thu May 04 10:57:09 2023
 Info: Command: quartus_sta demo -c demo
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -365,9 +593,10 @@ Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 10.000
+Info (332146): Worst-case minimum pulse width slack is 2.223
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
+    Info (332119):     2.223         0.000 ip_pll_one|altpll_component|pll|clk[0] 
     Info (332119):    10.000         0.000 clk 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
@@ -375,17 +604,18 @@ Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 10.000
+Info (332146): Worst-case minimum pulse width slack is 3.077
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
+    Info (332119):     3.077         0.000 ip_pll_one|altpll_component|pll|clk[0] 
     Info (332119):    10.000         0.000 clk 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4572 megabytes
-    Info: Processing ended: Thu May 04 10:42:18 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4574 megabytes
+    Info: Processing ended: Thu May 04 10:57:09 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

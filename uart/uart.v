@@ -1,2 +1,2 @@
-module uart();
+module uart(clk);
 endmodule

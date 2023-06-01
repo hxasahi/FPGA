@@ -1,0 +1,6 @@
+Added Component: Designator=*?(QFN32 5x5)
+Added Component: Designator=*?(QFN32 5x5_N)
+Added Component: Designator=*?(QFN32 5x5_M)
+Added Member To Class: ClassName=AG1280 Member=Component *? AG1280
+Added Member To Class: ClassName=AG1280 Member=Component *? AG1280
+Added Member To Class: ClassName=AG1280 Member=Component *? AG1280

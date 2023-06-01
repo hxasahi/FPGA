@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=K1 Old Footprint=SMD-6X6X6 New Footprint=DIP-6X6X6
+Change Component Footprint: Designator=K2 Old Footprint=SMD-6X6X6 New Footprint=DIP-6X6X6
+Change Component Footprint: Designator=K3 Old Footprint=SMD-6X6X6 New Footprint=DIP-6X6X6
+Change Component Footprint: Designator=K4 Old Footprint=SMD-6X6X6 New Footprint=DIP-6X6X6
+Change Component Footprint: Designator=K5 Old Footprint=SMD-6X6X6 New Footprint=DIP-6X6X6
+Change Component Footprint: Designator=K6 Old Footprint=SMD-6X6X6 New Footprint=DIP-6X6X6
+Added Room: Name=AG1280

@@ -1,0 +1,26 @@
+Added Component: Designator=(EP4CE10F17C8N)
+Add component (AddParameter): Name = "Designer"; Value = "U?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "EP4CE6F17C8N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "EP4CE6F17C8N"; VariantName = "[No Variations]"
+Added Component: Designator=(BGA-100_L11.0-W11.0-R10-C10-P1.00-TL)
+Add component (AddParameter): Name = "Designer"; Value = "U?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "EPM240F100I5N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "EPM240F100I5N"; VariantName = "[No Variations]"
+Added Component: Designator=U?(TQFP-100_L14.0-W14.0-P0.50-LS16.0-BL)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20121123/1457706563274.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "EPM240T100C5N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "EPM240T100C5N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Intel/Altera"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "EPM240T100C5N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "EPM240T100C5N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "TQFP-100_14x14x05P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C10041"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "EPM240T100C5N"; VariantName = "[No Variations]"
+Added Class: Name=FPGA开发板
+Added Room: Name=FPGA开发板

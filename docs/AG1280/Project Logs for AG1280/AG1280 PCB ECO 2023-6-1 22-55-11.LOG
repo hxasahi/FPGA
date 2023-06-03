@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=C1 Old Footprint=0603C New Footprint=1206C
+Change Component Footprint: Designator=C2 Old Footprint=0603C New Footprint=1206C
+Change Component Footprint: Designator=C3 Old Footprint=0603C New Footprint=1206C
+Change Component Footprint: Designator=C4 Old Footprint=0603C New Footprint=1206C
+Added Room: Name=AG1280

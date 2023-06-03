@@ -1,0 +1,14 @@
+Added Component: Designator=K7(DIP-6X6X6)
+Added Pin To Net: NetName=GND Pin=K7-1
+Added Pin To Net: NetName=NetK7_3 Pin=K7-3
+Added Pin To Net: NetName=NetK7_3 Pin=U3-48
+Added Net: Name=NetK7_3
+Added Member To Class: ClassName=AG1280 Member=Component C1 100n
+Added Member To Class: ClassName=AG1280 Member=Component C2 100n
+Added Member To Class: ClassName=AG1280 Member=Component C3 100n
+Added Member To Class: ClassName=AG1280 Member=Component C4 100n
+Added Member To Class: ClassName=AG1280 Member=Component C5 100n
+Added Member To Class: ClassName=AG1280 Member=Component C6 100n
+Added Member To Class: ClassName=AG1280 Member=Component C7 100n
+Added Member To Class: ClassName=AG1280 Member=Component K7 KEY
+Added Room: Name=AG1280

@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetD1_K Pin=U3-18
+Removed Pin From Net: NetName=NetD3_K Pin=U3-20
+Added Pin To Net: NetName=NetD3_K Pin=U3-18
+Added Pin To Net: NetName=NetD1_K Pin=U3-20
+Added Room: Name=AG1280

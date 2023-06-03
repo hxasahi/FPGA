@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetQ1_B Pin=U3-14
+Removed Pin From Net: NetName=NetQ4_B Pin=U3-15
+Removed Pin From Net: NetName=NetQ3_B Pin=U3-16
+Removed Pin From Net: NetName=NetQ2_B Pin=U3-17
+Added Pin To Net: NetName=NetQ2_B Pin=U3-14
+Added Pin To Net: NetName=NetQ3_B Pin=U3-15
+Added Pin To Net: NetName=NetQ4_B Pin=U3-16
+Added Pin To Net: NetName=NetQ1_B Pin=U3-17
+Added Room: Name=AG1280

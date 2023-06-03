@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=NetQ2_C Pin=SEG1-5
+Added Component: Designator=SEG2(0.36IN-2P)
+Added Pin To Net: NetName=NetQ4_C Pin=SEG1-5
+Added Pin To Net: NetName=NetQ1_C Pin=SEG1-10
+Added Pin To Net: NetName=NetSEG1_1 Pin=SEG2-1
+Added Pin To Net: NetName=NetSEG1_2 Pin=SEG2-2
+Added Pin To Net: NetName=NetSEG1_3 Pin=SEG2-3
+Added Pin To Net: NetName=NetSEG1_4 Pin=SEG2-4
+Added Pin To Net: NetName=NetQ2_C Pin=SEG2-5
+Added Pin To Net: NetName=NetSEG1_6 Pin=SEG2-6
+Added Pin To Net: NetName=NetSEG1_7 Pin=SEG2-7
+Added Pin To Net: NetName=NetSEG1_8 Pin=SEG2-8
+Added Pin To Net: NetName=NetSEG1_9 Pin=SEG2-9
+Added Pin To Net: NetName=NetQ3_C Pin=SEG2-10
+Added Member To Class: ClassName=AG1280 Member=Component SEG1 0.36IN-2-A
+Added Member To Class: ClassName=AG1280 Member=Component SEG2 0.36IN-2-A
+Added Room: Name=AG1280

@@ -1,16 +1,12 @@
 module seg(
 input wire clk,
 input rst_n,
-input wire[13:0] dat,
+input wire[31:0] dat,
 input wire pos,
 output reg[7:0] seg_out,
 output reg[3:0] sel
 );
 reg[31:0] cnt;
-wire[3:0] dat1;
-wire[3:0] dat2;
-wire[3:0] dat3;
-wire[3:0] dat4;
 reg[3:0] seg_num;
 //cnt 1 ms
 always @ (posedge clk or negedge rst_n)
@@ -32,10 +28,7 @@ begin
 	else
 		sel<=sel;
 end
-assign dat1 = dat % 10;
-assign dat2 = dat / 10 % 10;
-assign dat3 = dat / 100 % 10;
-assign dat4 = dat / 1000 % 10;
+
 //seg_num
 always @ (posedge clk or negedge rst_n)
 begin
@@ -43,10 +36,10 @@ begin
 		seg_num<=8'hff;					
 	else				
 		case(sel)
-			4'b1110: seg_num <= dat4;
-			4'b1101: seg_num <= dat3;
-			4'b1011: seg_num <= dat2;
-			4'b0111: seg_num <= dat1;			
+			4'b1110: seg_num <= dat[31:24];
+			4'b1101: seg_num <= dat[23:16];
+			4'b1011: seg_num <= dat[15:8];
+			4'b0111: seg_num <= dat[7:0];			
 			default:seg_num <= 4'd0;
 		endcase					
 end

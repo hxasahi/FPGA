@@ -1,14 +1,14 @@
-Fitter Status : Successful - Mon Jun 12 16:35:26 2023
+Fitter Status : Successful - Mon Jun 12 16:47:09 2023
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : template
 Top-level Entity Name : template
 Family : Cyclone II
 Device : EP2C8Q208C8
 Timing Models : Final
-Total logic elements : 895 / 8,256 ( 11 % )
-    Total combinational functions : 894 / 8,256 ( 11 % )
-    Dedicated logic registers : 92 / 8,256 ( 1 % )
-Total registers : 92
+Total logic elements : 177 / 8,256 ( 2 % )
+    Total combinational functions : 177 / 8,256 ( 2 % )
+    Dedicated logic registers : 110 / 8,256 ( 1 % )
+Total registers : 110
 Total pins : 16 / 138 ( 12 % )
 Total virtual pins : 0
 Total memory bits : 0 / 165,888 ( 0 % )

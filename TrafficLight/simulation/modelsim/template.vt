@@ -1,0 +1,28 @@
+`timescale 1 ns/ 1 ns
+module template_vlg_tb();
+reg clk;
+reg rst_n;
+reg key;
+wire led;
+wire[7:0] seg_out;
+wire[7:0] sel;
+initial
+begin
+	clk = 1;
+	rst_n <= 1'b0;
+	#20
+	rst_n <= 1'b1;
+	key = 1;
+end
+
+always #1 clk = ~clk;
+always #20 key = ~key;
+template i1 (
+	.clk(clk),
+	.rst_n(rst_n),
+	.key(key),
+	.led(led),
+	.seg_out(seg_out),
+	.sel(sel)
+);
+endmodule

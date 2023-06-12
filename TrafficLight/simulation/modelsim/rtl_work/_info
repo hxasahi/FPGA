@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\project\FPGA\TrafficLight\simulation\modelsim
+vkey
+ImjRhl58oSE?@72`A^=@zi1
+VB]WjkTaCV@DHlNSC99??S0
+Z1 dE:\project\FPGA\TrafficLight\simulation\modelsim
+w1686533554
+8E:/project/FPGA/TrafficLight/key.v
+FE:/project/FPGA/TrafficLight/key.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight -O0
+!i10b 1
+!s100 ;BEoSTUT?ReD7eKD88<kX3
+!s85 0
+!s108 1686541061.053000
+!s107 E:/project/FPGA/TrafficLight/key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight|E:/project/FPGA/TrafficLight/key.v|
+!s101 -O0
+vseg
+Ib3n?TzABoPSWQM4zCNKKe0
+VDjWO4B0OE4z]z83=:ISVD2
+R1
+w1686540989
+8E:/project/FPGA/TrafficLight/seg.v
+FE:/project/FPGA/TrafficLight/seg.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 dcQF=AX4K:kQM=m;8>=?O0
+!s85 0
+!s108 1686541061.141000
+!s107 E:/project/FPGA/TrafficLight/seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight|E:/project/FPGA/TrafficLight/seg.v|
+!s101 -O0
+vtemplate
+ISnRMo@B?ZMAJRf_LdR_G]1
+VcjkCG<IC7@S7@gCz46hbR2
+R1
+w1686541040
+8E:/project/FPGA/TrafficLight/template.v
+FE:/project/FPGA/TrafficLight/template.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Vc9HS<GoTgNJ8:PU6zDFL2
+!s85 0
+!s108 1686541060.986000
+!s107 E:/project/FPGA/TrafficLight/template.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight|E:/project/FPGA/TrafficLight/template.v|
+!s101 -O0
+vtemplate_vlg_tb
+!i10b 1
+!s100 YEbGE<d>4aE9d;jKNM7J33
+ImLlPk0Uij`Alb7oM8AeOY0
+VcCi=cj`c?hCBYgFoUVUND2
+R1
+w1686535804
+8E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt
+FE:/project/FPGA/TrafficLight/simulation/modelsim/template.vt
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1686541061.213000
+!s107 E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight/simulation/modelsim|E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight/simulation/modelsim -O0

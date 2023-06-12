@@ -1,0 +1,55 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do template_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight {E:/project/FPGA/TrafficLight/template.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module template
+# ** Warning: E:/project/FPGA/TrafficLight/template.v(29): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	template
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight {E:/project/FPGA/TrafficLight/key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key
+# 
+# Top level modules:
+# 	key
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight {E:/project/FPGA/TrafficLight/seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg
+# 
+# Top level modules:
+# 	seg
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight/simulation/modelsim {E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module template_vlg_tb
+# 
+# Top level modules:
+# 	template_vlg_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  template_vlg_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps template_vlg_tb 
+# Loading work.template_vlg_tb
+# Loading work.template
+# Loading work.key
+# Loading work.seg
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Simulation stop requested.

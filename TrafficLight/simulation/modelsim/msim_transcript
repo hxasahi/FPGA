@@ -13,8 +13,6 @@
 # vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight {E:/project/FPGA/TrafficLight/template.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module template
-# ** Warning: E:/project/FPGA/TrafficLight/template.v(29): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
 # 
 # Top level modules:
 # 	template
@@ -44,6 +42,12 @@
 # Loading work.template
 # Loading work.key
 # Loading work.seg
+# ** Warning: (vsim-3015) E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt(31): [PCDPC] - Port size (8 or 8) does not match connection size (4) for port 'sel'. The port definition is at: E:/project/FPGA/TrafficLight/template.v(7).
+# 
+#         Region: /template_vlg_tb/i1
+# ** Warning: (vsim-3015) E:/project/FPGA/TrafficLight/template.v(17): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'sel'. The port definition is at: E:/project/FPGA/TrafficLight/seg.v(7).
+# 
+#         Region: /template_vlg_tb/i1/seg_1
 # 
 # add wave *
 # view structure

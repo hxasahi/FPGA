@@ -1,5 +1,5 @@
 Flow report for template
-Mon Jun 12 11:37:32 2023
+Mon Jun 12 16:35:31 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -40,21 +40,21 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jun 12 11:37:32 2023       ;
+; Flow Status                        ; Successful - Mon Jun 12 16:35:31 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; template                                    ;
 ; Top-level Entity Name              ; template                                    ;
 ; Family                             ; Cyclone II                                  ;
-; Device                             ; EP2C5Q208C8                                 ;
+; Device                             ; EP2C8Q208C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 137 / 4,608 ( 3 % )                         ;
-;     Total combinational functions  ; 134 / 4,608 ( 3 % )                         ;
-;     Dedicated logic registers      ; 95 / 4,608 ( 2 % )                          ;
-; Total registers                    ; 95                                          ;
-; Total pins                         ; 20 / 142 ( 14 % )                           ;
+; Total logic elements               ; 895 / 8,256 ( 11 % )                        ;
+;     Total combinational functions  ; 894 / 8,256 ( 11 % )                        ;
+;     Dedicated logic registers      ; 92 / 8,256 ( 1 % )                          ;
+; Total registers                    ; 92                                          ;
+; Total pins                         ; 16 / 138 ( 12 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 119,808 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                              ;
+; Total memory bits                  ; 0 / 165,888 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                              ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/12/2023 11:37:22 ;
+; Start date & time ; 06/12/2023 16:35:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; template            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 84084424401666.168654104216404  ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 84084424401666.168655891507408  ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; template.vt    ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; template.vt                     ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
@@ -99,12 +99,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4583 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 5234 MB             ; 00:00:04                           ;
-; Assembler                 ; 00:00:00     ; 1.0                     ; 4549 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4578 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4519 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:06     ; --                      ; --                  ; 00:00:07                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4609 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:08     ; 1.4                     ; 5258 MB             ; 00:00:10                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4556 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4599 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4519 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

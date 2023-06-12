@@ -19,15 +19,15 @@ Z4 !s92 -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight -O0
 !i10b 1
 !s100 ;BEoSTUT?ReD7eKD88<kX3
 !s85 0
-!s108 1686541061.053000
+!s108 1686556957.184000
 !s107 E:/project/FPGA/TrafficLight/key.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight|E:/project/FPGA/TrafficLight/key.v|
 !s101 -O0
 vseg
-Ib3n?TzABoPSWQM4zCNKKe0
-VDjWO4B0OE4z]z83=:ISVD2
+II=PU0WdhNT]FFf_c6H0611
+Vg_UBP^Y@WO516]a5?5OEO1
 R1
-w1686540989
+w1686556764
 8E:/project/FPGA/TrafficLight/seg.v
 FE:/project/FPGA/TrafficLight/seg.v
 L0 1
@@ -37,17 +37,17 @@ r1
 R3
 R4
 !i10b 1
-!s100 dcQF=AX4K:kQM=m;8>=?O0
+!s100 5gZYH6L;BNFR9EV]m]<ia3
 !s85 0
-!s108 1686541061.141000
+!s108 1686556957.281000
 !s107 E:/project/FPGA/TrafficLight/seg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight|E:/project/FPGA/TrafficLight/seg.v|
 !s101 -O0
 vtemplate
-ISnRMo@B?ZMAJRf_LdR_G]1
-VcjkCG<IC7@S7@gCz46hbR2
+I;izM8_0HjeDPBB8fQOH<22
+V2:oc4;;YMO`<fj07ikUYX0
 R1
-w1686541040
+w1686556885
 8E:/project/FPGA/TrafficLight/template.v
 FE:/project/FPGA/TrafficLight/template.v
 L0 1
@@ -57,19 +57,19 @@ r1
 R3
 R4
 !i10b 1
-!s100 Vc9HS<GoTgNJ8:PU6zDFL2
+!s100 9<:zUKB>5=5QGn[D:<=TA3
 !s85 0
-!s108 1686541060.986000
+!s108 1686556957.101000
 !s107 E:/project/FPGA/TrafficLight/template.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight|E:/project/FPGA/TrafficLight/template.v|
 !s101 -O0
 vtemplate_vlg_tb
 !i10b 1
-!s100 YEbGE<d>4aE9d;jKNM7J33
-ImLlPk0Uij`Alb7oM8AeOY0
+!s100 l@zKOCDaGF^V`hFlYLi[B2
+I_ZLX?@?^cjbORHXiL4Q]J2
 VcCi=cj`c?hCBYgFoUVUND2
 R1
-w1686535804
+w1686556061
 8E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt
 FE:/project/FPGA/TrafficLight/simulation/modelsim/template.vt
 L0 2
@@ -77,7 +77,7 @@ R2
 r1
 !s85 0
 31
-!s108 1686541061.213000
+!s108 1686556957.373000
 !s107 E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight/simulation/modelsim|E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt|
 !s101 -O0

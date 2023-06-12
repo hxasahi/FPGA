@@ -3,7 +3,6 @@ input wire clk,
 input rst_n,
 input wire[7:0] dat1,
 input wire[7:0] dat2,
-input wire pos,
 output reg[7:0] seg_out,
 output reg[3:0] sel
 );

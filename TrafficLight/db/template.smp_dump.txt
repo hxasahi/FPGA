@@ -1,0 +1,8 @@
+
+State Machine - |template|state
+Name state.S_YELLOW state.M_RED state.M_YELLOW state.M_GREEN state.IDLE 
+state.IDLE 0 0 0 0 0 
+state.M_GREEN 0 0 0 1 1 
+state.M_YELLOW 0 0 1 0 1 
+state.M_RED 0 1 0 0 1 
+state.S_YELLOW 1 0 0 0 1 

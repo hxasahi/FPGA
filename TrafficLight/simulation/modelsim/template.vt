@@ -6,8 +6,8 @@ reg key;
 wire led;
 wire[7:0] seg_out;
 wire[3:0] sel;
-wire[3:0] seg_num;
-wire[13:0] dat;
+wire[3:0] state;
+wire[7:0] sec,sec_max;
 initial
 begin
 	clk = 1;
@@ -26,7 +26,8 @@ template i1 (
 	.led(led),
 	.seg_out(seg_out),
 	.sel(sel),
-	.seg_num(seg_num),
-	.dat(dat)
+	.state(state),
+	.sec(sec),
+	.sec_max(sec_max)
 );
 endmodule

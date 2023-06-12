@@ -8,6 +8,8 @@ vmap work rtl_work
 vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight {E:/project/FPGA/TrafficLight/template.v}
 vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight {E:/project/FPGA/TrafficLight/key.v}
 vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight {E:/project/FPGA/TrafficLight/seg.v}
+vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight {E:/project/FPGA/TrafficLight/adjust_shift.v}
+vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight/output_files {E:/project/FPGA/TrafficLight/output_files/bcd_8421.v}
 
 vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight/simulation/modelsim {E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt}
 

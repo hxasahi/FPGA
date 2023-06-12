@@ -177,7 +177,6 @@ dat2[4] => dat2[4].IN1
 dat2[5] => dat2[5].IN1
 dat2[6] => dat2[6].IN1
 dat2[7] => dat2[7].IN1
-pos => ~NO_FANOUT~
 seg_out[0] <= seg_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 seg_out[1] <= seg_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 seg_out[2] <= seg_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE

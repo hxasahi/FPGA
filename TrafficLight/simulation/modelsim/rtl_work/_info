@@ -3,13 +3,13 @@ K3
 13
 cModel Technology
 Z0 dE:\project\FPGA\TrafficLight\simulation\modelsim
-vkey
-ImjRhl58oSE?@72`A^=@zi1
-VB]WjkTaCV@DHlNSC99??S0
+vadjust_shift
+I1W8a9iU40>fIXmVWDO6W?2
+V1QlRjWbI4PdzF<2DS3fJ53
 Z1 dE:\project\FPGA\TrafficLight\simulation\modelsim
-w1686533554
-8E:/project/FPGA/TrafficLight/key.v
-FE:/project/FPGA/TrafficLight/key.v
+w1686562379
+8E:/project/FPGA/TrafficLight/adjust_shift.v
+FE:/project/FPGA/TrafficLight/adjust_shift.v
 L0 1
 Z2 OV;L;10.1d;51
 r1
@@ -17,17 +17,57 @@ r1
 Z3 o-vlog01compat -work work -O0
 Z4 !s92 -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight -O0
 !i10b 1
+!s100 hXb2ZjX31<oM26z_o54K_2
+!s85 0
+!s108 1686572826.706000
+!s107 E:/project/FPGA/TrafficLight/adjust_shift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight|E:/project/FPGA/TrafficLight/adjust_shift.v|
+!s101 -O0
+vbcd_8421
+IeVA@lmNi55M?5mbKI9bR@1
+VV4okQ0QSDS2@YnU:f3]B03
+R1
+w1686566674
+8E:/project/FPGA/TrafficLight/output_files/bcd_8421.v
+FE:/project/FPGA/TrafficLight/output_files/bcd_8421.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 mK:NAE?8QJ4]^S`XCAXff3
+!s85 0
+!s108 1686572826.747000
+!s107 E:/project/FPGA/TrafficLight/output_files/bcd_8421.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight/output_files|E:/project/FPGA/TrafficLight/output_files/bcd_8421.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight/output_files -O0
+vkey
+ImjRhl58oSE?@72`A^=@zi1
+VB]WjkTaCV@DHlNSC99??S0
+R1
+w1686533554
+8E:/project/FPGA/TrafficLight/key.v
+FE:/project/FPGA/TrafficLight/key.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
 !s100 ;BEoSTUT?ReD7eKD88<kX3
 !s85 0
-!s108 1686556957.184000
+!s108 1686572826.629000
 !s107 E:/project/FPGA/TrafficLight/key.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight|E:/project/FPGA/TrafficLight/key.v|
 !s101 -O0
 vseg
-II=PU0WdhNT]FFf_c6H0611
-Vg_UBP^Y@WO516]a5?5OEO1
+IGY_5WaO`z4YAhJFEc`ZEf3
+VZnf2mkPFTdfS7^9lD_UMU1
 R1
-w1686556764
+w1686571527
 8E:/project/FPGA/TrafficLight/seg.v
 FE:/project/FPGA/TrafficLight/seg.v
 L0 1
@@ -37,17 +77,17 @@ r1
 R3
 R4
 !i10b 1
-!s100 5gZYH6L;BNFR9EV]m]<ia3
+!s100 ej1<7IfMEA6_h4]5]RT];3
 !s85 0
-!s108 1686556957.281000
+!s108 1686572826.668000
 !s107 E:/project/FPGA/TrafficLight/seg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight|E:/project/FPGA/TrafficLight/seg.v|
 !s101 -O0
 vtemplate
-I;izM8_0HjeDPBB8fQOH<22
-V2:oc4;;YMO`<fj07ikUYX0
+IWCOb5LkLiJ]eJiemn<2>P2
+VeiSS7[z9nH7RkTHc`^NzX0
 R1
-w1686556885
+w1686572807
 8E:/project/FPGA/TrafficLight/template.v
 FE:/project/FPGA/TrafficLight/template.v
 L0 1
@@ -57,19 +97,19 @@ r1
 R3
 R4
 !i10b 1
-!s100 9<:zUKB>5=5QGn[D:<=TA3
+!s100 @ZI7ghDG5Fjh]^Eb3DzBC3
 !s85 0
-!s108 1686556957.101000
+!s108 1686572826.583000
 !s107 E:/project/FPGA/TrafficLight/template.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight|E:/project/FPGA/TrafficLight/template.v|
 !s101 -O0
 vtemplate_vlg_tb
 !i10b 1
-!s100 l@zKOCDaGF^V`hFlYLi[B2
-I_ZLX?@?^cjbORHXiL4Q]J2
+!s100 bDgZ0Rk]2ezhcYa4F@@AY1
+ICCFc7moXM`Dc]P0<A3RS91
 VcCi=cj`c?hCBYgFoUVUND2
 R1
-w1686556061
+w1686572119
 8E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt
 FE:/project/FPGA/TrafficLight/simulation/modelsim/template.vt
 L0 2
@@ -77,7 +117,7 @@ R2
 r1
 !s85 0
 31
-!s108 1686556957.373000
+!s108 1686572826.787000
 !s107 E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/TrafficLight/simulation/modelsim|E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt|
 !s101 -O0

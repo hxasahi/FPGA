@@ -28,6 +28,18 @@
 # 
 # Top level modules:
 # 	seg
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight {E:/project/FPGA/TrafficLight/adjust_shift.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adjust_shift
+# 
+# Top level modules:
+# 	adjust_shift
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight/output_files {E:/project/FPGA/TrafficLight/output_files/bcd_8421.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_8421
+# 
+# Top level modules:
+# 	bcd_8421
 # 
 # vlog -vlog01compat -work work +incdir+E:/project/FPGA/TrafficLight/simulation/modelsim {E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -42,12 +54,14 @@
 # Loading work.template
 # Loading work.key
 # Loading work.seg
-# ** Warning: (vsim-3015) E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt(31): [PCDPC] - Port size (8 or 8) does not match connection size (4) for port 'sel'. The port definition is at: E:/project/FPGA/TrafficLight/template.v(7).
+# Loading work.bcd_8421
+# Loading work.adjust_shift
+# ** Warning: (vsim-3015) E:/project/FPGA/TrafficLight/seg.v(13): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/TrafficLight/output_files/bcd_8421.v(3).
 # 
-#         Region: /template_vlg_tb/i1
-# ** Warning: (vsim-3015) E:/project/FPGA/TrafficLight/template.v(17): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'sel'. The port definition is at: E:/project/FPGA/TrafficLight/seg.v(7).
+#         Region: /template_vlg_tb/i1/seg_1/bcd_8421_1
+# ** Warning: (vsim-3015) E:/project/FPGA/TrafficLight/seg.v(14): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/TrafficLight/output_files/bcd_8421.v(3).
 # 
-#         Region: /template_vlg_tb/i1/seg_1
+#         Region: /template_vlg_tb/i1/seg_1/bcd_8421_2
 # 
 # add wave *
 # view structure
@@ -56,4 +70,4 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Break key hit 
-# Simulation stop requested.
+# Break in Module template_vlg_tb at E:/project/FPGA/TrafficLight/simulation/modelsim/template.vt line 21

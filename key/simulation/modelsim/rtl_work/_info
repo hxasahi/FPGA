@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\project\FPGA\key\simulation\modelsim
+vdemo
+IYCWVI6X==^lJ7Oofc4EY>1
+VOV2?S:4XS>DYH;;hhCGIW0
+Z1 dE:\project\FPGA\key\simulation\modelsim
+w1682960823
+8E:/project/FPGA/key/demo.v
+FE:/project/FPGA/key/demo.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 U4giaVhSA2JU:AJYiQGz12
+!s85 0
+!s108 1686535114.179000
+!s107 E:/project/FPGA/key/demo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/key|E:/project/FPGA/key/demo.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/project/FPGA/key -O0
+vkey
+!i10b 1
+!s100 f@UiXfc<SZo_cV0JhzYLV3
+IIoclcJWm=[[VoBf]3e88i2
+VDHAYYd[W>oQ`ZD1GE_`bN1
+R1
+w1682959395
+8E:/project/FPGA/key/key.v
+FE:/project/FPGA/key/key.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1686535114.252000
+!s107 E:/project/FPGA/key/key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/key|E:/project/FPGA/key/key.v|
+!s101 -O0
+R3
+R4

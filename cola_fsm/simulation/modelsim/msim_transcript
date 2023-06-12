@@ -10,20 +10,20 @@
 # ** Warning: Copied D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+E:/project/FPGA/key_fsm {E:/project/FPGA/key_fsm/demo.v}
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/cola_fsm {E:/project/FPGA/cola_fsm/demo.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module demo
 # 
 # Top level modules:
 # 	demo
-# vlog -vlog01compat -work work +incdir+E:/project/FPGA/key_fsm {E:/project/FPGA/key_fsm/key.v}
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/cola_fsm {E:/project/FPGA/cola_fsm/key.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module key
 # 
 # Top level modules:
 # 	key
 # 
-# vlog -vlog01compat -work work +incdir+E:/project/FPGA/key_fsm/simulation/modelsim {E:/project/FPGA/key_fsm/simulation/modelsim/demo.vt}
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/cola_fsm/simulation/modelsim {E:/project/FPGA/cola_fsm/simulation/modelsim/demo.vt}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module demo_vlg_tst
 # 
@@ -35,10 +35,18 @@
 # Loading work.demo_vlg_tst
 # Loading work.demo
 # Loading work.key
-# ** Warning: (vsim-3017) E:/project/FPGA/key_fsm/demo.v(16): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3015) E:/project/FPGA/cola_fsm/simulation/modelsim/demo.vt(23): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'key'. The port definition is at: E:/project/FPGA/cola_fsm/demo.v(1).
+# 
+#         Region: /demo_vlg_tst/i1
+# ** Warning: (vsim-3017) E:/project/FPGA/cola_fsm/demo.v(32): [TFMPC] - Too few port connections. Expected 4, found 3.
 # 
 #         Region: /demo_vlg_tst/i1/key1
-# ** Warning: (vsim-3722) E:/project/FPGA/key_fsm/demo.v(16): [TFMPC] - Missing connection for port 'rst_n'.
+# ** Warning: (vsim-3722) E:/project/FPGA/cola_fsm/demo.v(32): [TFMPC] - Missing connection for port 'rst_n'.
+# 
+# ** Warning: (vsim-3017) E:/project/FPGA/cola_fsm/demo.v(33): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /demo_vlg_tst/i1/key2
+# ** Warning: (vsim-3722) E:/project/FPGA/cola_fsm/demo.v(33): [TFMPC] - Missing connection for port 'rst_n'.
 # 
 # 
 # add wave *
@@ -47,5 +55,6 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+# WARNING: No extended dataflow license exists
 # Break key hit 
-# Simulation stop requested.
+# Break in Module demo at E:/project/FPGA/cola_fsm/demo.v line 35

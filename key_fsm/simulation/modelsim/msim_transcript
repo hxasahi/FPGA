@@ -48,4 +48,4 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Break key hit 
-# Simulation stop requested.
+# Break in Module demo_vlg_tst at E:/project/FPGA/key_fsm/simulation/modelsim/demo.vt line 16

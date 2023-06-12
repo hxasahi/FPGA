@@ -1,5 +1,5 @@
 Analysis & Synthesis report for template
-Mon Jun 12 16:47:05 2023
+Mon Jun 12 18:56:51 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -18,10 +18,14 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
  10. Inverted Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
  12. Parameter Settings for User Entity Instance: key:key_1
- 13. Port Connectivity Checks: "seg:seg_1"
- 14. Port Connectivity Checks: "key:key_1"
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 13. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_2"
+ 14. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst7"
+ 15. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst0"
+ 16. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1"
+ 17. Port Connectivity Checks: "seg:seg_1"
+ 18. Port Connectivity Checks: "key:key_1"
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -47,15 +51,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 12 16:47:05 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 12 18:56:51 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; template                                    ;
 ; Top-level Entity Name              ; template                                    ;
 ; Family                             ; Cyclone II                                  ;
-; Total logic elements               ; 179                                         ;
-;     Total combinational functions  ; 177                                         ;
-;     Dedicated logic registers      ; 110                                         ;
-; Total registers                    ; 110                                         ;
+; Total logic elements               ; 222                                         ;
+;     Total combinational functions  ; 220                                         ;
+;     Dedicated logic registers      ; 94                                          ;
+; Total registers                    ; 94                                          ;
 ; Total pins                         ; 16                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -166,15 +170,17 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                          ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path            ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------+---------+
-; template.v                       ; yes             ; User Verilog HDL File  ; E:/project/FPGA/TrafficLight/template.v ;         ;
-; key.v                            ; yes             ; User Verilog HDL File  ; E:/project/FPGA/TrafficLight/key.v      ;         ;
-; seg.v                            ; yes             ; User Verilog HDL File  ; E:/project/FPGA/TrafficLight/seg.v      ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; template.v                       ; yes             ; User Verilog HDL File  ; E:/project/FPGA/TrafficLight/template.v              ;         ;
+; key.v                            ; yes             ; User Verilog HDL File  ; E:/project/FPGA/TrafficLight/key.v                   ;         ;
+; seg.v                            ; yes             ; User Verilog HDL File  ; E:/project/FPGA/TrafficLight/seg.v                   ;         ;
+; adjust_shift.v                   ; yes             ; User Verilog HDL File  ; E:/project/FPGA/TrafficLight/adjust_shift.v          ;         ;
+; output_files/bcd_8421.v          ; yes             ; User Verilog HDL File  ; E:/project/FPGA/TrafficLight/output_files/bcd_8421.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -182,39 +188,51 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 179   ;
+; Estimated Total logic elements              ; 222   ;
 ;                                             ;       ;
-; Total combinational functions               ; 177   ;
+; Total combinational functions               ; 220   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 50    ;
-;     -- 3 input functions                    ; 6     ;
-;     -- <=2 input functions                  ; 121   ;
+;     -- 4 input functions                    ; 98    ;
+;     -- 3 input functions                    ; 18    ;
+;     -- <=2 input functions                  ; 104   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 85    ;
-;     -- arithmetic mode                      ; 92    ;
+;     -- normal mode                          ; 145   ;
+;     -- arithmetic mode                      ; 75    ;
 ;                                             ;       ;
-; Total registers                             ; 110   ;
-;     -- Dedicated logic registers            ; 110   ;
+; Total registers                             ; 94    ;
+;     -- Dedicated logic registers            ; 94    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 16    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 110   ;
-; Total fan-out                               ; 864   ;
-; Average fan-out                             ; 2.85  ;
+; Maximum fan-out                             ; 94    ;
+; Total fan-out                               ; 967   ;
+; Average fan-out                             ; 2.93  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |template                  ; 177 (96)          ; 110 (63)     ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |template           ;              ;
-;    |seg:seg_1|             ; 81 (81)           ; 47 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1 ;              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Library Name ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+--------------+
+; |template                                  ; 220 (82)          ; 94 (47)      ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |template                                                               ;              ;
+;    |seg:seg_1|                             ; 138 (98)          ; 47 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1                                                     ;              ;
+;       |bcd_8421:bcd_8421_1|                ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1                                 ;              ;
+;          |adjust_shift:adjust_shift_inst3| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst3 ;              ;
+;          |adjust_shift:adjust_shift_inst4| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst4 ;              ;
+;          |adjust_shift:adjust_shift_inst5| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst5 ;              ;
+;          |adjust_shift:adjust_shift_inst6| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst6 ;              ;
+;          |adjust_shift:adjust_shift_inst7| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst7 ;              ;
+;       |bcd_8421:bcd_8421_2|                ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_2                                 ;              ;
+;          |adjust_shift:adjust_shift_inst3| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_2|adjust_shift:adjust_shift_inst3 ;              ;
+;          |adjust_shift:adjust_shift_inst4| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_2|adjust_shift:adjust_shift_inst4 ;              ;
+;          |adjust_shift:adjust_shift_inst5| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_2|adjust_shift:adjust_shift_inst5 ;              ;
+;          |adjust_shift:adjust_shift_inst6| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_2|adjust_shift:adjust_shift_inst6 ;              ;
+;          |adjust_shift:adjust_shift_inst7| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_2|adjust_shift:adjust_shift_inst7 ;              ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,12 +252,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 110   ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Total registers                              ; 94    ;
+; Number of registers using Synchronous Clear  ; 8     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 110   ;
+; Number of registers using Asynchronous Clear ; 94    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 36    ;
+; Number of registers using Clock Enable       ; 20    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -256,14 +274,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg:seg_1|seg_out[4]                    ; 1       ;
 ; seg:seg_1|seg_out[5]                    ; 1       ;
 ; seg:seg_1|seg_out[6]                    ; 1       ;
-; seg:seg_1|sel[1]                        ; 12      ;
-; seg:seg_1|sel[2]                        ; 9       ;
-; seg:seg_1|sel[3]                        ; 5       ;
+; seg:seg_1|sel[1]                        ; 13      ;
+; seg:seg_1|sel[2]                        ; 8       ;
+; seg:seg_1|sel[3]                        ; 7       ;
 ; seg:seg_1|seg_num[0]                    ; 7       ;
 ; seg:seg_1|seg_num[1]                    ; 7       ;
 ; seg:seg_1|seg_num[2]                    ; 7       ;
 ; seg:seg_1|seg_num[3]                    ; 7       ;
-; Total number of inverted registers = 14 ;         ;
+; dat2[4]                                 ; 8       ;
+; dat2[2]                                 ; 8       ;
+; Total number of inverted registers = 16 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -272,7 +292,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
-; 16:1               ; 4 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |template|seg:seg_1|seg_num[1] ;
+; 20:1               ; 3 bits    ; 39 LEs        ; 18 LEs               ; 21 LEs                 ; Yes        ; |template|seg:seg_1|seg_num[3] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 
 
@@ -284,6 +304,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; cnt_max        ; 11110100001000111111 ; Unsigned Binary ;
 +----------------+----------------------+-----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_2"                                                                                           ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; bcd  ; Output ; Warning  ; Output or bidir port (12 bits) is wider than the port expression (8 bits) it drives; bit(s) "bcd[11..8]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst7"                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; odata[7..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst0" ;
++--------------+-------+----------+---------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                 ;
++--------------+-------+----------+---------------------------------------------------------+
+; idata[19..8] ; Input ; Info     ; Stuck at GND                                            ;
++--------------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1"                                                                                           ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; bcd  ; Output ; Warning  ; Output or bidir port (12 bits) is wider than the port expression (8 bits) it drives; bit(s) "bcd[11..8]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------+
@@ -319,7 +375,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Mon Jun 12 16:47:03 2023
+    Info: Processing started: Mon Jun 12 18:56:50 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off template -c template
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file template.v
@@ -328,19 +384,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file key.v
     Info (12023): Found entity 1: key
 Info (12021): Found 1 design units, including 1 entities, in source file seg.v
     Info (12023): Found entity 1: seg
+Info (12021): Found 1 design units, including 1 entities, in source file adjust_shift.v
+    Info (12023): Found entity 1: adjust_shift
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/bcd_8421.v
+    Info (12023): Found entity 1: bcd_8421
 Info (12127): Elaborating entity "template" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at template.v(31): truncated value with size 4 to match size of target (1)
-Warning (10240): Verilog HDL Always Construct warning at template.v(26): inferring latch(es) for variable "pos", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at template.v(26): inferring latch(es) for variable "led", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "led" at template.v(26)
-Info (10041): Inferred latch for "pos" at template.v(26)
+Warning (10230): Verilog HDL assignment warning at template.v(35): truncated value with size 4 to match size of target (1)
+Warning (10240): Verilog HDL Always Construct warning at template.v(29): inferring latch(es) for variable "pos", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at template.v(29): inferring latch(es) for variable "led", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "led" at template.v(29)
+Info (10041): Inferred latch for "pos" at template.v(29)
 Info (12128): Elaborating entity "key" for hierarchy "key:key_1"
 Info (12128): Elaborating entity "seg" for hierarchy "seg:seg_1"
-Warning (10230): Verilog HDL assignment warning at seg.v(36): truncated value with size 8 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at seg.v(39): truncated value with size 8 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at seg.v(40): truncated value with size 8 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at seg.v(41): truncated value with size 8 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at seg.v(42): truncated value with size 8 to match size of target (4)
+Info (12128): Elaborating entity "bcd_8421" for hierarchy "seg:seg_1|bcd_8421:bcd_8421_1"
+Info (12128): Elaborating entity "adjust_shift" for hierarchy "seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst0"
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
@@ -350,14 +409,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "key"
-Info (21057): Implemented 195 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 238 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 179 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4597 megabytes
-    Info: Processing ended: Mon Jun 12 16:47:05 2023
-    Info: Elapsed time: 00:00:02
+    Info (21061): Implemented 222 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4593 megabytes
+    Info: Processing ended: Mon Jun 12 18:56:51 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

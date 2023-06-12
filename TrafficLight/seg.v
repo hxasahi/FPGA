@@ -1,13 +1,18 @@
 module seg(
 input wire clk,
 input rst_n,
-input wire[31:0] dat,
+input wire[7:0] dat1,
+input wire[7:0] dat2,
 input wire pos,
 output reg[7:0] seg_out,
 output reg[3:0] sel
 );
 reg[31:0] cnt;
 reg[3:0] seg_num;
+wire[7:0] bcd1;
+wire[7:0] bcd2;
+bcd_8421 bcd_8421_1(.bin(dat1),.bcd(bcd1));
+bcd_8421 bcd_8421_2(.bin(dat2),.bcd(bcd2));
 //cnt 1 ms
 always @ (posedge clk or negedge rst_n)
 begin
@@ -36,10 +41,10 @@ begin
 		seg_num<=8'hff;					
 	else				
 		case(sel)
-			4'b1110: seg_num <= dat[31:24];
-			4'b1101: seg_num <= dat[23:16];
-			4'b1011: seg_num <= dat[15:8];
-			4'b0111: seg_num <= dat[7:0];			
+			4'b1110: seg_num <= bcd2[7:4];
+			4'b1101: seg_num <= bcd2[3:0];
+			4'b1011: seg_num <= bcd1[7:4];
+			4'b0111: seg_num <= bcd1[3:0];			
 			default:seg_num <= 4'd0;
 		endcase					
 end

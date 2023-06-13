@@ -1,5 +1,5 @@
 Analysis & Synthesis report for template
-Tue Jun 13 08:41:41 2023
+Tue Jun 13 10:38:52 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -20,14 +20,15 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: Top-level Entity: |template
  14. Parameter Settings for User Entity Instance: key:key_1
- 15. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_2"
- 16. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst7"
- 17. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst0"
- 18. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1"
- 19. Port Connectivity Checks: "key:key_1"
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
- 22. Analysis & Synthesis Suppressed Messages
+ 15. Parameter Settings for User Entity Instance: key:key_2
+ 16. Parameter Settings for User Entity Instance: key:key_3
+ 17. Parameter Settings for User Entity Instance: key:key_4
+ 18. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_2"
+ 19. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst7"
+ 20. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst0"
+ 21. Port Connectivity Checks: "seg:seg_1|bcd_8421:bcd_8421_1"
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -53,16 +54,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 13 08:41:41 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 13 10:38:52 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; template                                    ;
 ; Top-level Entity Name              ; template                                    ;
 ; Family                             ; Cyclone II                                  ;
-; Total logic elements               ; 178                                         ;
-;     Total combinational functions  ; 159                                         ;
-;     Dedicated logic registers      ; 111                                         ;
-; Total registers                    ; 111                                         ;
-; Total pins                         ; 21                                          ;
+; Total logic elements               ; 444                                         ;
+;     Total combinational functions  ; 440                                         ;
+;     Dedicated logic registers      ; 258                                         ;
+; Total registers                    ; 258                                         ;
+; Total pins                         ; 24                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -190,28 +191,28 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 178   ;
+; Estimated Total logic elements              ; 444   ;
 ;                                             ;       ;
-; Total combinational functions               ; 159   ;
+; Total combinational functions               ; 440   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 62    ;
-;     -- 3 input functions                    ; 9     ;
-;     -- <=2 input functions                  ; 88    ;
+;     -- 4 input functions                    ; 164   ;
+;     -- 3 input functions                    ; 59    ;
+;     -- <=2 input functions                  ; 217   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 90    ;
-;     -- arithmetic mode                      ; 69    ;
+;     -- normal mode                          ; 237   ;
+;     -- arithmetic mode                      ; 203   ;
 ;                                             ;       ;
-; Total registers                             ; 111   ;
-;     -- Dedicated logic registers            ; 111   ;
+; Total registers                             ; 258   ;
+;     -- Dedicated logic registers            ; 258   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 21    ;
+; I/O pins                                    ; 24    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 111   ;
-; Total fan-out                               ; 851   ;
-; Average fan-out                             ; 2.92  ;
+; Maximum fan-out                             ; 258   ;
+; Total fan-out                               ; 2222  ;
+; Average fan-out                             ; 3.08  ;
 +---------------------------------------------+-------+
 
 
@@ -220,30 +221,40 @@ applicable agreement for further details.
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Library Name ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+--------------+
-; |template                                  ; 159 (64)          ; 111 (64)     ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |template                                                               ;              ;
-;    |seg:seg_1|                             ; 95 (76)           ; 47 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1                                                     ;              ;
-;       |bcd_8421:bcd_8421_1|                ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1                                 ;              ;
+; |template                                  ; 440 (234)         ; 258 (129)    ; 0           ; 0            ; 0       ; 0         ; 24   ; 0            ; |template                                                               ;              ;
+;    |key:key_1|                             ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|key:key_1                                                     ;              ;
+;    |key:key_2|                             ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|key:key_2                                                     ;              ;
+;    |key:key_3|                             ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|key:key_3                                                     ;              ;
+;    |key:key_4|                             ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|key:key_4                                                     ;              ;
+;    |seg:seg_1|                             ; 94 (72)           ; 45 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1                                                     ;              ;
+;       |bcd_8421:bcd_8421_1|                ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1                                 ;              ;
 ;          |adjust_shift:adjust_shift_inst3| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst3 ;              ;
 ;          |adjust_shift:adjust_shift_inst4| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst4 ;              ;
 ;          |adjust_shift:adjust_shift_inst5| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst5 ;              ;
-;          |adjust_shift:adjust_shift_inst6| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst6 ;              ;
-;          |adjust_shift:adjust_shift_inst7| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst7 ;              ;
+;          |adjust_shift:adjust_shift_inst6| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst6 ;              ;
+;          |adjust_shift:adjust_shift_inst7| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |template|seg:seg_1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst7 ;              ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------+
-; State Machine - |template|state                                                             ;
-+----------------+----------------+-------------+----------------+---------------+------------+
-; Name           ; state.S_YELLOW ; state.M_RED ; state.M_YELLOW ; state.M_GREEN ; state.IDLE ;
-+----------------+----------------+-------------+----------------+---------------+------------+
-; state.IDLE     ; 0              ; 0           ; 0              ; 0             ; 0          ;
-; state.M_GREEN  ; 0              ; 0           ; 0              ; 1             ; 1          ;
-; state.M_YELLOW ; 0              ; 0           ; 1              ; 0             ; 1          ;
-; state.M_RED    ; 0              ; 1           ; 0              ; 0             ; 1          ;
-; state.S_YELLOW ; 1              ; 0           ; 0              ; 0             ; 1          ;
-+----------------+----------------+-------------+----------------+---------------+------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |template|state                                                                                                                                              ;
++----------------+-------------+-------------+-------------+------------+------------+------------+----------------+-------------+----------------+---------------+------------+
+; Name           ; state.SET_R ; state.SET_Y ; state.SET_G ; state.EMG3 ; state.EMG2 ; state.EMG1 ; state.S_YELLOW ; state.M_RED ; state.M_YELLOW ; state.M_GREEN ; state.IDLE ;
++----------------+-------------+-------------+-------------+------------+------------+------------+----------------+-------------+----------------+---------------+------------+
+; state.IDLE     ; 0           ; 0           ; 0           ; 0          ; 0          ; 0          ; 0              ; 0           ; 0              ; 0             ; 0          ;
+; state.M_GREEN  ; 0           ; 0           ; 0           ; 0          ; 0          ; 0          ; 0              ; 0           ; 0              ; 1             ; 1          ;
+; state.M_YELLOW ; 0           ; 0           ; 0           ; 0          ; 0          ; 0          ; 0              ; 0           ; 1              ; 0             ; 1          ;
+; state.M_RED    ; 0           ; 0           ; 0           ; 0          ; 0          ; 0          ; 0              ; 1           ; 0              ; 0             ; 1          ;
+; state.S_YELLOW ; 0           ; 0           ; 0           ; 0          ; 0          ; 0          ; 1              ; 0           ; 0              ; 0             ; 1          ;
+; state.EMG1     ; 0           ; 0           ; 0           ; 0          ; 0          ; 1          ; 0              ; 0           ; 0              ; 0             ; 1          ;
+; state.EMG2     ; 0           ; 0           ; 0           ; 0          ; 1          ; 0          ; 0              ; 0           ; 0              ; 0             ; 1          ;
+; state.EMG3     ; 0           ; 0           ; 0           ; 1          ; 0          ; 0          ; 0              ; 0           ; 0              ; 0             ; 1          ;
+; state.SET_G    ; 0           ; 0           ; 1           ; 0          ; 0          ; 0          ; 0              ; 0           ; 0              ; 0             ; 1          ;
+; state.SET_Y    ; 0           ; 1           ; 0           ; 0          ; 0          ; 0          ; 0              ; 0           ; 0              ; 0             ; 1          ;
+; state.SET_R    ; 1           ; 0           ; 0           ; 0          ; 0          ; 0          ; 0              ; 0           ; 0              ; 0             ; 1          ;
++----------------+-------------+-------------+-------------+------------+------------+------------+----------------+-------------+----------------+---------------+------------+
 
 
 +---------------------------------------------------------------------------------+
@@ -251,7 +262,6 @@ Encoding Type:  One-Hot
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
-; sec_max[6,7]                           ; Stuck at GND due to stuck port data_in ;
 ; seg:seg_1|seg_out[7]                   ; Stuck at VCC due to stuck port data_in ;
 ; dat2[7]                                ; Merged with dat1[7]                    ;
 ; dat2[6]                                ; Merged with dat1[6]                    ;
@@ -261,12 +271,13 @@ Encoding Type:  One-Hot
 ; dat2[2]                                ; Merged with dat1[2]                    ;
 ; dat2[1]                                ; Merged with dat1[1]                    ;
 ; dat2[0]                                ; Merged with dat1[0]                    ;
-; sec_max[4]                             ; Merged with sec_max[1]                 ;
-; state~4                                ; Lost fanout                            ;
 ; state~5                                ; Lost fanout                            ;
 ; state~6                                ; Lost fanout                            ;
 ; state~7                                ; Lost fanout                            ;
-; Total Number of Removed Registers = 16 ;                                        ;
+; state~8                                ; Lost fanout                            ;
+; seg:seg_1|cnt[0]                       ; Merged with cnt_500ms[0]               ;
+; seg:seg_1|cnt[1]                       ; Merged with cnt_500ms[1]               ;
+; Total Number of Removed Registers = 15 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -275,12 +286,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 111   ;
-; Number of registers using Synchronous Clear  ; 40    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 111   ;
+; Total registers                              ; 258   ;
+; Number of registers using Synchronous Clear  ; 120   ;
+; Number of registers using Synchronous Load   ; 5     ;
+; Number of registers using Asynchronous Clear ; 178   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 17    ;
+; Number of registers using Clock Enable       ; 126   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -290,6 +301,14 @@ Encoding Type:  One-Hot
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
+; sec_y[0]                                ; 5       ;
+; sec_g[1]                                ; 5       ;
+; sec_r[3]                                ; 4       ;
+; sec_g[2]                                ; 4       ;
+; sec_r[2]                                ; 4       ;
+; sec_y[5]                                ; 5       ;
+; sec_r[5]                                ; 5       ;
+; sec_g[4]                                ; 4       ;
 ; seg:seg_1|seg_out[0]                    ; 1       ;
 ; seg:seg_1|seg_out[1]                    ; 1       ;
 ; seg:seg_1|seg_out[2]                    ; 1       ;
@@ -304,21 +323,39 @@ Encoding Type:  One-Hot
 ; seg:seg_1|seg_num[1]                    ; 7       ;
 ; seg:seg_1|seg_num[2]                    ; 7       ;
 ; seg:seg_1|seg_num[3]                    ; 7       ;
-; sec_max[1]                              ; 3       ;
-; sec_max[2]                              ; 1       ;
-; Total number of inverted registers = 16 ;         ;
+; sec_max[1]                              ; 2       ;
+; sec_max[2]                              ; 2       ;
+; sec_max[4]                              ; 2       ;
+; Total number of inverted registers = 25 ;         ;
 +-----------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |template|sec[6]               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |template|cnt_1s[23]           ;
-; 16:1               ; 3 bits    ; 30 LEs        ; 9 LEs                ; 21 LEs                 ; Yes        ; |template|seg:seg_1|seg_num[1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |template|sec_g[3]               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |template|sec_y[3]               ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |template|sec_r[0]               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |template|cnt_1s[4]              ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |template|sec[0]                 ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |template|key:key_4|cnt_20ms[12] ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |template|key:key_3|cnt_20ms[8]  ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |template|key:key_2|cnt_20ms[12] ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |template|key:key_1|cnt_20ms[12] ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |template|sec_max[3]             ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |template|dat1[7]                ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |template|sec_g[4]               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 0 LEs                ; 4 LEs                  ; Yes        ; |template|sec_y[0]               ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |template|sec_r[2]               ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |template|sec_max[1]             ;
+; 16:1               ; 3 bits    ; 30 LEs        ; 9 LEs                ; 21 LEs                 ; Yes        ; |template|seg:seg_1|seg_num[1]   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |template|state                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |template|led                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |template|led                    ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 14 LEs               ; 6 LEs                  ; No         ; |template|Selector15             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -331,14 +368,50 @@ Encoding Type:  One-Hot
 ; M_YELLOW       ; 0011                            ; Unsigned Binary       ;
 ; M_RED          ; 0100                            ; Unsigned Binary       ;
 ; S_YELLOW       ; 0101                            ; Unsigned Binary       ;
-; EMG            ; 0110                            ; Unsigned Binary       ;
+; EMG1           ; 0110                            ; Unsigned Binary       ;
+; EMG2           ; 0111                            ; Unsigned Binary       ;
+; EMG3           ; 1000                            ; Unsigned Binary       ;
+; SET_G          ; 1001                            ; Unsigned Binary       ;
+; SET_Y          ; 1010                            ; Unsigned Binary       ;
+; SET_R          ; 1011                            ; Unsigned Binary       ;
 ; CNT_1S_MAX     ; 0000000010011000100101100111111 ; Unsigned Binary       ;
+; CNT_500MS_MAX  ; 0000000001001100010010110011111 ; Unsigned Binary       ;
 +----------------+---------------------------------+-----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: key:key_1  ;
++----------------+----------------------+-----------------+
+; Parameter Name ; Value                ; Type            ;
++----------------+----------------------+-----------------+
+; cnt_max        ; 11110100001000111111 ; Unsigned Binary ;
++----------------+----------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key:key_2  ;
++----------------+----------------------+-----------------+
+; Parameter Name ; Value                ; Type            ;
++----------------+----------------------+-----------------+
+; cnt_max        ; 11110100001000111111 ; Unsigned Binary ;
++----------------+----------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key:key_3  ;
++----------------+----------------------+-----------------+
+; Parameter Name ; Value                ; Type            ;
++----------------+----------------------+-----------------+
+; cnt_max        ; 11110100001000111111 ; Unsigned Binary ;
++----------------+----------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key:key_4  ;
 +----------------+----------------------+-----------------+
 ; Parameter Name ; Value                ; Type            ;
 +----------------+----------------------+-----------------+
@@ -383,15 +456,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "key:key_1"                                                                              ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; key_flag ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -407,7 +471,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Tue Jun 13 08:41:39 2023
+    Info: Processing started: Tue Jun 13 10:38:50 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off template -c template
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file template.v
@@ -421,8 +485,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file adjust_
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/bcd_8421.v
     Info (12023): Found entity 1: bcd_8421
 Info (12127): Elaborating entity "template" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at template.v(54): truncated value with size 31 to match size of target (8)
-Info (10264): Verilog HDL Case Statement information at template.v(76): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at template.v(122): all case item expressions in this case statement are onehot
 Info (12128): Elaborating entity "key" for hierarchy "key:key_1"
 Info (12128): Elaborating entity "seg" for hierarchy "seg:seg_1"
 Warning (10230): Verilog HDL assignment warning at seg.v(40): truncated value with size 8 to match size of target (4)
@@ -434,25 +497,16 @@ Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal 
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "seg_out[7]" is stuck at VCC
 Info (17049): 4 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file E:/project/FPGA/TrafficLight/output_files/template.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "key"
-Info (21057): Implemented 199 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
+Info (21057): Implemented 468 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
     Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 178 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4589 megabytes
-    Info: Processing ended: Tue Jun 13 08:41:41 2023
+    Info (21061): Implemented 444 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4601 megabytes
+    Info: Processing ended: Tue Jun 13 10:38:52 2023
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in E:/project/FPGA/TrafficLight/output_files/template.map.smsg.
 
 

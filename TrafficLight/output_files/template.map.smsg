@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at template.v(90): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at template.v(123): always construct contains both blocking and non-blocking assignments

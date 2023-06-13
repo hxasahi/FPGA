@@ -90,8 +90,8 @@ clk                          : 23        : input  : 3.3-V LVTTL       :         
 rst_n                        : 24        : input  : 3.3-V LVTTL       :         : 1         : Y              
 GND                          : 25        : gnd    :                   :         :           :                
 nCONFIG                      : 26        :        :                   :         : 1         :                
-GND+                         : 27        :        :                   :         : 1         :                
-key                          : 28        : input  : 3.3-V LVTTL       :         : 1         : Y              
+key[0]                       : 27        : input  : 3.3-V LVTTL       :         : 1         : Y              
+key[1]                       : 28        : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 29        : power  :                   : 3.3V    : 1         :                
 led[3]                       : 30        : output : 3.3-V LVTTL       :         : 1         : Y              
 led[2]                       : 31        : output : 3.3-V LVTTL       :         : 1         : Y              
@@ -192,8 +192,8 @@ MSEL1                        : 125       :        :                   :         
 MSEL0                        : 126       :        :                   :         : 3         :                
 RESERVED_INPUT               : 127       :        :                   :         : 3         :                
 RESERVED_INPUT               : 128       :        :                   :         : 3         :                
-GND+                         : 129       :        :                   :         : 3         :                
-GND+                         : 130       :        :                   :         : 3         :                
+key[3]                       : 129       : input  : 3.3-V LVTTL       :         : 3         : Y              
+key[2]                       : 130       : input  : 3.3-V LVTTL       :         : 3         : Y              
 GND+                         : 131       :        :                   :         : 3         :                
 GND+                         : 132       :        :                   :         : 3         :                
 RESERVED_INPUT               : 133       :        :                   :         : 3         :                

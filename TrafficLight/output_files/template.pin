@@ -77,8 +77,8 @@ RESERVED_INPUT               : 10        :        :                   :         
 RESERVED_INPUT               : 11        :        :                   :         : 1         :                
 RESERVED_INPUT               : 12        :        :                   :         : 1         :                
 RESERVED_INPUT               : 13        :        :                   :         : 1         :                
-RESERVED_INPUT               : 14        :        :                   :         : 1         :                
-RESERVED_INPUT               : 15        :        :                   :         : 1         :                
+led[4]                       : 14        : output : 3.3-V LVTTL       :         : 1         : Y              
+led[5]                       : 15        : output : 3.3-V LVTTL       :         : 1         : Y              
 TDO                          : 16        : output :                   :         : 1         :                
 TMS                          : 17        : input  :                   :         : 1         :                
 TCK                          : 18        : input  :                   :         : 1         :                
@@ -93,8 +93,8 @@ nCONFIG                      : 26        :        :                   :         
 GND+                         : 27        :        :                   :         : 1         :                
 key                          : 28        : input  : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 29        : power  :                   : 3.3V    : 1         :                
-led                          : 30        : output : 3.3-V LVTTL       :         : 1         : Y              
-RESERVED_INPUT               : 31        :        :                   :         : 1         :                
+led[3]                       : 30        : output : 3.3-V LVTTL       :         : 1         : Y              
+led[2]                       : 31        : output : 3.3-V LVTTL       :         : 1         : Y              
 VCCINT                       : 32        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : 33        :        :                   :         : 1         :                
 RESERVED_INPUT               : 34        :        :                   :         : 1         :                
@@ -120,8 +120,8 @@ VCCA_PLL1                    : 53        : power  :                   : 1.2V    
 GNDA_PLL1                    : 54        : gnd    :                   :         :           :                
 GND                          : 55        : gnd    :                   :         :           :                
 RESERVED_INPUT               : 56        :        :                   :         : 4         :                
-RESERVED_INPUT               : 57        :        :                   :         : 4         :                
-RESERVED_INPUT               : 58        :        :                   :         : 4         :                
+led[1]                       : 57        : output : 3.3-V LVTTL       :         : 4         : Y              
+led[0]                       : 58        : output : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT               : 59        :        :                   :         : 4         :                
 RESERVED_INPUT               : 60        :        :                   :         : 4         :                
 seg_out[0]                   : 61        : output : 3.3-V LVTTL       :         : 4         : Y              

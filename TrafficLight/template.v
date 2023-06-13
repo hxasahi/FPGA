@@ -2,7 +2,7 @@ module template(
 input clk,
 input rst_n,
 input wire key,
-output reg led,
+output reg[5:0] led,
 output wire[7:0] seg_out,
 output wire[3:0] sel
 /*
@@ -31,33 +31,62 @@ parameter CNT_1S_MAX = 31'd49_999_99;
 key key_1(.clk(clk),.rst_n(rst_n),.key_in(key),.key_flag(key1));
 seg seg_1(.clk(clk),.rst_n(rst_n),.dat1(dat1),.dat2(dat2),.seg_out(seg_out),.sel(sel));
 
+//cnt_1s
+always @ (posedge clk or negedge rst_n)
+begin
+	if(!rst_n)	
+		cnt_1s<=31'd0;			
+	else if(sec==sec_max)		
+		cnt_1s<=31'd0;		
+	else if(cnt_1s == CNT_1S_MAX)		
+		cnt_1s<=31'd0;			
+	else	
+		cnt_1s<=cnt_1s+31'd1;	
+end
+//sec
 always @ (posedge clk or negedge rst_n)
 begin
 	if(!rst_n)
-	begin		
 		sec<=4'd0;
-		cnt_1s<=31'd0;		
-	end
-	else if(sec==sec_max)	
-	begin
-		cnt_1s<=31'd0;
+	else if(sec==sec_max)
 		sec<=4'd0;
-		dat1<=sec;
-		dat2<=sec;
-	end
-	else if(cnt_1s == CNT_1S_MAX)	
+	else if(cnt_1s == CNT_1S_MAX)
+		sec<=sec+31'd1;
+	else ;
+end
+//dat1 dat2
+always @ (posedge clk or negedge rst_n)
+begin
+	if(!rst_n)
 	begin
-		cnt_1s<=31'd0;
-		sec<=sec+1'd1;
-		dat1<=sec;
-		dat2<=sec;
+		dat1<=8'd0;
+		dat2<=8'd0;
 	end
 	else
 	begin
-		cnt_1s<=cnt_1s+31'd1;
-	end
+		dat1<=sec;
+		dat2<=sec;
+	end		
 end
-
+always @ (posedge clk or negedge rst_n)
+begin
+	if(!rst_n)
+		led<=6'd0;
+	else
+		case(state)
+			M_GREEN:
+				led<=6'b001_100;
+			M_YELLOW:
+				led<=6'b010_100;
+			M_RED:
+				led<=6'b100_001;
+			S_YELLOW:
+				led<=6'b100_010;
+			default:
+				led<=6'b000_000;
+		endcase
+end
+//state
 always @ (posedge clk or negedge rst_n)
 begin
 	if(!rst_n)

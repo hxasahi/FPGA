@@ -1,0 +1,39 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do uart_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/uart {E:/project/FPGA/uart/uart.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart
+# 
+# Top level modules:
+# 	uart
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/uart/simulation/modelsim {E:/project/FPGA/uart/simulation/modelsim/uart.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart_vlg_tb
+# 
+# Top level modules:
+# 	uart_vlg_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  uart_vlg_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps uart_vlg_tb 
+# Loading work.uart_vlg_tb
+# Loading work.uart
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Simulation stop requested.

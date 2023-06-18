@@ -96,20 +96,20 @@ VCCIO1                       : 29        : power  :                   : 3.3V    
 RESERVED_INPUT               : 30        :        :                   :         : 1         :                
 RESERVED_INPUT               : 31        :        :                   :         : 1         :                
 VCCINT                       : 32        : power  :                   : 1.2V    :           :                
-dat[7]                       : 33        : output : 3.3-V LVTTL       :         : 1         : Y              
-dat[6]                       : 34        : output : 3.3-V LVTTL       :         : 1         : Y              
-dat[5]                       : 35        : output : 3.3-V LVTTL       :         : 1         : Y              
+RESERVED_INPUT               : 33        :        :                   :         : 1         :                
+RESERVED_INPUT               : 34        :        :                   :         : 1         :                
+RESERVED_INPUT               : 35        :        :                   :         : 1         :                
 GND                          : 36        : gnd    :                   :         :           :                
-dat[4]                       : 37        : output : 3.3-V LVTTL       :         : 1         : Y              
+RESERVED_INPUT               : 37        :        :                   :         : 1         :                
 GND                          : 38        : gnd    :                   :         :           :                
-dat[3]                       : 39        : output : 3.3-V LVTTL       :         : 1         : Y              
-dat[2]                       : 40        : output : 3.3-V LVTTL       :         : 1         : Y              
-dat[1]                       : 41        : output : 3.3-V LVTTL       :         : 1         : Y              
+RESERVED_INPUT               : 39        :        :                   :         : 1         :                
+RESERVED_INPUT               : 40        :        :                   :         : 1         :                
+RESERVED_INPUT               : 41        :        :                   :         : 1         :                
 VCCIO1                       : 42        : power  :                   : 3.3V    : 1         :                
-dat[0]                       : 43        : output : 3.3-V LVTTL       :         : 1         : Y              
-en                           : 44        : output : 3.3-V LVTTL       :         : 1         : Y              
-rw                           : 45        : output : 3.3-V LVTTL       :         : 1         : Y              
-rs                           : 46        : output : 3.3-V LVTTL       :         : 1         : Y              
+RESERVED_INPUT               : 43        :        :                   :         : 1         :                
+RESERVED_INPUT               : 44        :        :                   :         : 1         :                
+RESERVED_INPUT               : 45        :        :                   :         : 1         :                
+RESERVED_INPUT               : 46        :        :                   :         : 1         :                
 RESERVED_INPUT               : 47        :        :                   :         : 1         :                
 RESERVED_INPUT               : 48        :        :                   :         : 1         :                
 GND                          : 49        : gnd    :                   :         :           :                
@@ -150,7 +150,7 @@ VCCIO4                       : 83        : power  :                   : 3.3V    
 RESERVED_INPUT               : 84        :        :                   :         : 4         :                
 GND                          : 85        : gnd    :                   :         :           :                
 RESERVED_INPUT               : 86        :        :                   :         : 4         :                
-RESERVED_INPUT               : 87        :        :                   :         : 4         :                
+lcd_rw                       : 87        : output : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT               : 88        :        :                   :         : 4         :                
 RESERVED_INPUT               : 89        :        :                   :         : 4         :                
 RESERVED_INPUT               : 90        :        :                   :         : 4         :                
@@ -234,23 +234,23 @@ GND                          : 167       : gnd    :                   :         
 RESERVED_INPUT               : 168       :        :                   :         : 2         :                
 RESERVED_INPUT               : 169       :        :                   :         : 2         :                
 RESERVED_INPUT               : 170       :        :                   :         : 2         :                
-RESERVED_INPUT               : 171       :        :                   :         : 2         :                
+lcd_data[1]                  : 171       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : 172       : power  :                   : 3.3V    : 2         :                
-RESERVED_INPUT               : 173       :        :                   :         : 2         :                
+lcd_data[7]                  : 173       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 174       : gnd    :                   :         :           :                
-RESERVED_INPUT               : 175       :        :                   :         : 2         :                
-RESERVED_INPUT               : 176       :        :                   :         : 2         :                
+lcd_en                       : 175       : output : 3.3-V LVTTL       :         : 2         : N              
+lcd_data[0]                  : 176       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 177       : gnd    :                   :         :           :                
 VCCINT                       : 178       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : 179       :        :                   :         : 2         :                
-RESERVED_INPUT               : 180       :        :                   :         : 2         :                
-RESERVED_INPUT               : 181       :        :                   :         : 2         :                
-RESERVED_INPUT               : 182       :        :                   :         : 2         :                
+lcd_rs                       : 179       : output : 3.3-V LVTTL       :         : 2         : N              
+lcd_data[3]                  : 180       : output : 3.3-V LVTTL       :         : 2         : N              
+lcd_data[4]                  : 181       : output : 3.3-V LVTTL       :         : 2         : N              
+lcd_data[6]                  : 182       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : 183       : power  :                   : 3.3V    : 2         :                
 GND                          : 184       : gnd    :                   :         :           :                
-RESERVED_INPUT               : 185       :        :                   :         : 2         :                
+lcd_data[5]                  : 185       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 186       : gnd    :                   :         :           :                
-RESERVED_INPUT               : 187       :        :                   :         : 2         :                
+lcd_data[2]                  : 187       : output : 3.3-V LVTTL       :         : 2         : N              
 RESERVED_INPUT               : 188       :        :                   :         : 2         :                
 RESERVED_INPUT               : 189       :        :                   :         : 2         :                
 VCCINT                       : 190       : power  :                   : 1.2V    :           :                

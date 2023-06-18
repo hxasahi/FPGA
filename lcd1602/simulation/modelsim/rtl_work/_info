@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\project\FPGA\lcd1602\simulation\modelsim
+vdemo
+I;SXg_^zNXkGhG7fVe[a`]2
+V[bE8C>fmdO?GS<3B=GRoB2
+Z1 dE:\project\FPGA\lcd1602\simulation\modelsim
+w1687102152
+8E:/project/FPGA/lcd1602/demo.v
+FE:/project/FPGA/lcd1602/demo.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 lMRDjA8e4:YK2P:=S0iT_2
+!s85 0
+!s108 1687102167.346000
+!s107 E:/project/FPGA/lcd1602/demo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/lcd1602|E:/project/FPGA/lcd1602/demo.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/project/FPGA/lcd1602 -O0
+vdemo_vlg_tb
+!i10b 1
+!s100 Z;_H^Ma<1RI[cd38_G5QC1
+I;CKS;n7;J4Mi>k:Y7TSA31
+V2CaW;dTH?6Q<M@R]Zzh?z0
+R1
+w1687102059
+8E:/project/FPGA/lcd1602/simulation/modelsim/demo.vt
+FE:/project/FPGA/lcd1602/simulation/modelsim/demo.vt
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1687102167.396000
+!s107 E:/project/FPGA/lcd1602/simulation/modelsim/demo.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/lcd1602/simulation/modelsim|E:/project/FPGA/lcd1602/simulation/modelsim/demo.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/project/FPGA/lcd1602/simulation/modelsim -O0

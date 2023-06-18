@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demo
-Sun Apr 30 20:19:48 2023
+Sun Jun 18 23:29:13 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -13,13 +13,12 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |demo|current
+  8. State Machine - |demo|state_c
   9. Registers Removed During Synthesis
  10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |demo
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -45,15 +44,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 30 20:19:48 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun Jun 18 23:29:13 2023       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; demo                                        ;
 ; Top-level Entity Name              ; demo                                        ;
 ; Family                             ; Cyclone II                                  ;
-; Total logic elements               ; 65                                          ;
-;     Total combinational functions  ; 44                                          ;
-;     Dedicated logic registers      ; 49                                          ;
-; Total registers                    ; 49                                          ;
+; Total logic elements               ; 115                                         ;
+;     Total combinational functions  ; 109                                         ;
+;     Dedicated logic registers      ; 64                                          ;
+; Total registers                    ; 64                                          ;
 ; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -178,28 +177,28 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 65    ;
+; Estimated Total logic elements              ; 115   ;
 ;                                             ;       ;
-; Total combinational functions               ; 44    ;
+; Total combinational functions               ; 109   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 19    ;
-;     -- 3 input functions                    ; 3     ;
-;     -- <=2 input functions                  ; 22    ;
+;     -- 4 input functions                    ; 50    ;
+;     -- 3 input functions                    ; 8     ;
+;     -- <=2 input functions                  ; 51    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 30    ;
-;     -- arithmetic mode                      ; 14    ;
+;     -- normal mode                          ; 70    ;
+;     -- arithmetic mode                      ; 39    ;
 ;                                             ;       ;
-; Total registers                             ; 49    ;
-;     -- Dedicated logic registers            ; 49    ;
+; Total registers                             ; 64    ;
+;     -- Dedicated logic registers            ; 64    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 13    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; rst_n ;
-; Maximum fan-out                             ; 49    ;
-; Total fan-out                               ; 281   ;
-; Average fan-out                             ; 2.65  ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 64    ;
+; Total fan-out                               ; 557   ;
+; Average fan-out                             ; 2.99  ;
 +---------------------------------------------+-------+
 
 
@@ -208,40 +207,28 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |demo                      ; 44 (44)           ; 49 (49)      ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |demo               ;              ;
+; |demo                      ; 109 (109)         ; 64 (64)      ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |demo               ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |demo|current                                                                                                                                                                                                                                                                                                                                 ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Name          ; current.dat15 ; current.dat14 ; current.dat13 ; current.dat12 ; current.dat11 ; current.dat10 ; current.dat9 ; current.dat8 ; current.dat7 ; current.dat6 ; current.dat5 ; current.dat4 ; current.dat3 ; current.dat2 ; current.dat1 ; current.dat0 ; current.set4 ; current.set3 ; current.set2 ; current.set1 ; current.set0 ; current.fini ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; current.set0  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; current.set1  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 1            ; 0            ;
-; current.set2  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 1            ; 0            ;
-; current.set3  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 1            ; 0            ;
-; current.set4  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat0  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat1  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat2  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat3  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat4  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat5  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat6  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat7  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat8  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat9  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat10 ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat11 ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat12 ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat13 ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat14 ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.dat15 ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ;
-; current.fini  ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 1            ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |demo|state_c                                                                                                                                              ;
++-------------------+--------------+-------------------+---------------+-------------------+------------+------------+------------+------------+--------------+--------------+
+; Name              ; state_c.stop ; state_c.ROW2_ADDR ; state_c.WRITE ; state_c.ROW1_ADDR ; state_c.S3 ; state_c.S2 ; state_c.S1 ; state_c.S0 ; state_c.INIT ; state_c.IDLE ;
++-------------------+--------------+-------------------+---------------+-------------------+------------+------------+------------+------------+--------------+--------------+
+; state_c.IDLE      ; 0            ; 0                 ; 0             ; 0                 ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ;
+; state_c.INIT      ; 0            ; 0                 ; 0             ; 0                 ; 0          ; 0          ; 0          ; 0          ; 1            ; 1            ;
+; state_c.S0        ; 0            ; 0                 ; 0             ; 0                 ; 0          ; 0          ; 0          ; 1          ; 0            ; 1            ;
+; state_c.S1        ; 0            ; 0                 ; 0             ; 0                 ; 0          ; 0          ; 1          ; 0          ; 0            ; 1            ;
+; state_c.S2        ; 0            ; 0                 ; 0             ; 0                 ; 0          ; 1          ; 0          ; 0          ; 0            ; 1            ;
+; state_c.S3        ; 0            ; 0                 ; 0             ; 0                 ; 1          ; 0          ; 0          ; 0          ; 0            ; 1            ;
+; state_c.ROW1_ADDR ; 0            ; 0                 ; 0             ; 1                 ; 0          ; 0          ; 0          ; 0          ; 0            ; 1            ;
+; state_c.WRITE     ; 0            ; 0                 ; 1             ; 0                 ; 0          ; 0          ; 0          ; 0          ; 0            ; 1            ;
+; state_c.ROW2_ADDR ; 0            ; 1                 ; 0             ; 0                 ; 0          ; 0          ; 0          ; 0          ; 0            ; 1            ;
+; state_c.stop      ; 1            ; 0                 ; 0             ; 0                 ; 0          ; 0          ; 0          ; 0          ; 0            ; 1            ;
++-------------------+--------------+-------------------+---------------+-------------------+------------+------------+------------+------------+--------------+--------------+
 
 
 +------------------------------------------------------------+
@@ -249,12 +236,11 @@ Encoding Type:  One-Hot
 +---------------------------------------+--------------------+
 ; Register name                         ; Reason for Removal ;
 +---------------------------------------+--------------------+
-; current~4                             ; Lost fanout        ;
-; current~5                             ; Lost fanout        ;
-; current~6                             ; Lost fanout        ;
-; current~7                             ; Lost fanout        ;
-; current~8                             ; Lost fanout        ;
-; Total Number of Removed Registers = 5 ;                    ;
+; state_c~13                            ; Lost fanout        ;
+; state_c~14                            ; Lost fanout        ;
+; state_c~15                            ; Lost fanout        ;
+; state_c~16                            ; Lost fanout        ;
+; Total Number of Removed Registers = 4 ;                    ;
 +---------------------------------------+--------------------+
 
 
@@ -263,55 +249,23 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 49    ;
+; Total registers                              ; 64    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 49    ;
+; Number of registers using Asynchronous Clear ; 63    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 33    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; e                                      ; 1       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
-
-
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |demo ;
-+----------------+--------+--------------------------------------------+
-; Parameter Name ; Value  ; Type                                       ;
-+----------------+--------+--------------------------------------------+
-; set0           ; 000000 ; Unsigned Binary                            ;
-; set1           ; 000001 ; Unsigned Binary                            ;
-; set2           ; 000010 ; Unsigned Binary                            ;
-; set3           ; 000011 ; Unsigned Binary                            ;
-; set4           ; 000100 ; Unsigned Binary                            ;
-; dat0           ; 000101 ; Unsigned Binary                            ;
-; dat1           ; 000110 ; Unsigned Binary                            ;
-; dat2           ; 000111 ; Unsigned Binary                            ;
-; dat3           ; 001000 ; Unsigned Binary                            ;
-; dat4           ; 001001 ; Unsigned Binary                            ;
-; dat5           ; 001010 ; Unsigned Binary                            ;
-; dat6           ; 001011 ; Unsigned Binary                            ;
-; dat7           ; 001100 ; Unsigned Binary                            ;
-; dat8           ; 001101 ; Unsigned Binary                            ;
-; dat9           ; 001110 ; Unsigned Binary                            ;
-; dat10          ; 001111 ; Unsigned Binary                            ;
-; dat11          ; 010000 ; Unsigned Binary                            ;
-; dat12          ; 010001 ; Unsigned Binary                            ;
-; dat13          ; 010010 ; Unsigned Binary                            ;
-; dat14          ; 010011 ; Unsigned Binary                            ;
-; dat15          ; 010100 ; Unsigned Binary                            ;
-; fini           ; 110001 ; Unsigned Binary                            ;
-+----------------+--------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |demo|state_c              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +-------------------------------+
@@ -329,29 +283,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Sun Apr 30 20:19:47 2023
+    Info: Processing started: Sun Jun 18 23:29:13 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demo -c demo
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Warning (10229): Verilog HDL Expression warning at demo.v(35): truncated literal to match 6 bits
 Info (12021): Found 1 design units, including 1 entities, in source file demo.v
     Info (12023): Found entity 1: demo
 Info (12127): Elaborating entity "demo" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at demo.v(45): truncated value with size 32 to match size of target (16)
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "Ram0" is uninferred due to inappropriate RAM size
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "rw" is stuck at GND
-Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+    Warning (13410): Pin "lcd_rw" is stuck at GND
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 78 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 129 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 65 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4597 megabytes
-    Info: Processing ended: Sun Apr 30 20:19:48 2023
-    Info: Elapsed time: 00:00:01
+    Info (21061): Implemented 116 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4593 megabytes
+    Info: Processing ended: Sun Jun 18 23:29:13 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

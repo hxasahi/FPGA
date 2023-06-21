@@ -1,0 +1,15 @@
+1、数据采集卡
+
+      USB3.0    ETH    FIFO    SDRAM    Matlab
+
+2、示波器
+
+      FIFO   SDRAM    GD32    ADC
+
+3、FPGA解调
+
+      FIFO   SDRAM    ADC
+
+4、SDR
+
+      ZYNQ    DDR  Linux   射频仿真

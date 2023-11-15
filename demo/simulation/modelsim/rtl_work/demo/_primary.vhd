@@ -2,7 +2,7 @@ library verilog;
 use verilog.vl_types.all;
 entity demo is
     generic(
-        max_cnt         : integer := 50
+        max_cnt         : integer := 5000
     );
     port(
         clk             : in     vl_logic;

@@ -5,21 +5,16 @@ module demo
 	output reg[7:0] seg,
 	output reg[3:0] pos
 );
-reg[3:0] data1;
-reg[3:0] data2;
-reg[3:0] data3;
-reg[3:0] data4;
+
 reg[3:0] data;
 
-reg[12:0] cnt;
-parameter max_cnt = 5_0;
-initial
-begin
-	data1<=4'd1;
-	data2<=4'd2;
-	data3<=4'd3;
-	data4<=4'd4;
-end
+reg[15:0] cnt;
+parameter max_cnt = 5_000;
+reg[7:0] dat1;
+wire[11:0] bcd1;
+//此处如果dat1写成reg，则无法输出，因为没有时钟驱动它，但是可以写成wire
+//如果写成reg就必须在某个always里面写
+bcd_8421 bcd_8421_1(.bin(dat1),.bcd(bcd1));
 
 //delay
 always @ (posedge clk or negedge rst_n)
@@ -46,14 +41,17 @@ end
 //data
 always @ (posedge clk or negedge rst_n)
 begin
-	if(!rst_n)	
+	if(!rst_n)
+	begin
 		data<=4'd0;	
+		dat1 = 8'd49;
+	end
 	else
 	case(pos)
-		4'b1110:data<=data1;
-		4'b1101:data<=data2;
-		4'b1011:data<=data3;
-		4'b0111:data<=data4;
+		4'b1110:data<=bcd1[3:0];
+		4'b1101:data<=bcd1[7:4];
+		4'b1011:data<=bcd1[11:8];
+		4'b0111:data<=4'd11;
 		default:data<=4'd11;
 	endcase
 end

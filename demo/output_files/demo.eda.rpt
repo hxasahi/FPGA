@@ -1,5 +1,5 @@
 EDA Netlist Writer report for demo
-Wed Nov 15 21:06:45 2023
+Wed Nov 15 22:03:54 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Nov 15 21:06:45 2023 ;
+; EDA Netlist Writer Status ; Successful - Wed Nov 15 22:03:54 2023 ;
 ; Revision Name             ; demo                                  ;
 ; Top-level Entity Name     ; demo                                  ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,20 +66,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------+
-; Simulation Generated Files                                ;
-+-----------------------------------------------------------+
-; Generated Files                                           ;
-+-----------------------------------------------------------+
-; E:/fpga/simulation/modelsim/demo_8_1200mv_85c_slow.vo     ;
-; E:/fpga/simulation/modelsim/demo_8_1200mv_0c_slow.vo      ;
-; E:/fpga/simulation/modelsim/demo_min_1200mv_0c_fast.vo    ;
-; E:/fpga/simulation/modelsim/demo.vo                       ;
-; E:/fpga/simulation/modelsim/demo_8_1200mv_85c_v_slow.sdo  ;
-; E:/fpga/simulation/modelsim/demo_8_1200mv_0c_v_slow.sdo   ;
-; E:/fpga/simulation/modelsim/demo_min_1200mv_0c_v_fast.sdo ;
-; E:/fpga/simulation/modelsim/demo_v.sdo                    ;
-+-----------------------------------------------------------+
++------------------------------------------------------------------------+
+; Simulation Generated Files                                             ;
++------------------------------------------------------------------------+
+; Generated Files                                                        ;
++------------------------------------------------------------------------+
+; E:/project/FPGA/demo/simulation/modelsim/demo_8_1200mv_85c_slow.vo     ;
+; E:/project/FPGA/demo/simulation/modelsim/demo_8_1200mv_0c_slow.vo      ;
+; E:/project/FPGA/demo/simulation/modelsim/demo_min_1200mv_0c_fast.vo    ;
+; E:/project/FPGA/demo/simulation/modelsim/demo.vo                       ;
+; E:/project/FPGA/demo/simulation/modelsim/demo_8_1200mv_85c_v_slow.sdo  ;
+; E:/project/FPGA/demo/simulation/modelsim/demo_8_1200mv_0c_v_slow.sdo   ;
+; E:/project/FPGA/demo/simulation/modelsim/demo_min_1200mv_0c_v_fast.sdo ;
+; E:/project/FPGA/demo/simulation/modelsim/demo_v.sdo                    ;
++------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,19 +88,19 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Nov 15 21:06:45 2023
+    Info: Processing started: Wed Nov 15 22:03:54 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off demo -c demo
-Info (204019): Generated file demo_8_1200mv_85c_slow.vo in folder "E:/fpga/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file demo_8_1200mv_0c_slow.vo in folder "E:/fpga/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file demo_min_1200mv_0c_fast.vo in folder "E:/fpga/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file demo.vo in folder "E:/fpga/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file demo_8_1200mv_85c_v_slow.sdo in folder "E:/fpga/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file demo_8_1200mv_0c_v_slow.sdo in folder "E:/fpga/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file demo_min_1200mv_0c_v_fast.sdo in folder "E:/fpga/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file demo_v.sdo in folder "E:/fpga/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file demo_8_1200mv_85c_slow.vo in folder "E:/project/FPGA/demo/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file demo_8_1200mv_0c_slow.vo in folder "E:/project/FPGA/demo/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file demo_min_1200mv_0c_fast.vo in folder "E:/project/FPGA/demo/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file demo.vo in folder "E:/project/FPGA/demo/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file demo_8_1200mv_85c_v_slow.sdo in folder "E:/project/FPGA/demo/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file demo_8_1200mv_0c_v_slow.sdo in folder "E:/project/FPGA/demo/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file demo_min_1200mv_0c_v_fast.sdo in folder "E:/project/FPGA/demo/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file demo_v.sdo in folder "E:/project/FPGA/demo/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4527 megabytes
-    Info: Processing ended: Wed Nov 15 21:06:45 2023
+    Info: Peak virtual memory: 4526 megabytes
+    Info: Processing ended: Wed Nov 15 22:03:54 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

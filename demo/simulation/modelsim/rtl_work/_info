@@ -2,44 +2,84 @@ m255
 K3
 13
 cModel Technology
-Z0 dE:\fpga\simulation\modelsim
-vdemo
-ICQgm[o2P`MoE2fjQ@5BP]2
-Vh97H77DA0NQ2fkoinb9IJ1
-Z1 dE:\fpga\simulation\modelsim
-w1700053636
-8E:/fpga/demo.v
-FE:/fpga/demo.v
+Z0 dE:\project\FPGA\demo\simulation\modelsim
+vadjust_shift
+If^Jjg48MDTBHzNU:@oOAh0
+V1QlRjWbI4PdzF<2DS3fJ53
+Z1 dE:\project\FPGA\demo\simulation\modelsim
+Z2 w1686884681
+8E:/project/FPGA/demo/adjust_shift.v
+FE:/project/FPGA/demo/adjust_shift.v
 L0 1
-Z2 OV;L;10.1d;51
+Z3 OV;L;10.1d;51
 r1
 31
-Z3 o-vlog01compat -work work -O0
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work +incdir+E:/project/FPGA/demo -O0
 !i10b 1
-!s100 IWfzEg`;>C]JCkD>dU]R51
+!s100 OaVk2N[oBUz2MYfBQ51V71
 !s85 0
-!s108 1700053645.981000
-!s107 E:/fpga/demo.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/fpga|E:/fpga/demo.v|
+!s108 1700056548.417000
+!s107 E:/project/FPGA/demo/adjust_shift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/demo|E:/project/FPGA/demo/adjust_shift.v|
 !s101 -O0
-!s92 -vlog01compat -work work +incdir+E:/fpga -O0
+vbcd_8421
+IU24CK8;;gHcaLk[@U@O[o0
+VV4okQ0QSDS2@YnU:f3]B03
+R1
+R2
+8E:/project/FPGA/demo/bcd_8421.v
+FE:/project/FPGA/demo/bcd_8421.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 bY8]fG:FnKD1_ThgT8@980
+!s85 0
+!s108 1700056548.373000
+!s107 E:/project/FPGA/demo/bcd_8421.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/demo|E:/project/FPGA/demo/bcd_8421.v|
+!s101 -O0
+vdemo
+IULE8LaR5ib>kI4ldkgmd82
+VLzOS;^jJlU<<Fo1?Q_;cc0
+R1
+w1700056527
+8E:/project/FPGA/demo/demo.v
+FE:/project/FPGA/demo/demo.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 3zOjcdU0A]Zo9]WB_I=1;0
+!s85 0
+!s108 1700056548.454000
+!s107 E:/project/FPGA/demo/demo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/demo|E:/project/FPGA/demo/demo.v|
+!s101 -O0
 vdemo_vlg_tst
 !i10b 1
-!s100 0Z_`G6<=bV6SzSif=7bkG1
-I>3aMh@GmCmQ7MfH4;Qb3N1
+!s100 =DMhmmk`CH>EK7[m^LIaO1
+I5jG18SCMi9TG`8OhcNFH]0
 VDVVRW5Sd]7B_hkWkC]Ime1
 R1
 w1700049988
-8E:/fpga/simulation/modelsim/demo.vt
-FE:/fpga/simulation/modelsim/demo.vt
+8E:/project/FPGA/demo/simulation/modelsim/demo.vt
+FE:/project/FPGA/demo/simulation/modelsim/demo.vt
 L0 28
-R2
+R3
 r1
 !s85 0
 31
-!s108 1700053646.027000
-!s107 E:/fpga/simulation/modelsim/demo.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/fpga/simulation/modelsim|E:/fpga/simulation/modelsim/demo.vt|
+!s108 1700056548.491000
+!s107 E:/project/FPGA/demo/simulation/modelsim/demo.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/demo/simulation/modelsim|E:/project/FPGA/demo/simulation/modelsim/demo.vt|
 !s101 -O0
-R3
-!s92 -vlog01compat -work work +incdir+E:/fpga/simulation/modelsim -O0
+R4
+!s92 -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim -O0

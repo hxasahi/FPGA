@@ -1,6 +1,6 @@
 module seg(
 input wire clk,
-input wire rst_n,
+input rst_n,
 input wire[7:0] dat1,
 input wire[7:0] dat2,
 output reg[7:0] seg_out,
@@ -40,10 +40,10 @@ begin
 		seg_num<=8'hff;					
 	else				
 		case(sel)
-			4'b1110: seg_num <= bcd1[7:4];
-			4'b1101: seg_num <= bcd1[3:0];
-			4'b1011: seg_num <= bcd2[7:4];
-			4'b0111: seg_num <= bcd2[3:0];			
+			4'b1110: seg_num <= bcd2[7:4];
+			4'b1101: seg_num <= bcd2[3:0];
+			4'b1011: seg_num <= bcd1[7:4];
+			4'b0111: seg_num <= bcd1[3:0];			
 			default:seg_num <= 4'd0;
 		endcase					
 end

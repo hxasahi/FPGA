@@ -10,6 +10,18 @@
 # ** Warning: Copied D:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key
+# 
+# Top level modules:
+# 	key
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg
+# 
+# Top level modules:
+# 	seg
 # vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/bcd_8421.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module bcd_8421
@@ -40,8 +52,463 @@
 # vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps demo_vlg_tst 
 # Loading work.demo_vlg_tst
 # Loading work.demo
+# Loading work.seg
 # Loading work.bcd_8421
 # Loading work.adjust_shift
+# Loading work.key
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(13): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_1
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(14): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim -O0 E:/project/FPGA/demo/simulation/modelsim/demo.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim -O0 E:/project/FPGA/demo/simulation/modelsim/demo.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+do demo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key
+# 
+# Top level modules:
+# 	key
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg
+# 
+# Top level modules:
+# 	seg
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/bcd_8421.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_8421
+# 
+# Top level modules:
+# 	bcd_8421
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/adjust_shift.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adjust_shift
+# 
+# Top level modules:
+# 	adjust_shift
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/demo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo
+# 
+# Top level modules:
+# 	demo
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim {E:/project/FPGA/demo/simulation/modelsim/demo.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  demo_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps demo_vlg_tst 
+# Loading work.demo_vlg_tst
+# Loading work.demo
+# Loading work.seg
+# Loading work.bcd_8421
+# Loading work.adjust_shift
+# Loading work.key
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(13): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_1
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(14): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+do demo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key
+# 
+# Top level modules:
+# 	key
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg
+# 
+# Top level modules:
+# 	seg
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/bcd_8421.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_8421
+# 
+# Top level modules:
+# 	bcd_8421
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/adjust_shift.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adjust_shift
+# 
+# Top level modules:
+# 	adjust_shift
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/demo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo
+# 
+# Top level modules:
+# 	demo
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim {E:/project/FPGA/demo/simulation/modelsim/demo.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  demo_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps demo_vlg_tst 
+# Loading work.demo_vlg_tst
+# Loading work.demo
+# Loading work.seg
+# Loading work.bcd_8421
+# Loading work.adjust_shift
+# Loading work.key
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(15): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_1
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(16): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+do demo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key
+# 
+# Top level modules:
+# 	key
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg
+# 
+# Top level modules:
+# 	seg
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/bcd_8421.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_8421
+# 
+# Top level modules:
+# 	bcd_8421
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/adjust_shift.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adjust_shift
+# 
+# Top level modules:
+# 	adjust_shift
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/demo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo
+# 
+# Top level modules:
+# 	demo
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim {E:/project/FPGA/demo/simulation/modelsim/demo.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  demo_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps demo_vlg_tst 
+# Loading work.demo_vlg_tst
+# Loading work.demo
+# Loading work.seg
+# Loading work.bcd_8421
+# Loading work.adjust_shift
+# Loading work.key
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(15): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_1
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(16): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim -O0 E:/project/FPGA/demo/simulation/modelsim/demo.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim -O0 E:/project/FPGA/demo/simulation/modelsim/demo.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+do demo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key
+# 
+# Top level modules:
+# 	key
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg
+# 
+# Top level modules:
+# 	seg
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/bcd_8421.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_8421
+# 
+# Top level modules:
+# 	bcd_8421
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/adjust_shift.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adjust_shift
+# 
+# Top level modules:
+# 	adjust_shift
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/demo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo
+# 
+# Top level modules:
+# 	demo
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim {E:/project/FPGA/demo/simulation/modelsim/demo.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  demo_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps demo_vlg_tst 
+# Loading work.demo_vlg_tst
+# Loading work.demo
+# Loading work.seg
+# Loading work.bcd_8421
+# Loading work.adjust_shift
+# Loading work.key
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(15): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_1
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(16): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+do demo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key
+# 
+# Top level modules:
+# 	key
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg
+# 
+# Top level modules:
+# 	seg
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/bcd_8421.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_8421
+# 
+# Top level modules:
+# 	bcd_8421
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/adjust_shift.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adjust_shift
+# 
+# Top level modules:
+# 	adjust_shift
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/demo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo
+# 
+# Top level modules:
+# 	demo
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim {E:/project/FPGA/demo/simulation/modelsim/demo.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  demo_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps demo_vlg_tst 
+# Loading work.demo_vlg_tst
+# Loading work.demo
+# Loading work.seg
+# Loading work.bcd_8421
+# Loading work.adjust_shift
+# Loading work.key
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/simulation/modelsim/demo.vt(59): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'state'. The port definition is at: E:/project/FPGA/demo/demo.v(8).
+# 
+#         Region: /demo_vlg_tst/demo_init
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(15): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_1
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(16): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim -O0 E:/project/FPGA/demo/simulation/modelsim/demo.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim -O0 E:/project/FPGA/demo/simulation/modelsim/demo.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+do demo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/key.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key
+# 
+# Top level modules:
+# 	key
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg
+# 
+# Top level modules:
+# 	seg
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/bcd_8421.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_8421
+# 
+# Top level modules:
+# 	bcd_8421
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/adjust_shift.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adjust_shift
+# 
+# Top level modules:
+# 	adjust_shift
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo {E:/project/FPGA/demo/demo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo
+# 
+# Top level modules:
+# 	demo
+# 
+# vlog -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim {E:/project/FPGA/demo/simulation/modelsim/demo.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demo_vlg_tst
+# 
+# Top level modules:
+# 	demo_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  demo_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps demo_vlg_tst 
+# Loading work.demo_vlg_tst
+# Loading work.demo
+# Loading work.seg
+# Loading work.bcd_8421
+# Loading work.adjust_shift
+# Loading work.key
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(15): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_1
+# ** Warning: (vsim-3015) E:/project/FPGA/demo/seg.v(16): [PCDPC] - Port size (12 or 12) does not match connection size (8) for port 'bcd'. The port definition is at: E:/project/FPGA/demo/bcd_8421.v(3).
+# 
+#         Region: /demo_vlg_tst/demo_init/seg1/bcd_8421_2
 # 
 # add wave *
 # view structure

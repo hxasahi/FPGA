@@ -8,7 +8,7 @@ module key
 
 reg [19:0] cnt_20ms;
 parameter cnt_max = 20'd999_999;
-
+//parameter cnt_max = 20'd5;
 always @ (posedge clk or negedge rst_n)
 begin
 	if(!rst_n)

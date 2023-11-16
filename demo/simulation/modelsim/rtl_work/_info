@@ -19,7 +19,7 @@ Z5 !s92 -vlog01compat -work work +incdir+E:/project/FPGA/demo -O0
 !i10b 1
 !s100 OaVk2N[oBUz2MYfBQ51V71
 !s85 0
-!s108 1700056548.417000
+!s108 1700128340.454000
 !s107 E:/project/FPGA/demo/adjust_shift.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/demo|E:/project/FPGA/demo/adjust_shift.v|
 !s101 -O0
@@ -39,15 +39,15 @@ R5
 !i10b 1
 !s100 bY8]fG:FnKD1_ThgT8@980
 !s85 0
-!s108 1700056548.373000
+!s108 1700128340.419000
 !s107 E:/project/FPGA/demo/bcd_8421.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/demo|E:/project/FPGA/demo/bcd_8421.v|
 !s101 -O0
 vdemo
-IULE8LaR5ib>kI4ldkgmd82
-VLzOS;^jJlU<<Fo1?Q_;cc0
+IMDgUCFiYYTSPQPSgkVaZ>2
+Vnk`GP=Cbb_>]U2RKkFo@50
 R1
-w1700056527
+w1700128233
 8E:/project/FPGA/demo/demo.v
 FE:/project/FPGA/demo/demo.v
 L0 1
@@ -57,19 +57,19 @@ r1
 R4
 R5
 !i10b 1
-!s100 3zOjcdU0A]Zo9]WB_I=1;0
+!s100 `PNT[I2M=c4`c2fO;H[F53
 !s85 0
-!s108 1700056548.454000
+!s108 1700128340.488000
 !s107 E:/project/FPGA/demo/demo.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/demo|E:/project/FPGA/demo/demo.v|
 !s101 -O0
 vdemo_vlg_tst
 !i10b 1
-!s100 =DMhmmk`CH>EK7[m^LIaO1
-I5jG18SCMi9TG`8OhcNFH]0
+!s100 ?k[hLQR2]I`>OgT4HBHcZ3
+I@ikEX=VHbTKZanhCSXmUS1
 VDVVRW5Sd]7B_hkWkC]Ime1
 R1
-w1700049988
+w1700128330
 8E:/project/FPGA/demo/simulation/modelsim/demo.vt
 FE:/project/FPGA/demo/simulation/modelsim/demo.vt
 L0 28
@@ -77,9 +77,49 @@ R3
 r1
 !s85 0
 31
-!s108 1700056548.491000
+!s108 1700128340.525000
 !s107 E:/project/FPGA/demo/simulation/modelsim/demo.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/demo/simulation/modelsim|E:/project/FPGA/demo/simulation/modelsim/demo.vt|
 !s101 -O0
 R4
 !s92 -vlog01compat -work work +incdir+E:/project/FPGA/demo/simulation/modelsim -O0
+vkey
+I1iCajd93flJV>]8PTYEiL0
+V;hHj9DSJRNfX>a?0MI:`32
+R1
+w1700128033
+8E:/project/FPGA/demo/key.v
+FE:/project/FPGA/demo/key.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 HAidg=1VZdPI67FIQA3FC2
+!s85 0
+!s108 1700128340.333000
+!s107 E:/project/FPGA/demo/key.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/demo|E:/project/FPGA/demo/key.v|
+!s101 -O0
+vseg
+I>CjnUoQ:K^ERFWjFoYbha2
+VmDAbN[ZSL0Y1>^`9]C4NV2
+R1
+w1700127938
+8E:/project/FPGA/demo/seg.v
+FE:/project/FPGA/demo/seg.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 GF9Fh=gOOo5W<WS4>a6j12
+!s85 0
+!s108 1700128340.384000
+!s107 E:/project/FPGA/demo/seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/demo|E:/project/FPGA/demo/seg.v|
+!s101 -O0

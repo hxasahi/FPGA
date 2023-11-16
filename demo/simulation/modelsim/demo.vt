@@ -28,25 +28,34 @@
 module demo_vlg_tst();
 reg clk;
 reg rst_n;
+reg key;
 wire[7:0] seg;
 wire[3:0] pos;
+wire[2:0] state;
+wire flag;
 
 initial                                                
 begin                                                                                       
 	$display("Running testbench"); 
 	clk <= 1;
 	rst_n <= 0;
-	#40
-	rst_n <= 1;	
+	key <= 1;
+	#100
+	rst_n <= 1;
 end
 
 always #10 clk<=~clk;
+always #200 key<=~key;
+
 demo demo_init
 (
 	.clk(clk),
 	.rst_n(rst_n),
 	.seg(seg),
-	.pos(pos)
+	.pos(pos),
+	.key(key),
+	.state(state),
+	.flag(flag)
 );
 endmodule
 

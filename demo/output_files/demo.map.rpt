@@ -1,5 +1,5 @@
 Analysis & Synthesis report for demo
-Thu Nov 16 17:09:22 2023
+Thu Nov 16 18:10:24 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -13,17 +13,20 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: key:key1
- 13. Port Connectivity Checks: "seg:seg1|bcd_8421:bcd_8421_2"
- 14. Port Connectivity Checks: "seg:seg1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst7"
- 15. Port Connectivity Checks: "seg:seg1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst0"
- 16. Port Connectivity Checks: "seg:seg1|bcd_8421:bcd_8421_1"
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  8. State Machine - |demo|state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |demo
+ 14. Parameter Settings for User Entity Instance: seg:seg1
+ 15. Parameter Settings for User Entity Instance: key:key1
+ 16. Port Connectivity Checks: "seg:seg1|bcd_8421:bcd_8421_2"
+ 17. Port Connectivity Checks: "seg:seg1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst7"
+ 18. Port Connectivity Checks: "seg:seg1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst0"
+ 19. Port Connectivity Checks: "seg:seg1|bcd_8421:bcd_8421_1"
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -49,15 +52,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 16 17:09:22 2023            ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 16 18:10:24 2023            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; demo                                             ;
 ; Top-level Entity Name              ; demo                                             ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 173                                              ;
-;     Total combinational functions  ; 171                                              ;
-;     Dedicated logic registers      ; 83                                               ;
-; Total registers                    ; 83                                               ;
+; Total logic elements               ; 106                                              ;
+;     Total combinational functions  ; 100                                              ;
+;     Dedicated logic registers      ; 75                                               ;
+; Total registers                    ; 75                                               ;
 ; Total pins                         ; 15                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
@@ -188,64 +191,70 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 173       ;
+; Estimated Total logic elements              ; 106       ;
 ;                                             ;           ;
-; Total combinational functions               ; 171       ;
+; Total combinational functions               ; 100       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 81        ;
-;     -- 3 input functions                    ; 12        ;
-;     -- <=2 input functions                  ; 78        ;
+;     -- 4 input functions                    ; 31        ;
+;     -- 3 input functions                    ; 4         ;
+;     -- <=2 input functions                  ; 65        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 108       ;
-;     -- arithmetic mode                      ; 63        ;
+;     -- normal mode                          ; 50        ;
+;     -- arithmetic mode                      ; 50        ;
 ;                                             ;           ;
-; Total registers                             ; 83        ;
-;     -- Dedicated logic registers            ; 83        ;
+; Total registers                             ; 75        ;
+;     -- Dedicated logic registers            ; 75        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 15        ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 83        ;
-; Total fan-out                               ; 843       ;
-; Average fan-out                             ; 2.97      ;
+; Maximum fan-out                             ; 75        ;
+; Total fan-out                               ; 559       ;
+; Average fan-out                             ; 2.73      ;
 +---------------------------------------------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                        ;
-+--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Library Name ;
-+--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
-; |demo                                      ; 171 (16)          ; 83 (15)      ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |demo                                                              ; work         ;
-;    |key:key1|                              ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|key:key1                                                     ; work         ;
-;    |seg:seg1|                              ; 127 (93)          ; 47 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1                                                     ; work         ;
-;       |bcd_8421:bcd_8421_1|                ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_1                                 ; work         ;
-;          |adjust_shift:adjust_shift_inst3| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst3 ; work         ;
-;          |adjust_shift:adjust_shift_inst4| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst4 ; work         ;
-;          |adjust_shift:adjust_shift_inst5| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst5 ; work         ;
-;          |adjust_shift:adjust_shift_inst6| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst6 ; work         ;
-;          |adjust_shift:adjust_shift_inst7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst7 ; work         ;
-;       |bcd_8421:bcd_8421_2|                ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_2                                 ; work         ;
-;          |adjust_shift:adjust_shift_inst3| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_2|adjust_shift:adjust_shift_inst3 ; work         ;
-;          |adjust_shift:adjust_shift_inst4| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_2|adjust_shift:adjust_shift_inst4 ; work         ;
-;          |adjust_shift:adjust_shift_inst5| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_2|adjust_shift:adjust_shift_inst5 ; work         ;
-;          |adjust_shift:adjust_shift_inst6| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_2|adjust_shift:adjust_shift_inst6 ; work         ;
-;          |adjust_shift:adjust_shift_inst7| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1|bcd_8421:bcd_8421_2|adjust_shift:adjust_shift_inst7 ; work         ;
-+--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |demo                      ; 100 (5)           ; 75 (7)       ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |demo               ; work         ;
+;    |key:key1|              ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|key:key1      ; work         ;
+;    |seg:seg1|              ; 67 (67)           ; 47 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |demo|seg:seg1      ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; seg:seg1|seg_out[7]                   ; Stuck at VCC due to stuck port data_in ;
-; dat1[0]                               ; Merged with dat2[0]                    ;
-; Total Number of Removed Registers = 2 ;                                        ;
-+---------------------------------------+----------------------------------------+
+Encoding Type:  One-Hot
++-------------------------------------------------+
+; State Machine - |demo|state                     ;
++------------+-----------+-----------+------------+
+; Name       ; state.TWO ; state.ONE ; state.IDLE ;
++------------+-----------+-----------+------------+
+; state.IDLE ; 0         ; 0         ; 0          ;
+; state.ONE  ; 0         ; 1         ; 1          ;
+; state.TWO  ; 1         ; 0         ; 1          ;
++------------+-----------+-----------+------------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; seg:seg1|seg_out[7]                    ; Stuck at VCC due to stuck port data_in ;
+; dat2[6,7]                              ; Stuck at GND due to stuck port data_in ;
+; dat2[5]                                ; Stuck at VCC due to stuck port data_in ;
+; dat2[2..4]                             ; Stuck at GND due to stuck port data_in ;
+; dat1[4..6]                             ; Merged with dat1[7]                    ;
+; dat1[2]                                ; Merged with dat1[3]                    ;
+; dat1[7]                                ; Stuck at GND due to stuck port data_in ;
+; dat2[1]                                ; Merged with dat2[0]                    ;
+; Total Number of Removed Registers = 13 ;                                        ;
++----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -253,12 +262,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 83    ;
+; Total registers                              ; 75    ;
 ; Number of registers using Synchronous Clear  ; 20    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 83    ;
+; Number of registers using Asynchronous Clear ; 75    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 38    ;
+; Number of registers using Clock Enable       ; 29    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -268,10 +277,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; dat2[5]                                 ; 7       ;
-; dat2[1]                                 ; 6       ;
-; dat1[3]                                 ; 5       ;
-; dat1[2]                                 ; 5       ;
 ; seg:seg1|seg_out[0]                     ; 1       ;
 ; seg:seg1|seg_out[1]                     ; 1       ;
 ; seg:seg1|seg_out[2]                     ; 1       ;
@@ -279,25 +284,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg:seg1|seg_out[4]                     ; 1       ;
 ; seg:seg1|seg_out[5]                     ; 1       ;
 ; seg:seg1|seg_out[6]                     ; 1       ;
-; seg:seg1|sel[1]                         ; 15      ;
-; seg:seg1|sel[2]                         ; 9       ;
+; seg:seg1|sel[1]                         ; 7       ;
+; seg:seg1|sel[2]                         ; 6       ;
 ; seg:seg1|sel[3]                         ; 7       ;
 ; seg:seg1|seg_num[0]                     ; 7       ;
 ; seg:seg1|seg_num[1]                     ; 7       ;
 ; seg:seg1|seg_num[2]                     ; 7       ;
 ; seg:seg1|seg_num[3]                     ; 7       ;
-; Total number of inverted registers = 18 ;         ;
+; dat1[3]                                 ; 4       ;
+; Total number of inverted registers = 15 ;         ;
 +-----------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |demo|key:key1|cnt_20ms[5] ;
-; 20:1               ; 3 bits    ; 39 LEs        ; 18 LEs               ; 21 LEs                 ; Yes        ; |demo|seg:seg1|seg_num[3]  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |demo|key:key1|cnt_20ms[19] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |demo|dat1[1]               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |demo ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; IDLE           ; 001   ; Unsigned Binary                             ;
+; ONE            ; 010   ; Unsigned Binary                             ;
+; TWO            ; 100   ; Unsigned Binary                             ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: seg:seg1 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; cnt1ms         ; 50000 ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------+
@@ -361,7 +389,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Nov 16 17:09:21 2023
+    Info: Processing started: Thu Nov 16 18:10:24 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off demo -c demo
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file key.v
@@ -375,10 +403,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file adjust_
 Info (12021): Found 1 design units, including 1 entities, in source file demo.v
     Info (12023): Found entity 1: demo
 Info (12127): Elaborating entity "demo" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at demo.v(28): truncated value with size 32 to match size of target (8)
-Warning (10230): Verilog HDL assignment warning at demo.v(29): truncated value with size 32 to match size of target (8)
 Info (12128): Elaborating entity "seg" for hierarchy "seg:seg1"
-Warning (10230): Verilog HDL assignment warning at seg.v(40): truncated value with size 8 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at seg.v(42): truncated value with size 8 to match size of target (4)
 Info (12128): Elaborating entity "bcd_8421" for hierarchy "seg:seg1|bcd_8421:bcd_8421_1"
 Info (12128): Elaborating entity "adjust_shift" for hierarchy "seg:seg1|bcd_8421:bcd_8421_1|adjust_shift:adjust_shift_inst0"
 Info (12128): Elaborating entity "key" for hierarchy "key:key1"
@@ -391,14 +417,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 188 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 121 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 173 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info (21061): Implemented 106 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4624 megabytes
-    Info: Processing ended: Thu Nov 16 17:09:22 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Thu Nov 16 18:10:24 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

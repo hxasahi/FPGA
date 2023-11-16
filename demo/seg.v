@@ -7,6 +7,8 @@ output reg[7:0] seg_out,
 output reg[3:0] sel
 );
 reg[31:0] cnt;
+parameter cnt1ms = 50_000;
+//parameter cnt1ms = 50;
 reg[3:0] seg_num;
 wire[7:0] bcd1;
 wire[7:0] bcd2;
@@ -17,7 +19,7 @@ always @ (posedge clk or negedge rst_n)
 begin
 	if(!rst_n)
 		cnt<=32'd0;
-	else if(cnt==32'd49_999)
+	else if(cnt==cnt1ms-1)
 		cnt<=32'd0;
 	else
 		cnt<=cnt+32'd1;
@@ -27,7 +29,7 @@ always @ (posedge clk or negedge rst_n)
 begin
 	if(!rst_n)					
 		sel<=4'b1110;		
-	else if(cnt==32'd49_999)
+	else if(cnt==cnt1ms-1)
 		sel<={sel[2:0],sel[3]};
 	else
 		sel<=sel;

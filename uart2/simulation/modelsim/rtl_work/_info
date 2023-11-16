@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\project\FPGA\uart2\simulation\modelsim
+vuart
+ILloVh]FMa;Q0kGGXHGNbn0
+Vcn<knnPfH;:Em?SEcWoo02
+Z1 dE:\project\FPGA\uart2\simulation\modelsim
+w1700143735
+8E:/project/FPGA/uart2/uart.v
+FE:/project/FPGA/uart2/uart.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 9z]LLYIi?7V]Y[XW=]WSU2
+!s85 0
+!s108 1700143746.881000
+!s107 E:/project/FPGA/uart2/uart.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/uart2|E:/project/FPGA/uart2/uart.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/project/FPGA/uart2 -O0
+vuart_vlg_tst
+!i10b 1
+!s100 b58SkK1[>`bP47HfVdhjL1
+IhEnzeMEHbE81a:oZ_3NPT2
+VfB9@`f>13fG:[o0`GL]bW1
+R1
+w1700141568
+8E:/project/FPGA/uart2/simulation/modelsim/uart.vt
+FE:/project/FPGA/uart2/simulation/modelsim/uart.vt
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1700143746.919000
+!s107 E:/project/FPGA/uart2/simulation/modelsim/uart.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/project/FPGA/uart2/simulation/modelsim|E:/project/FPGA/uart2/simulation/modelsim/uart.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/project/FPGA/uart2/simulation/modelsim -O0

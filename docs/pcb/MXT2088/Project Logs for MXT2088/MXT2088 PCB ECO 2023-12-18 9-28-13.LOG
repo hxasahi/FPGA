@@ -1,0 +1,23 @@
+Added Component: Designator=U?(LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20140508/1457707057464.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "AD9288BSTZ-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "differential input"; Value = "是"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interface"; Value = "并行"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "AD9288BSTZ-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ADI(亚德诺)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "AD9288BSTZ-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "AD9288BSTZ-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "number of channels"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40℃~+85℃"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "resolution"; Value = "8位"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "sampling frequency"; Value = "40MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "LQFP-48(7x7)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C653455"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supply Voltage"; Value = "2.7V~3.6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "AD9288BSTZ-40"; VariantName = "[No Variations]"
+Added Class: Name=MXT2088
+Added Room: Name=MXT2088

@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [MXT2088.PrjPcb]
+   Generated File[MXT2088.TXT]
+   Generated File[MXT2088.LDP]
+   Generated File[MXT2088.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 11:04:07 On 2023/12/18
